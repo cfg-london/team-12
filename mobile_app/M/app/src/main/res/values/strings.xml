@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">linkage</string>
-<<<<<<< HEAD
     <string-array name="referrerOptions">
         <item>GP</item>
         <item>Police</item>
@@ -15,10 +14,8 @@
         <item>Friend, Family or Neighbour</item>
         <item>Other</item>
     </string-array>
-=======
 
     <string name="title_activity_languages">LanguagesActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
->>>>>>> 6325015beb846fdb9d4907d7ea889348b38e0e0e
 </resources>
