@@ -14,5 +14,9 @@ class UserProfile {
     private Optional<String> email;
     private Optional<String> address;
     private Optional<String> workplace;
-    
+
+    public UserProfile(String type) {
+        this.type = type;
+//        name.ifPresent(x -> this.name = x.);
+    }
 }

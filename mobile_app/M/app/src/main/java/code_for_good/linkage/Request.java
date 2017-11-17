@@ -13,4 +13,15 @@ public class Request {
     private List<String> issues;
     private List<String> languages;
     private RefereeInfo info;
+
+    public Request(boolean urgency, UserProfile receiver, List<String> issues,
+                   List<String> languages, RefereeInfo info) {
+        this.urgency = urgency;
+        this.receiver = receiver;
+        this.issues = issues;
+        this.languages = languages;
+        this.info = info;
+    }
+
+
 }
