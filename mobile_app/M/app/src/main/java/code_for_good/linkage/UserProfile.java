@@ -9,14 +9,25 @@ import java.util.Optional;
 class UserProfile {
 
     private String type;
-    private Optional<String> name;
-    private Optional<String> phone;
-    private Optional<String> email;
-    private Optional<String> address;
-    private Optional<String> workplace;
+    private String name;
+    private String phone;
+    private String email;
+    private String address;
+    private String workplace;
 
-    public UserProfile(String type) {
+    public UserProfile(String type, String name, String phone,
+                       String email, String address, String workplace) {
         this.type = type;
-//        name.ifPresent(x -> this.name = x.);
+        this.name = name;
+        this.phone = phone;
+        this.email = email;
+        this.address = address;
+        this.workplace = workplace;
+    }
+
+    @Override
+    public String toString() {
+        return "Name: " + name + " Telephone number:" + phone + " E-mail" + email
+                + " Address" + address + " Workplace" + workplace;
     }
 }
