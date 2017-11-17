@@ -29,4 +29,5 @@ dependencies {
     compile 'com.android.support:support-v4:26.+'
     testCompile 'junit:junit:4.12'
     compile files('externalLibraries/javax.mail.jar')
+    compile files('externalLibraries/activation.jar')
 }
