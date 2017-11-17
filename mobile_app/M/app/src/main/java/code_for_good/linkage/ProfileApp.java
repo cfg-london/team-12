@@ -99,7 +99,10 @@ public class ProfileApp extends AppCompatActivity {
                 profile = new UserProfile(type, name.getText().toString(),
                         phone.getText().toString(), email.getText().toString(),
                         address.getText().toString(), work.getText().toString());
+
             }
         });
     }
+
+    private void
 }
