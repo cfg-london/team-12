@@ -9,14 +9,11 @@ import java.util.Optional;
 class UserProfile {
 
     private String type;
-    private Optional<String> name;
-    private Optional<String> phone;
-    private Optional<String> email;
-    private Optional<String> address;
-    private Optional<String> workplace;
+    private String name;
+    private String phone;
+    private String email;
+    private String address;
+    private String workplace;
 
-    public UserProfile(String type) {
-        this.type = type;
-//        name.ifPresent(x -> this.name = x.);
-    }
+
 }
