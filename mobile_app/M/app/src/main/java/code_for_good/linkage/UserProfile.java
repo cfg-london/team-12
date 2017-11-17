@@ -1,12 +1,9 @@
 package code_for_good.linkage;
 
-import java.util.Optional;
+import android.os.Parcel;
+import android.os.Parcelable;
 
-/**
- * Created by dimarammfire on 17.11.17.
- */
-
-class UserProfile {
+class UserProfile implements Parcelable {
 
     private String type;
     private String name;
@@ -15,8 +12,7 @@ class UserProfile {
     private String address;
     private String workplace;
 
-    public UserProfile(String type, String name, String phone,
-                       String email, String address, String workplace) {
+    public UserProfile(String type, String name, String phone, String email, String address, String workplace) {
         this.type = type;
         this.name = name;
         this.phone = phone;
@@ -25,9 +21,41 @@ class UserProfile {
         this.workplace = workplace;
     }
 
+    public String getType() {
+        return type;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public String getWorkplace() {
+        return workplace;
+    }
+
+    public UserProfile(Parcel in){
+
+    }
+
     @Override
-    public String toString() {
-        return "Name: " + name + " Telephone number:" + phone + " E-mail" + email
-                + " Address" + address + " Workplace" + workplace;
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel parcel, int i) {
+
     }
 }
