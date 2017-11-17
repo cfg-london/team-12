@@ -3,11 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0099cc"
+    android:id="@+id/fullscreen_lang_frame"
     tools:context="code_for_good.linkage.LanguagesActivity">
 
     <!-- The primary full-screen view. This can be replaced with whatever view
          is needed to present your content, e.g. VideoView, SurfaceView,
          TextureView, etc. -->
+
     <TextView
         android:id="@+id/fullscreen_content"
         android:layout_width="match_parent"
@@ -20,6 +22,7 @@
 
     <!-- This FrameLayout insets its children based on system windows using
          android:fitsSystemWindows. -->
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -37,35 +40,45 @@
             tools:ignore="UselessParent">
 
         </LinearLayout>
+
     </FrameLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
 
-        <TextView
-            android:id="@+id/textView1"
+        <Button
+            android:id="@+id/buttonEng"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_above="@+id/textView2"
-            android:text="TextView1" />
+            android:text="English"
+            android:textSize="10pt"
+            android:onClick="changeLanguage"
+            android:layout_centerHorizontal="true" />
 
-        <TextView
-            android:id="@+id/textView2"
+        <Button
+            android:id="@+id/buttonBeng"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="TextView2" />
+            android:layout_below="@+id/buttonEng"
+            android:text="Bengali"
+            android:textSize="10pt"
+            android:layout_marginTop="2pt"
+            android:onClick="changeLanguage"
+            android:layout_centerHorizontal="true" />
 
 
-        <TextView
-            android:id="@+id/textView3"
+        <Button
+            android:id="@+id/buttonChi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_below="@+id/textView2"
-            android:text="TextView3" />
+            android:layout_below="@+id/buttonBeng"
+            android:text="Chinese"
+            android:textSize="10pt"
+            android:layout_marginTop="2pt"
+            android:onClick="changeLanguage"
+            android:layout_centerHorizontal="true" />
     </RelativeLayout>
 
 </FrameLayout>
