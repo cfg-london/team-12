@@ -1,6 +1,7 @@
 package code_for_good.linkage;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,6 +10,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.MenuItem;
 import android.support.v4.app.NavUtils;
+import android.widget.TextView;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -89,6 +91,7 @@ public class LanguagesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        setTitle("Languages");
         setContentView(R.layout.activity_languages);
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
@@ -107,11 +110,6 @@ public class LanguagesActivity extends AppCompatActivity {
                 toggle();
             }
         });
-
-        // Upon interacting with UI controls, delay any scheduled hide()
-        // operations to prevent the jarring behavior of controls going away
-        // while interacting with the UI.
-        findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
     }
 
     @Override
@@ -176,5 +174,12 @@ public class LanguagesActivity extends AppCompatActivity {
     private void delayedHide(int delayMillis) {
         mHideHandler.removeCallbacks(mHideRunnable);
         mHideHandler.postDelayed(mHideRunnable, delayMillis);
+    }
+
+    private void changeLanguage(View view){
+        Intent intent = new Intent(this, ProfileApp.class);
+        CharSequence language = ((TextView) view).getText();
+        intent.putExtra("Language_Choice", language);
+        startActivity(intent);
     }
 }
