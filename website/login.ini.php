@@ -3,7 +3,7 @@
 ;/*
 [database]
 username = admin
-hashedPassword = $2y$10$bVe5Ubc3WQcFc1AlSsjdZeBY4k/jQU3e2MeUCtmMdY8ihQ3aIGNQa
+hashedPassword = $2y$10$t7FP31BixfWehVzJiV9/hewTcMUGIRRK12aeUEj6IL4cosW/MPzt2
 #this file is kept outside root to prevent access by the web
 ;*/
 ;?>

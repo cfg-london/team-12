@@ -1,2 +1,2 @@
 INDEX PAGE
-<a href="/wwwroot/Admin/login.php">Login</a>
+<a href="/website/wwwroot/Admin/login.php">Login</a>
