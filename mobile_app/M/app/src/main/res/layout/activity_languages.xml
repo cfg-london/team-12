@@ -1,4 +1,5 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -46,39 +47,150 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true">
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="23pt">
 
         <Button
             android:id="@+id/buttonEng"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="English"
-            android:textSize="10pt"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
             android:onClick="changeLanguage"
-            android:layout_centerHorizontal="true" />
+            android:text="English"
+            android:textSize="10pt" />
+
+
+        <ImageButton
+            android:id="@+id/imageGB"
+            android:layout_width="32dip"
+            android:layout_height="32dip"
+            android:layout_alignBottom="@+id/buttonEng"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/buttonEsp"
+            app:srcCompat="@mipmap/gb" />
 
         <Button
             android:id="@+id/buttonBeng"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
             android:layout_below="@+id/buttonEng"
-            android:text="Bengali"
-            android:textSize="10pt"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="2pt"
             android:onClick="changeLanguage"
-            android:layout_centerHorizontal="true" />
+            android:text="বাঙালি"
+            android:textSize="10pt" />
 
 
         <Button
             android:id="@+id/buttonChi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
             android:layout_below="@+id/buttonBeng"
-            android:text="Chinese"
-            android:textSize="10pt"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="2pt"
             android:onClick="changeLanguage"
-            android:layout_centerHorizontal="true" />
+            android:text="中文"
+            android:textSize="10pt" />
+
+        <Button
+            android:id="@+id/buttonFr"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/buttonChi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2pt"
+            android:onClick="changeLanguage"
+            android:text="Français"
+            android:textSize="10pt" />
+
+        <Button
+            android:id="@+id/buttonEsp"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/buttonFr"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2pt"
+            android:onClick="changeLanguage"
+            android:text="Español"
+            android:textSize="10pt" />
+
+        <Button
+            android:id="@+id/buttonIta"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/buttonEsp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2pt"
+            android:onClick="changeLanguage"
+            android:text="Italiano"
+            android:textSize="10pt" />
+
+        <Button
+            android:id="@+id/buttonSom"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/buttonIta"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2pt"
+            android:onClick="changeLanguage"
+            android:text="Somali"
+            android:textSize="10pt" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="32dip"
+            android:layout_height="32dip"
+            android:layout_above="@+id/buttonChi"
+            android:layout_alignEnd="@+id/imageGB"
+            android:layout_alignStart="@+id/imageGB"
+            android:layout_alignTop="@+id/buttonBeng"
+            app:srcCompat="@mipmap/bd" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="32dip"
+            android:layout_height="32dip"
+            android:layout_alignBottom="@+id/buttonChi"
+            android:layout_alignTop="@+id/buttonChi"
+            android:layout_toStartOf="@+id/buttonChi"
+            app:srcCompat="@mipmap/cn" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="32dip"
+            android:layout_height="32dip"
+            android:layout_above="@+id/buttonEsp"
+            android:layout_below="@+id/buttonChi"
+            app:srcCompat="@mipmap/fr"
+            android:layout_alignStart="@+id/imageButton5" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="32dip"
+            android:layout_height="32dip"
+            android:layout_alignBottom="@+id/buttonEsp"
+            android:layout_alignTop="@+id/buttonEsp"
+            android:layout_toStartOf="@+id/buttonEsp"
+            app:srcCompat="@mipmap/es" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="32dip"
+            android:layout_height="32dip"
+            android:layout_alignBottom="@+id/buttonIta"
+            android:layout_alignStart="@+id/imageButton5"
+            android:layout_below="@+id/buttonEsp"
+            app:srcCompat="@mipmap/it" />
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="32dip"
+            android:layout_height="32dip"
+            android:layout_alignBottom="@+id/buttonSom"
+            android:layout_alignStart="@+id/imageButton3"
+            android:layout_alignTop="@+id/buttonSom"
+            app:srcCompat="@mipmap/so" />
+
     </RelativeLayout>
 
 </FrameLayout>
