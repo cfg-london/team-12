@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">linkage</string>
+    <string-array name="referrerOptions">
+        <item>GP</item>
+        <item>Police</item>
+        <item>Fire and Rescue</item>
+        <item>Paramedic</item>
+        <item>Pharmacist</item>
+        <item>Meals on Wheels</item>
+        <item>Linkage</item>
+        <item>Social Worker</item>
+        <item>Local Charity</item>
+        <item>Paid Carer</item>
+        <item>Friend, Family or Neighbour</item>
+        <item>Other</item>
+    </string-array>
 </resources>
