@@ -63,7 +63,15 @@ public class ProfileApp extends AppCompatActivity {
             }
         }
 
+
         ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.referrerOptions, R.layout.custom_spinner);
+
+        /*
+        ArrayAdapter adapter;
+        switch(lang) {
+        }
+         */
+
         adapter.setDropDownViewResource(R.layout.custom_spinner_dropdown);
         referrerDropdown = (Spinner) findViewById(R.id.professionDropdown);
         referrerDropdown.setAdapter(adapter);
