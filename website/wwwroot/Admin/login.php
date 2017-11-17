@@ -10,7 +10,9 @@ session_start();
 </head>
 <body>
 <?php
+require '../header.html';
 echo $_SESSION['error'];
+$_SESSION['error'] = "";
 ?>
 <form id="login" name="login" method="POST" action="verify_login.php">
     Username: <input type="text" name="username" id="username" />

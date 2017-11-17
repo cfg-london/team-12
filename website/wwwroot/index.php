@@ -1,6 +1,5 @@
-INDEX PAGE
-<a href="/website/wwwroot/Admin/login.php">Login</a>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
@@ -29,6 +28,9 @@ INDEX PAGE
     </script>
   </head>
   <body>
+  <?php
+  require 'header.html';
+  ?>
     <div id="piechart" style="width: 900px; height: 500px;"></div>
   </body>
 </html>
