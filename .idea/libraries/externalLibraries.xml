@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="externalLibraries">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mobile_app/M/app/externalLibraries/activation.jar!/" />
+      <root url="jar://$PROJECT_DIR$/mobile_app/M/app/externalLibraries/javax.mail.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
