@@ -1,4 +1,5 @@
 <?php
+session_start();
 $username = $_POST['username'];
 $password = $_POST['pass'];
 $serverLoginDetails = parse_ini_file("../../login.ini.php");
@@ -13,7 +14,10 @@ if ($username == $serverLoginDetails['username'] && password_verify($password, $
     }
     echo "\npassword correct";
 } else {
-    echo "\npassword incorrect";
+    //this is the error message which is outputted onto login page
+    $_SESSION['error'] = "<h1>Login details incorrect</h1>";
+    header("Location: login.php");
+    exit;
 }
 
 /**
