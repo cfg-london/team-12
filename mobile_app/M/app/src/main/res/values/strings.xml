@@ -18,16 +18,16 @@
     <string-array name="bngReferrerOptions">
         <item>Sādhāraṇa anuśīlanakārī</item>
         <item>Puliśa</item>
-        <item>Agni ēbaṁ rēsaki'u</item>
+        <item>Agni ēbaṁ rēsaki\'u</item>
         <item>Pyārāmēḍika</item>
-        <item>Kampa'uṇḍāra</item>
+        <item>Kampa\'uṇḍāra</item>
         <item>Cākāra upara khābāra</item>
         <item>Liṅkēja</item>
         <item>Samāja karmī</item>
         <item>Sthānīẏa cyāriṭi</item>
         <item>Pradatta paricaryā</item>
         <item>Bandhu, paribāra bā āśapāśa</item>
-        <item>An'yān'ya</item>
+        <item>An\'yān\'ya</item>
     </string-array>
 
     <string-array name="chiReferrerOptions">
@@ -99,7 +99,7 @@
         <item>Cuntooyinka ku yaala wheels</item>
         <item>Isku xirka</item>
         <item>Shaqaale bulsho</item>
-        <item>Hay'ad samafal oo maxalli ah</item>
+        <item>Hay\'ad samafal oo maxalli ah</item>
         <item>Daryeele mushahar ah</item>
         <item>Saaxiibka, Qoyska ama Deriska</item>
         <item>Kale</item>

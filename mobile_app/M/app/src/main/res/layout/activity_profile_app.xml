@@ -18,7 +18,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginStart="@dimen/fontSize"
-            android:entries="@array/referrerOptions"
+            android:entries="@array/engReferrerOptions"
             android:textAlignment="textEnd"
             android:layout_weight="1"/>
     </LinearLayout>

@@ -64,7 +64,7 @@ public class ProfileApp extends AppCompatActivity {
         }
 
 
-        ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.referrerOptions, R.layout.custom_spinner);
+        ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.engReferrerOptions, R.layout.custom_spinner);
 
         /*
         ArrayAdapter adapter;
