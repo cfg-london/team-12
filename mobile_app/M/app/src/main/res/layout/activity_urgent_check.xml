@@ -24,7 +24,7 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="355"
+        android:layout_width="355dp"
         android:layout_height="87dp"
         android:text="Volunteering for LinkAge+"
         tools:layout_editor_absoluteX="13dp"
