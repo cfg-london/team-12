@@ -46,7 +46,14 @@ class UserProfile implements Parcelable {
     }
 
     public UserProfile(Parcel in){
-
+        String[] data = new String[6];
+        in.readStringArray(data);
+        this.type = data[0];
+        this.name = data[1];
+        this.phone = data[2];
+        this.email = data[3];
+        this.address = data[4];
+        this.workplace = data[5];
     }
 
     @Override
@@ -56,6 +63,18 @@ class UserProfile implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel parcel, int i) {
-
+        parcel.writeStringArray(new String[] {
+                type, name, phone, email, address, workplace
+        });
     }
+
+    public static final Parcelable.Creator CREATOR = new Parcelable.Creator() {
+        public UserProfile createFromParcel(Parcel in) {
+            return new UserProfile(in);
+        }
+
+        public UserProfile[] newArray(int size) {
+            return new UserProfile[size];
+        }
+    };
 }
