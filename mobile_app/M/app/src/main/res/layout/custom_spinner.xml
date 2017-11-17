@@ -1,0 +1,6 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/customSpinner"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textAlignment="textEnd"
+          android:textSize="@dimen/fontSize" />
