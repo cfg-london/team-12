@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="code_for_good.linkage.UrgentCheck">
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="355dp"
+        android:layout_height="137dp"
+        android:text="NON-URGENT"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="211dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="355dp"
+        android:layout_height="137dp"
+        android:text="URGENT"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="40dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="355"
+        android:layout_height="87dp"
+        android:text="Volunteering for LinkAge+"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="382dp" />
+</android.support.constraint.ConstraintLayout>
