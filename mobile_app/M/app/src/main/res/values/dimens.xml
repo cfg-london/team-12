@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="lineSplitMargin">10dp</dimen>
+    <dimen name="fontSize">15pt</dimen>
+    <dimen name="textSizeSmall">10pt</dimen>
+</resources>
