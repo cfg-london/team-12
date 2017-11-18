@@ -28,7 +28,7 @@ public class RefereeDetails extends AppCompatActivity {
     private LinearLayout languages;
     private Button submit;
 
-    private Languages lang;
+    private Language lang;
 
     private RequestBuilder rb;
 
@@ -37,7 +37,7 @@ public class RefereeDetails extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_referee_details);
 
-        this.lang = (Languages) getIntent().getSerializableExtra("Language");
+        this.lang = (Language) getIntent().getSerializableExtra("Language");
 
         ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.genderOptions, R.layout.custom_spinner);
         adapter.setDropDownViewResource(R.layout.custom_spinner_dropdown);
