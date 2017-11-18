@@ -26,6 +26,7 @@ public class Request implements Parcelable {
     }
 
     public void send() throws IOException {
+        Log.v("tag", "Hello");
         String urlString = "http://34.241.158.221/send_mail.php";
         urlString += "?urgent=" + (urgent ? "true" : "false");
         urlString += "?referrer=" + referrer.toString();
@@ -34,6 +35,7 @@ public class Request implements Parcelable {
             urlString += issue + " ";
         }
         urlString.replace(" ", "%20");
+        urlString.replace("\n", "%0A");
         Log.v("tag", urlString);
         URL url = new URL(urlString);
         URLConnection connection = url.openConnection();
