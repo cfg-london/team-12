@@ -87,7 +87,7 @@
         <item>Carità locale</item>
         <item>Carer a pagamento</item>
         <item>Amico, famiglia o vicino</item>
-        <item>Altro</item>
+        <item>Altro </item>
     </string-array>
 
     <string-array name="somReferrerOptions">
