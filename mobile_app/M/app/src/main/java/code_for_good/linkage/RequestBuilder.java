@@ -10,7 +10,7 @@ public class RequestBuilder implements Parcelable{
 
     private boolean urgent; // Is the request urgent?
     private UserProfile referrer; // Who is sending the referral?
-    private List<String> issues; // The list of issues that are the reason for the referral.
+    private List<String> issues = new ArrayList<>(); // The list of issues that are the reason for the referral.
     private Referee referee; // The information provided on the referee.
 
     public RequestBuilder() {
@@ -20,11 +20,7 @@ public class RequestBuilder implements Parcelable{
     public RequestBuilder(Parcel in) {
         urgent = in.readByte() != 0;
         referrer = in.readParcelable(UserProfile.class.getClassLoader());
-        try {
-            in.readStringList(issues);
-        } catch (NullPointerException e){
-            in.createStringArrayList();
-        }
+        in.readStringList(issues);
         referee = in.readParcelable(Referee.class.getClassLoader());
 
     }

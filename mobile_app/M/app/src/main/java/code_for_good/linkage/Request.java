@@ -3,13 +3,14 @@ package code_for_good.linkage;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Request implements Parcelable {
 
     private boolean urgent; // Is the request urgent?
     private UserProfile referrer; // Who is sending the referral?
-    private List<String> issues; // The list of issues that are the reason for the referral.
+    private List<String> issues = new ArrayList<>(); // The list of issues that are the reason for the referral.
     private Referee info; // The information provided on the referee.
 
     public Request(boolean urgent, UserProfile referrer, List<String> issues, Referee info) {
@@ -27,7 +28,7 @@ public class Request implements Parcelable {
         urgent = in.readByte() != 0;
         referrer = (UserProfile) in.readParcelable(UserProfile.class.getClassLoader());
         in.readStringList(issues);
-        info = (Referee) in.readParcelable(Referee.class.getClassLoader());
+        info = in.readParcelable(Referee.class.getClassLoader());
     }
 
     @Override
