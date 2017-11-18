@@ -34,7 +34,10 @@ public class AdditionalInformationSubmit extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_additional_information_submit);
 
-        request = getIntent().getExtras().getParcelable("request");
+        try {request = getIntent().getExtras().getParcelable("request");}
+        catch (NullPointerException e) {
+            System.out.println("Empty results supplied.");
+        }
         submit = findViewById(R.id.finalSubmit);
         consent = findViewById(R.id.consentCheck);
 
@@ -55,7 +58,6 @@ public class AdditionalInformationSubmit extends AppCompatActivity {
     }
 
     private void remindAccept(){
-        //Toasts aren't displaying for some rason
         Toast.makeText(this, "Please tick the checkbox", Toast.LENGTH_LONG).show();
     }
 
