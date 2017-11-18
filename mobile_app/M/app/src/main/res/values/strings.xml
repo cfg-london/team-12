@@ -18,4 +18,13 @@
     <string name="title_activity_languages">LanguagesActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="social_isolation">Social isolation</string>
+    <string name="safety_at_home">Safety at home</string>
+    <string name="legal_help">Legal Help</string>
+    <string name="crisis">Crisis</string>
+    <string name="transport_mobility"><![CDATA[Transport & Mobility]]></string>
+    <string name="later_life_planning">Later life planning</string>
+    <string name="help_around_the_house">Help around the house</string>
+    <string name="staying_in_their_home">Staying in their home</string>
+    <string name="money_benefits"><![CDATA[Money & Benefits]]></string>
 </resources>
