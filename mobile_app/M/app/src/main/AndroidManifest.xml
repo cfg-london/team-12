@@ -31,6 +31,7 @@
                 android:value="code_for_good.linkage.ProfileApp" />
         </activity>
         <activity android:name=".IssueSelector"></activity>
+        <activity android:name=".Messenger" />
     </application>
 
 </manifest>

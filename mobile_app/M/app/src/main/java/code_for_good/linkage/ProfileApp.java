@@ -25,12 +25,53 @@ public class ProfileApp extends AppCompatActivity {
     private EditText address;
     private Button submit;
 
+    private Langauges lang;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile_app);
 
-        ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.referrerOptions, R.layout.custom_spinner);
+        this.lang = Langauges.ENG;
+
+        if(getIntent().hasExtra("Language_Choice")){
+            String languages = getIntent().getStringExtra("Language_Choice");
+            switch (languages) {
+                case "English":
+                    lang = Langauges.ENG;
+                    break;
+                case "বাঙালি":
+                    lang = Langauges.BNG;
+                    break;
+                case "中文":
+                    lang = Langauges.CHI;
+                    break;
+                case "Français":
+                    lang = Langauges.FRA;
+                    break;
+                case "Español":
+                    lang = Langauges.ESP;
+                    break;
+                case "Italiano":
+                    lang = Langauges.ITA;
+                    break;
+                case "Somali":
+                    lang = Langauges.SOM;
+                    break;
+                default:
+                    break;
+            }
+        }
+
+
+        ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.engReferrerOptions, R.layout.custom_spinner);
+
+        /*
+        ArrayAdapter adapter;
+        switch(lang) {
+        }
+         */
+
         adapter.setDropDownViewResource(R.layout.custom_spinner_dropdown);
         referrerDropdown = (Spinner) findViewById(R.id.professionDropdown);
         referrerDropdown.setAdapter(adapter);
@@ -58,7 +99,6 @@ public class ProfileApp extends AppCompatActivity {
                 profile = new UserProfile(type, name.getText().toString(),
                         phone.getText().toString(), email.getText().toString(),
                         address.getText().toString(), work.getText().toString());
-                //Intent
             }
         });
     }
