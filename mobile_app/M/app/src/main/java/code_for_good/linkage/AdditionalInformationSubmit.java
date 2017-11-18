@@ -56,7 +56,7 @@ public class AdditionalInformationSubmit extends AppCompatActivity {
 
     private void remindAccept(){
         //Toasts aren't displaying for some rason
-        Toast.makeText(this, "Please tick the checkbox", Toast.LENGTH_LONG);
+        Toast.makeText(this, "Please tick the checkbox", Toast.LENGTH_LONG).show();
     }
 
     private class DatabaseConnector extends AsyncTask<Request, Void, Void> {

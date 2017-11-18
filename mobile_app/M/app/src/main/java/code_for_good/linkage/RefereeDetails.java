@@ -39,7 +39,8 @@ public class RefereeDetails extends AppCompatActivity {
 
         this.lang = (Language) getIntent().getSerializableExtra("Language");
 
-        ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.genderOptions, R.layout.custom_spinner);
+        ArrayAdapter adapter = ArrayAdapter.createFromResource(this,
+                R.array.genderOptions, R.layout.custom_spinner);
         adapter.setDropDownViewResource(R.layout.custom_spinner_dropdown);
         genderOptions = (Spinner) findViewById(R.id.genderDropdown);
         genderOptions.setAdapter(adapter);
@@ -84,7 +85,8 @@ public class RefereeDetails extends AppCompatActivity {
                 langref.setText(getString(R.string.lang_bng));
                 moreinforef.setText(getString(R.string.more_info_bng));
                 submit.setText(getString(R.string.next_bng));
-                ArrayAdapter bngadapter = ArrayAdapter.createFromResource(this, R.array.bnggenderOptions, R.layout.custom_spinner);
+                ArrayAdapter bngadapter = ArrayAdapter.createFromResource(this,
+                        R.array.bnggenderOptions, R.layout.custom_spinner);
                 adapter.setDropDownViewResource(R.layout.custom_spinner_dropdown);
                 genderOptions.setAdapter(bngadapter);
                 break;
@@ -98,7 +100,8 @@ public class RefereeDetails extends AppCompatActivity {
                 langref.setText(getString(R.string.lang_chi));
                 moreinforef.setText(getString(R.string.more_info_chi));
                 submit.setText(getString(R.string.next_chi));
-                ArrayAdapter chiadapter = ArrayAdapter.createFromResource(this, R.array.chigenderOptions, R.layout.custom_spinner);
+                ArrayAdapter chiadapter = ArrayAdapter.createFromResource(this,
+                        R.array.chigenderOptions, R.layout.custom_spinner);
                 adapter.setDropDownViewResource(R.layout.custom_spinner_dropdown);
                 genderOptions.setAdapter(chiadapter);
                 break;
@@ -112,7 +115,8 @@ public class RefereeDetails extends AppCompatActivity {
                 langref.setText(getString(R.string.lang_fra));
                 moreinforef.setText(getString(R.string.more_info_fra));
                 submit.setText(getString(R.string.next_fra));
-                ArrayAdapter fraadapter = ArrayAdapter.createFromResource(this, R.array.fragenderOptions, R.layout.custom_spinner);
+                ArrayAdapter fraadapter = ArrayAdapter.createFromResource(this,
+                        R.array.fragenderOptions, R.layout.custom_spinner);
                 adapter.setDropDownViewResource(R.layout.custom_spinner_dropdown);
                 genderOptions.setAdapter(fraadapter);
                 break;
@@ -126,7 +130,8 @@ public class RefereeDetails extends AppCompatActivity {
                 langref.setText(getString(R.string.lang_esp));
                 moreinforef.setText(getString(R.string.more_info_esp));
                 submit.setText(getString(R.string.next_esp));
-                ArrayAdapter espadapter = ArrayAdapter.createFromResource(this, R.array.espgenderOptions, R.layout.custom_spinner);
+                ArrayAdapter espadapter = ArrayAdapter.createFromResource(this,
+                        R.array.espgenderOptions, R.layout.custom_spinner);
                 adapter.setDropDownViewResource(R.layout.custom_spinner_dropdown);
                 genderOptions.setAdapter(espadapter);
                 break;
@@ -140,7 +145,8 @@ public class RefereeDetails extends AppCompatActivity {
                 langref.setText(getString(R.string.lang_ita));
                 moreinforef.setText(getString(R.string.more_info_ita));
                 submit.setText(getString(R.string.next_ita));
-                ArrayAdapter itaadapter = ArrayAdapter.createFromResource(this, R.array.itagenderOptions, R.layout.custom_spinner);
+                ArrayAdapter itaadapter = ArrayAdapter.createFromResource(this,
+                        R.array.itagenderOptions, R.layout.custom_spinner);
                 adapter.setDropDownViewResource(R.layout.custom_spinner_dropdown);
                 genderOptions.setAdapter(itaadapter);
                 break;
@@ -154,7 +160,8 @@ public class RefereeDetails extends AppCompatActivity {
                 langref.setText(getString(R.string.lang_som));
                 moreinforef.setText(getString(R.string.more_info_som));
                 submit.setText(getString(R.string.next_som));
-                ArrayAdapter somadapter = ArrayAdapter.createFromResource(this, R.array.somgenderOptions, R.layout.custom_spinner);
+                ArrayAdapter somadapter = ArrayAdapter.createFromResource(this,
+                        R.array.somgenderOptions, R.layout.custom_spinner);
                 adapter.setDropDownViewResource(R.layout.custom_spinner_dropdown);
                 genderOptions.setAdapter(somadapter);
                 break;
@@ -234,7 +241,7 @@ public class RefereeDetails extends AppCompatActivity {
     }
 
     private void numberError() {
-        Toast.makeText(this, "Invalid age", Toast.LENGTH_LONG);
+        Toast.makeText(this, "Invalid age", Toast.LENGTH_LONG).show();
     }
 
     private void toIssues(){
