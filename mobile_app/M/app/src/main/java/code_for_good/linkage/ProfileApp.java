@@ -50,7 +50,6 @@ public class ProfileApp extends AppCompatActivity {
         TextView workV = (TextView) findViewById(R.id.workView);
         TextView moreinfoV = (TextView) findViewById(R.id.moreinfoView);
 
-
         switch (lang) {
             case ENG:
                 nameV.setText(getString(R.string.name_eng));
@@ -59,6 +58,7 @@ public class ProfileApp extends AppCompatActivity {
                 addrV.setText(getString(R.string.addr_eng));
                 workV.setText(getString(R.string.work_eng));
                 moreinfoV.setText(getString(R.string.more_info_eng));
+                submit.setText(getString(R.string.next_eng));
                 break;
             case BNG:
                 nameV.setText(getString(R.string.name_bng));
@@ -67,6 +67,7 @@ public class ProfileApp extends AppCompatActivity {
                 addrV.setText(getString(R.string.addr_bng));
                 workV.setText(getString(R.string.work_bng));
                 moreinfoV.setText(getString(R.string.more_info_bng));
+                submit.setText(getString(R.string.next_bng));
                 break;
             case CHI:
                 nameV.setText(getString(R.string.name_chi));
@@ -75,6 +76,7 @@ public class ProfileApp extends AppCompatActivity {
                 addrV.setText(getString(R.string.addr_chi));
                 workV.setText(getString(R.string.work_chi));
                 moreinfoV.setText(getString(R.string.more_info_chi));
+                submit.setText(getString(R.string.next_chi));
                 break;
             case FRA:
                 nameV.setText(getString(R.string.name_fra));
@@ -83,6 +85,7 @@ public class ProfileApp extends AppCompatActivity {
                 addrV.setText(getString(R.string.addr_fra));
                 workV.setText(getString(R.string.work_fra));
                 moreinfoV.setText(getString(R.string.more_info_fra));
+                submit.setText(getString(R.string.next_fra));
                 break;
             case ESP:
                 nameV.setText(getString(R.string.name_esp));
@@ -91,6 +94,7 @@ public class ProfileApp extends AppCompatActivity {
                 addrV.setText(getString(R.string.addr_esp));
                 workV.setText(getString(R.string.work_esp));
                 moreinfoV.setText(getString(R.string.more_info_esp));
+                submit.setText(getString(R.string.next_esp));
                 break;
             case ITA:
                 nameV.setText(getString(R.string.name_ita));
@@ -99,6 +103,7 @@ public class ProfileApp extends AppCompatActivity {
                 addrV.setText(getString(R.string.addr_ita));
                 workV.setText(getString(R.string.work_ita));
                 moreinfoV.setText(getString(R.string.more_info_ita));
+                submit.setText(getString(R.string.next_ita));
                 break;
             case SOM:
                 nameV.setText(getString(R.string.name_som));
@@ -107,6 +112,7 @@ public class ProfileApp extends AppCompatActivity {
                 addrV.setText(getString(R.string.addr_som));
                 workV.setText(getString(R.string.work_som));
                 moreinfoV.setText(getString(R.string.more_info_som));
+                submit.setText(getString(R.string.next_som));
                 break;
             default:
                 nameV.setText(getString(R.string.name_eng));
@@ -115,6 +121,7 @@ public class ProfileApp extends AppCompatActivity {
                 addrV.setText(getString(R.string.addr_eng));
                 workV.setText(getString(R.string.work_eng));
                 moreinfoV.setText(getString(R.string.more_info_eng));
+                submit.setText(getString(R.string.next_eng));
         }
 
         submit.setOnClickListener(new View.OnClickListener() {
