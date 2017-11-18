@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
+import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
@@ -60,7 +61,6 @@ public class AdditionalInformationSubmit extends AppCompatActivity {
             URL url = null;
             try {
                 requests[0].send();
-                /*
                 String b = requests[0].getJobType().replace(" ", "_").replace(",", "");
                 StringBuilder sb = new StringBuilder();
                 for(String s : requests[0].getIssues()){
@@ -74,10 +74,19 @@ public class AdditionalInformationSubmit extends AppCompatActivity {
                     }
                     sb.append(s).append(",");
                 }
-                sb.setLength(sb.length() - 1);
+                sb.setLength(sb.length() - 2);
                 url = new URL("http://34.241.158.221/Admin/register.php?type=increment&contents="
                         + b + "," + sb.toString());
-                url.openConnection(); */
+                HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+                connection.setDoOutput(true);
+                BufferedReader in = new BufferedReader(
+                        new InputStreamReader(
+                                connection.getInputStream()));
+                String inputLine;
+                while ((inputLine = in.readLine()) != null){
+
+                }
+                in.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }

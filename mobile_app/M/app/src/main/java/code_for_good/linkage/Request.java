@@ -45,14 +45,13 @@ public class Request implements Parcelable {
         URL url = new URL(urlString);
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         connection.setDoOutput(true);
-        connection.setConnectTimeout(2000);
-        connection.setReadTimeout(2000);
         BufferedReader in = new BufferedReader(
                 new InputStreamReader(
                         connection.getInputStream()));
         String inputLine;
-        while ((inputLine = in.readLine()) != null)
-            System.out.println(inputLine);
+        while ((inputLine = in.readLine()) != null){
+
+        }
         in.close();
         // Stub. Send email to specified address.
     }
