@@ -15,10 +15,10 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".ProfileApp"
-            android:parentActivityName=".LauncherActivity">
+            android:parentActivityName=".LangAndRegisterActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="code_for_good.linkage.LauncherActivity" />
+                android:value="code_for_good.linkage.LangAndRegisterActivity" />
         </activity>
 
         <activity android:name=".UrgentCheck"
@@ -32,15 +32,15 @@
             android:name=".LanguagesActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_languages"
-            android:parentActivityName=".LauncherActivity"
+            android:parentActivityName=".LangAndRegisterActivity"
             android:theme="@style/FullscreenTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="code_for_good.linkage.LauncherActivity" />
+                android:value="code_for_good.linkage.LangAndRegisterActivity" />
         </activity>
         <activity android:name=".IssueSelector" />
         <activity android:name=".Messenger" />
-        <activity android:name=".LauncherActivity">
+        <activity android:name=".LangAndRegisterActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

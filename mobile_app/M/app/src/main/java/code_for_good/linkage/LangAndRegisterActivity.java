@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class LauncherActivity extends AppCompatActivity {
+public class LangAndRegisterActivity extends AppCompatActivity {
 
     private Languages lang;
 
