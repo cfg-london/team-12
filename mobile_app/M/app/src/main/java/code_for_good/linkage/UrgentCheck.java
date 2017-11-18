@@ -15,37 +15,6 @@ public class UrgentCheck extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_urgent_check);
-
-        this.lang = Languages.ENG;
-
-        if(getIntent().hasExtra("Language_Choice")){
-            String languages = getIntent().getStringExtra("Language_Choice");
-            switch (languages) {
-                case "English":
-                    lang = Languages.ENG;
-                    break;
-                case "বাঙালি":
-                    lang = Languages.BNG;
-                    break;
-                case "中文":
-                    lang = Languages.CHI;
-                    break;
-                case "Français":
-                    lang = Languages.FRA;
-                    break;
-                case "Español":
-                    lang = Languages.ESP;
-                    break;
-                case "Italiano":
-                    lang = Languages.ITA;
-                    break;
-                case "Somali":
-                    lang = Languages.SOM;
-                    break;
-                default:
-                    break;
-            }
-        }
     }
 
     public void urgent() {
@@ -54,10 +23,5 @@ public class UrgentCheck extends AppCompatActivity {
 
     public void nonUrgent() {
 
-    }
-
-    public void changeLangActivity(View view){
-        Intent intent = new Intent(this, LanguagesActivity.class);
-        startActivity(intent);
     }
 }

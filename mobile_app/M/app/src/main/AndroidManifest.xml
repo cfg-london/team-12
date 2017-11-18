@@ -13,32 +13,40 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ProfileApp">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity
+            android:name=".ProfileApp"
+            android:parentActivityName=".LauncherActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="code_for_good.linkage.LauncherActivity" />
         </activity>
-        <activity android:name=".UrgentCheck">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity android:name=".UrgentCheck"
+            android:parentActivityName=".ProfileApp">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="code_for_good.linkage.ProfileApp" />
+
         </activity>
         <activity
             android:name=".LanguagesActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_languages"
-            android:parentActivityName=".ProfileApp"
+            android:parentActivityName=".LauncherActivity"
             android:theme="@style/FullscreenTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="code_for_good.linkage.ProfileApp" />
+                android:value="code_for_good.linkage.LauncherActivity" />
         </activity>
-        <activity android:name=".IssueSelector"></activity>
+        <activity android:name=".IssueSelector" />
         <activity android:name=".Messenger" />
+        <activity android:name=".LauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
