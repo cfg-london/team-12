@@ -60,6 +60,24 @@ public class AdditionalInformationSubmit extends AppCompatActivity {
             URL url = null;
             try {
                 requests[0].send();
+                /*
+                String b = requests[0].getJobType().replace(" ", "_").replace(",", "");
+                StringBuilder sb = new StringBuilder();
+                for(String s : requests[0].getIssues()){
+                    if(s.equals("Issues involving staying in their home")
+                            || s.equals("Requires help around the house")){
+                        s = "help_round_the_house";
+                    } else {
+                        s = s.replace(" Issues", "");
+                        s = s.toLowerCase().replace(" ", "_");
+                        s = s.replace("/", "_and_");
+                    }
+                    sb.append(s).append(",");
+                }
+                sb.setLength(sb.length() - 1);
+                url = new URL("http://34.241.158.221/Admin/register.php?type=increment&contents="
+                        + b + "," + sb.toString());
+                url.openConnection(); */
             } catch (IOException e) {
                 e.printStackTrace();
             }
