@@ -82,6 +82,34 @@ public class LangAndRegisterActivity extends AppCompatActivity {
         referrerDropdown = (Spinner) findViewById(R.id.professionDropdown);
         referrerDropdown.setAdapter(adapter);
 
+        TextView iama = (TextView) findViewById(R.id.i_am_a_view);
+
+        switch (lang) {
+            case ENG:
+                iama.setText(getString(R.string.i_am_eng));
+                break;
+            case BNG:
+                iama.setText(getString(R.string.i_am_bng));
+                break;
+            case CHI:
+                iama.setText(getString(R.string.i_am_chi));
+                break;
+            case FRA:
+                iama.setText(getString(R.string.i_am_fra));
+                break;
+            case ESP:
+                iama.setText(getString(R.string.i_am_esp));
+                break;
+            case ITA:
+                iama.setText(getString(R.string.i_am_ita));
+                break;
+            case SOM:
+                iama.setText(getString(R.string.i_am_som));
+                break;
+            default:
+                iama.setText(getString(R.string.i_am_eng));
+        }
+
         referrerDropdown.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
