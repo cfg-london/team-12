@@ -17,7 +17,7 @@ $_SESSION['error'] = "";
 ?>
 <form id="login" name="login" method="POST" action="admin_page.php">
   <div class ="form-group">
-    Username: <input type="text"  name="username" id="username" />
+    Username: <input type="text" name="username" id="username" />
   </div>
   <div class ="form-group">
     Password: <input type="password" name="pass" id="pass" />
