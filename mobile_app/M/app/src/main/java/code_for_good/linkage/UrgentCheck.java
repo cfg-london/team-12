@@ -45,7 +45,9 @@ public class UrgentCheck extends AppCompatActivity {
     }
 
     public void toRefDetails(RequestBuilder rb, UserProfile userProfile){
-        Intent intent = new Intent(this, LanguagesActivity.class);
+        Intent intent = new Intent(this, RefereeDetails.class);
+        intent.putExtra("request", rb);
+        intent.putExtra("profile", userProfile);
         startActivity(intent);
     }
 }

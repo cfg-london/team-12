@@ -16,6 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="10"
+            android:textSize="@dimen/fontSize"
             android:layout_margin="5dp"
             android:background="@color/button"
             android:text="Urgent" />
@@ -25,6 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="10"
+            android:textSize="@dimen/fontSize"
             android:layout_margin="5dp"
             android:background="@color/button"
             android:text="Non Urgent" />
@@ -33,6 +35,7 @@
             android:id="@+id/urgentCheckVolunteer"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:textSize="@dimen/textSizeSmall"
             android:layout_weight="3"
             android:text="Volunteer" />
     </LinearLayout>

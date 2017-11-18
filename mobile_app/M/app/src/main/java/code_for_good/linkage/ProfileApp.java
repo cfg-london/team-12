@@ -14,8 +14,7 @@ import android.widget.TextView;
 public class ProfileApp extends AppCompatActivity {
 
     private UserProfile profile;
-    private Spinner referrerDropdown;
-    private String type;
+
     private EditText name;
     private EditText phone;
     private EditText email;
@@ -33,45 +32,7 @@ public class ProfileApp extends AppCompatActivity {
 
         this.lang = (Languages) getIntent().getSerializableExtra("Language");
 
-        ArrayAdapter adapter;
-        switch(lang) {
-            case ENG:
-                adapter = ArrayAdapter.createFromResource(this, R.array.engReferrerOptions, R.layout.custom_spinner);
-                break;
-            case BNG:
-                adapter = ArrayAdapter.createFromResource(this, R.array.bngReferrerOptions, R.layout.custom_spinner);
-                break;
-            case CHI:
-                adapter = ArrayAdapter.createFromResource(this, R.array.chiReferrerOptions, R.layout.custom_spinner);
-                break;
-            case FRA:
-                adapter = ArrayAdapter.createFromResource(this, R.array.fraReferrerOptions, R.layout.custom_spinner);
-                break;
-            case ESP:
-                adapter = ArrayAdapter.createFromResource(this, R.array.espReferrerOptions, R.layout.custom_spinner);
-                break;
-            case ITA:
-                adapter = ArrayAdapter.createFromResource(this, R.array.itaReferrerOptions, R.layout.custom_spinner);
-                break;
-            case SOM:
-                adapter = ArrayAdapter.createFromResource(this, R.array.somReferrerOptions, R.layout.custom_spinner);
-                break;
-            default:
-                adapter = ArrayAdapter.createFromResource(this, R.array.engReferrerOptions, R.layout.custom_spinner);
-        }
-        adapter.setDropDownViewResource(R.layout.custom_spinner_dropdown);
-        referrerDropdown = (Spinner) findViewById(R.id.professionDropdown);
-        referrerDropdown.setAdapter(adapter);
-
-        referrerDropdown.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                type = ((TextView) findViewById(R.id.customSpinner)).getText().toString();
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {}
-        });
+        final String type = getIntent().getExtras().getString("type");
 
         name = (EditText) findViewById(R.id.profileInputName);
         phone = (EditText) findViewById(R.id.profileInputPhone);
@@ -79,6 +40,24 @@ public class ProfileApp extends AppCompatActivity {
         work = (EditText) findViewById(R.id.profileInputWorkAddress);
         address = (EditText) findViewById(R.id.profileInputAddress);
         submit = (Button) findViewById(R.id.profileInputNext);
+
+        switch (lang) {
+            case ENG:
+                break;
+            case BNG:
+                break;
+            case CHI:
+                break;
+            case FRA:
+                break;
+            case ESP:
+                break;
+            case ITA:
+                break;
+            case SOM:
+                break;
+            default:
+        }
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override

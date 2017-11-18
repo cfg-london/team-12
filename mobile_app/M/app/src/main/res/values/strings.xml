@@ -44,7 +44,7 @@
         <item>当地的慈善事业</item>
         <item>有偿护老者</item>
         <item>朋友，家人或邻居</item>
-        <item>一个需要帮助的人</item>
+        <item>需要帮助的人</item>
         <item>其他</item>
     </string-array>
 
@@ -144,4 +144,18 @@
     <string name="money_benefits_off"><![CDATA[Money & Benefits \n(NOT SELECTED)]]></string>
     <string name="additional_information">Additional Information</string>
     <string name="confirm">Confirm</string>
+    <string name="i_am_eng">I am a</string>
+    <string name="i_am_bng">Āmi ēkajana</string>
+    <string name="i_am_chi">我是一个</string>
+    <string name="i_am_fra">Je suis un</string>
+    <string name="i_am_esp">Soy un</string>
+    <string name="i_am_ita">Sono un</string>
+    <string name="i_am_som">Anigu waxaan ahay a</string>
+    <string name="name_eng">Name</string>
+    <string name="name_bng">Nāma</string>
+    <string name="name_chi">名字</string>
+    <string name="name_fra">Prénom</string>
+    <string name="name_esp">Nombre</string>
+    <string name="name_ita">Nome</string>
+    <string name="name_som">Magaca</string>
 </resources>
