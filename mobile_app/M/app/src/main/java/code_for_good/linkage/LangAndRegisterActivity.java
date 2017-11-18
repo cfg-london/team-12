@@ -144,7 +144,7 @@ public class LangAndRegisterActivity extends AppCompatActivity {
     public void toUrgent(View view) {
         Intent intent = new Intent(this, UrgentCheck.class);
         intent.putExtra("Language", lang);
-        intent.putExtra("type", type);
+        intent.putExtra("profile", new UserProfile(type, "", "", "", "", ""));
         startActivity(intent);
         this.finish();
     }
