@@ -1,5 +1,6 @@
 <?php
 session_start();
+$err = $_GET['err'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,8 +13,10 @@ session_start();
 <body>
 <?php
 require '../header.html';
-echo $_SESSION['error'];
-$_SESSION['error'] = "";
+if ($err) {
+    echo $_SESSION['error'];
+    $_SESSION['error'] = "";
+}
 ?>
 <form id="login" name="login" method="POST" action="admin_page.php">
   <div class ="form-group">
