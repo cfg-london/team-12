@@ -239,6 +239,7 @@ public class RefereeDetails extends AppCompatActivity {
 
     private void toIssues(){
         Intent toIssues = new Intent(this, IssueSelector.class);
+        toIssues.putExtra("Language", lang);
         toIssues.putExtra("request", rb);
         startActivity(toIssues);
         this.finish();

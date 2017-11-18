@@ -179,8 +179,6 @@
     <string name="money_benefits"><![CDATA[Money & Benefits]]></string>
     <string name="money_benefits_on"><![CDATA[Money & Benefits \n(SELECTED)]]></string>
     <string name="money_benefits_off"><![CDATA[Money & Benefits \n(NOT SELECTED)]]></string>
-    <string name="additional_information">Additional Information</string>
-    <string name="confirm">Confirm</string>
     <string name="i_am_eng">I am a</string>
     <string name="i_am_bng">Āmi ēkajana</string>
     <string name="i_am_chi">我是一个</string>
@@ -320,5 +318,21 @@
     <string name="approx_esp">Aproximado</string>
     <string name="approx_ita">Approssimativo</string>
     <string name="approx_som">Qiyaas ahaan</string>
+
+    <string name="addInfo_eng">Additional Information</string>
+    <string name="addInfo_bng">Atirikta tathya</string>
+    <string name="addInfo_chi">附加信息</string>
+    <string name="addInfo_fra">Information additionnelle</string>
+    <string name="addInfo_esp">Información Adicional</string>
+    <string name="addInfo_ita">Informazioni aggiuntive</string>
+    <string name="addInfo_som">Xog dheeraad ah</string>
+
+    <string name="cfm_eng">Confirm</string>
+    <string name="cfm_bng">Niścita karā</string>
+    <string name="cfm_chi">确认</string>
+    <string name="cfm_fra">Confirmer</string>
+    <string name="cfm_esp">Confirmar</string>
+    <string name="cfm_ita">Conferma</string>
+    <string name="cfm_som">Xaqiiji</string>
 
 </resources>
