@@ -28,12 +28,16 @@ public class RefereeDetails extends AppCompatActivity {
     private LinearLayout languages;
     private Button submit;
 
+    private Languages lang;
+
     private RequestBuilder rb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_referee_details);
+
+        this.lang = (Languages) getIntent().getSerializableExtra("Language");
 
         ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.genderOptions, R.layout.custom_spinner);
         adapter.setDropDownViewResource(R.layout.custom_spinner_dropdown);
@@ -47,6 +51,96 @@ public class RefereeDetails extends AppCompatActivity {
         age = (EditText) findViewById(R.id.refereeInputAge);
         address = (EditText) findViewById(R.id.refereeInputAddress);
         languages = (LinearLayout) findViewById(R.id.refereeInputLanguages);
+
+        TextView nameref = (TextView) findViewById(R.id.nameRef);
+        TextView phoneref = (TextView) findViewById(R.id.phoneRef);
+        TextView genderref = (TextView) findViewById(R.id.genderRef);
+        TextView ageref = (TextView) findViewById(R.id.ageRef);
+        TextView addrref = (TextView) findViewById(R.id.addrRef);
+        TextView langref = (TextView) findViewById(R.id.langRef);
+        TextView moreinforef = (TextView) findViewById(R.id.moreinfoRef);
+
+        switch (lang) {
+            case ENG:
+                nameref.setText(getString(R.string.name_eng));
+                phoneref.setText(getString(R.string.phone_eng));
+                genderref.setText(getString(R.string.Gender_eng));
+                ageref.setText(getString(R.string.age_eng));
+                age.setHint(getString(R.string.approx_eng));
+                addrref.setText(getString(R.string.addr_eng));
+                langref.setText(getString(R.string.lang_eng));
+                moreinforef.setText(getString(R.string.more_info_eng));
+                break;
+            case BNG:
+                nameref.setText(getString(R.string.name_bng));
+                phoneref.setText(getString(R.string.phone_bng));
+                genderref.setText(getString(R.string.Gender_bng));
+                ageref.setText(getString(R.string.age_bng));
+                age.setHint(getString(R.string.approx_bng));
+                addrref.setText(getString(R.string.addr_bng));
+                langref.setText(getString(R.string.lang_bng));
+                moreinforef.setText(getString(R.string.more_info_bng));
+                break;
+            case CHI:
+                nameref.setText(getString(R.string.name_chi));
+                phoneref.setText(getString(R.string.phone_chi));
+                genderref.setText(getString(R.string.Gender_chi));
+                ageref.setText(getString(R.string.age_chi));
+                age.setHint(getString(R.string.approx_chi));
+                addrref.setText(getString(R.string.addr_chi));
+                langref.setText(getString(R.string.lang_chi));
+                moreinforef.setText(getString(R.string.more_info_chi));
+                break;
+            case FRA:
+                nameref.setText(getString(R.string.name_fra));
+                phoneref.setText(getString(R.string.phone_fra));
+                genderref.setText(getString(R.string.Gender_fra));
+                ageref.setText(getString(R.string.age_fra));
+                age.setHint(getString(R.string.approx_fra));
+                addrref.setText(getString(R.string.addr_fra));
+                langref.setText(getString(R.string.lang_fra));
+                moreinforef.setText(getString(R.string.more_info_fra));
+                break;
+            case ESP:
+                nameref.setText(getString(R.string.name_esp));
+                phoneref.setText(getString(R.string.phone_esp));
+                genderref.setText(getString(R.string.Gender_esp));
+                ageref.setText(getString(R.string.age_esp));
+                age.setHint(getString(R.string.approx_esp));
+                addrref.setText(getString(R.string.addr_esp));
+                langref.setText(getString(R.string.lang_esp));
+                moreinforef.setText(getString(R.string.more_info_esp));
+                break;
+            case ITA:
+                nameref.setText(getString(R.string.name_ita));
+                phoneref.setText(getString(R.string.phone_ita));
+                genderref.setText(getString(R.string.Gender_ita));
+                ageref.setText(getString(R.string.age_ita));
+                age.setHint(getString(R.string.approx_ita));
+                addrref.setText(getString(R.string.addr_ita));
+                langref.setText(getString(R.string.lang_ita));
+                moreinforef.setText(getString(R.string.more_info_ita));
+                break;
+            case SOM:
+                nameref.setText(getString(R.string.name_som));
+                phoneref.setText(getString(R.string.phone_som));
+                genderref.setText(getString(R.string.Gender_som));
+                ageref.setText(getString(R.string.age_som));
+                age.setHint(getString(R.string.approx_som));
+                addrref.setText(getString(R.string.addr_som));
+                langref.setText(getString(R.string.lang_som));
+                moreinforef.setText(getString(R.string.more_info_som));
+                break;
+            default:
+                nameref.setText(getString(R.string.name_eng));
+                phoneref.setText(getString(R.string.phone_eng));
+                genderref.setText(getString(R.string.Gender_eng));
+                ageref.setText(getString(R.string.age_eng));
+                age.setHint(getString(R.string.approx_eng));
+                addrref.setText(getString(R.string.addr_eng));
+                langref.setText(getString(R.string.lang_eng));
+                moreinforef.setText(getString(R.string.more_info_eng));
+        }
 
         final List<String> languagesSpoken = new ArrayList<>();
         final AppCompatActivity context = this;

@@ -272,6 +272,14 @@
     <string name="age_ita">Età:</string>
     <string name="age_som">Da\':</string>
 
+    <string name="lang_eng">Languages:</string>
+    <string name="lang_bng">Bhāṣāsamūha:</string>
+    <string name="lang_chi">语言:</string>
+    <string name="lang_fra">Langues:</string>
+    <string name="lang_esp">Idiomas:</string>
+    <string name="lang_ita">Le lingue:</string>
+    <string name="lang_som">Luqadaha:</string>
+
     <string name="approx_eng">Approximate</string>
     <string name="approx_bng">Ānumānika</string>
     <string name="approx_chi">近似</string>
