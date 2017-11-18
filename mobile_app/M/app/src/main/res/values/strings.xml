@@ -133,6 +133,22 @@
     <string name="i_am_ita">Sono un</string>
     <string name="i_am_som">Anigu waxaan ahay a</string>
 
+    <string name="register_eng">Register</string>
+    <string name="register_bng">Nibandhana</string>
+    <string name="register_chi">寄存器</string>
+    <string name="register_fra">Registre</string>
+    <string name="register_esp">Registro</string>
+    <string name="register_ita">Registrare</string>
+    <string name="register_som">Isdiiwaangalin</string>
+
+    <string name="dont_register_eng">Proceed without registering</string>
+    <string name="dont_register_bng">Nibandhana chāṛā\'i ēgiẏē yāna</string>
+    <string name="dont_register_chi">继续未注册</string>
+    <string name="dont_register_fra">Procéder sans inscription</string>
+    <string name="dont_register_esp">Proceda sin registrarse</string>
+    <string name="dont_register_ita">Procedere senza registrarsi</string>
+    <string name="dont_register_som">Ku sii wad inaadan diiwaangelin</string>
+
     <string name="name_eng">Name</string>
     <string name="name_bng">Nāma</string>
     <string name="name_chi">名字</string>
