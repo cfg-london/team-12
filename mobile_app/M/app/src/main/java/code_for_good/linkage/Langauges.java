@@ -8,6 +8,4 @@ public enum Langauges {
     ITA,
     ESP,
     SOM,
-    RUS,
-    DEU
 }
