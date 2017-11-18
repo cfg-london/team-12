@@ -23,11 +23,15 @@ public class ProfileApp extends AppCompatActivity {
     private EditText address;
     private Button submit;
 
+    private Languages lang;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile_app);
+
+        this.lang = (Languages) getIntent().getSerializableExtra("Language");
 
         ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.engReferrerOptions, R.layout.custom_spinner);
 
@@ -66,6 +70,7 @@ public class ProfileApp extends AppCompatActivity {
     private void setupProfile(UserProfile profile){
         Intent toUrgent = new Intent(this, UrgentCheck.class);
         toUrgent.putExtra("profile", profile);
+        toUrgent.putExtra("Language", lang);
         startActivity(toUrgent);
         this.finish();
     }

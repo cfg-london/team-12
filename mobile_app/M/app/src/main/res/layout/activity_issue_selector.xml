@@ -22,6 +22,7 @@
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
+                android:layout_margin="3dp"
                 android:background="@drawable/button_toggle"
                 android:textOff="@string/social_isolation"
                 android:textOn="@string/social_isolation" />
@@ -31,6 +32,7 @@
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
+                android:layout_margin="3dp"
                 android:background="@drawable/button_toggle"
                 android:textOn="@string/safety_at_home"
                 android:textOff="@string/safety_at_home" />
@@ -40,6 +42,7 @@
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
+                android:layout_margin="3dp"
                 android:background="@drawable/button_toggle"
                 android:textOn="@string/legal_help"
                 android:textOff="@string/legal_help" />
@@ -56,6 +59,7 @@
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
+                android:layout_margin="3dp"
                 android:background="@drawable/button_toggle"
                 android:textOn="@string/crisis"
                 android:textOff="@string/crisis" />
@@ -65,6 +69,7 @@
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
+                android:layout_margin="3dp"
                 android:background="@drawable/button_toggle"
                 android:textOn="@string/transport_mobility"
                 android:textOff="@string/transport_mobility" />
@@ -74,6 +79,7 @@
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
+                android:layout_margin="3dp"
                 android:background="@drawable/button_toggle"
                 android:textOn="@string/later_life_planning"
                 android:textOff="@string/later_life_planning" />
@@ -90,6 +96,7 @@
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
+                android:layout_margin="3dp"
                 android:background="@drawable/button_toggle"
                 android:textOff="@string/help_around_the_house"
                 android:textOn="@string/help_around_the_house" />
@@ -99,6 +106,7 @@
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
+                android:layout_margin="3dp"
                 android:background="@drawable/button_toggle"
                 android:textOn="@string/staying_in_their_home"
                 android:textOff="@string/staying_in_their_home" />
@@ -108,10 +116,28 @@
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
+                android:layout_margin="3dp"
                 android:background="@drawable/button_toggle"
                 android:textOn="@string/money_benefits"
                 android:textOff="@string/money_benefits" />
         </TableRow>
 
     </TableLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="365dp"
+        android:layout_height="62dp"
+        android:text="Additional Information"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="364dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="361dp"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="445dp" />
+
 </android.support.constraint.ConstraintLayout>
