@@ -132,7 +132,7 @@ public class IssueSelector extends AppCompatActivity {
         buttonMoney.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                requestBuilder.toggleIssue("Money / Benefits Issue");
+                requestBuilder.toggleIssue("Money / Benefits Issues");
             }
         });
 
