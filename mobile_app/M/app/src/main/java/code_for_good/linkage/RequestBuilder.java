@@ -13,7 +13,7 @@ public class RequestBuilder implements Parcelable{
     private List<String> issues; // The list of issues that are the reason for the referral.
     private Referee referee; // The information provided on the referee.
 
-    private RequestBuilder() {
+    public RequestBuilder() {
         this.issues = new ArrayList<>();
     }
 
