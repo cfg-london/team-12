@@ -12,7 +12,8 @@ class UserProfile implements Parcelable {
     private String address;
     private String workplace;
 
-    public UserProfile(String type, String name, String phone, String email, String address, String workplace) {
+    public UserProfile(String type, String name, String phone,
+                       String email, String address, String workplace) {
         this.type = type;
         this.name = name;
         this.phone = phone;
