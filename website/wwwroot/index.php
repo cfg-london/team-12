@@ -64,6 +64,16 @@
   <body>
   <?php
   require 'header.html';
+  //now connect to SQL server
+  $databaseInfo = parse_ini_file("../login.ini.php");
+  $database = mysqli_connect($databaseInfo['dbIP'], $databaseInfo['dbUser'], $databaseInfo['dbPass'], $databaseInfo['dbDataBase'], $databaseInfo['dbSocket']);
+  if (!$database) {
+      //error connecting
+      echo "Error: Unable to connect to MySQL." . PHP_EOL;
+      echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
+      echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
+      exit;
+  }
   ?><table align="center">
       <tr valign="top">
         <td colSpan=2>
