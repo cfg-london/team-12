@@ -75,7 +75,8 @@
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
                 android:background="@drawable/button_toggle"
-                android:text="@string/later_life_planning" />
+                android:textOn="@string/later_life_planning"
+                android:textOff="@string/later_life_planning" />
         </TableRow>
 
         <TableRow
@@ -90,7 +91,8 @@
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
                 android:background="@drawable/button_toggle"
-                android:text="@string/help_around_the_house" />
+                android:textOff="@string/help_around_the_house"
+                android:textOn="@string/help_around_the_house" />
 
             <ToggleButton
                 android:id="@+id/buttonStayingInTheirHome"
@@ -98,7 +100,8 @@
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
                 android:background="@drawable/button_toggle"
-                android:text="@string/staying_in_their_home" />
+                android:textOn="@string/staying_in_their_home"
+                android:textOff="@string/staying_in_their_home" />
 
             <ToggleButton
                 android:id="@+id/buttonMoneyAndBenefits"
@@ -106,7 +109,8 @@
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
                 android:background="@drawable/button_toggle"
-                android:text="@string/money_benefits" />
+                android:textOn="@string/money_benefits"
+                android:textOff="@string/money_benefits" />
         </TableRow>
 
     </TableLayout>
