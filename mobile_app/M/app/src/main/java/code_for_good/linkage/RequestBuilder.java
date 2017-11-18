@@ -55,6 +55,13 @@ public class RequestBuilder implements Parcelable{
         return this;
     }
 
+    public RequestBuilder toggleIssue(String issue) {
+        if (issues.contains(issue)) {
+            return removeIssue(issue);
+        }
+        return addIssue(issue);
+    }
+
     public RequestBuilder addIssue(String issue) {
         issues.add(issue);
         return this;

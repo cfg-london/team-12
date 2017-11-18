@@ -2,6 +2,7 @@ package code_for_good.linkage;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 public class IssueSelector extends AppCompatActivity {
@@ -29,6 +30,15 @@ public class IssueSelector extends AppCompatActivity {
         buttonTransport = (Button) findViewById(R.id.buttonHelpAroundTheHouse);
         buttonStayingInHome = (Button) findViewById(R.id.buttonStayingInTheirHome);
         buttonMoney = (Button) findViewById(R.id.buttonMoneyAndBenefits);
+
+        final RequestBuilder requestBuilder = getIntent().getParcelableExtra("request");
+
+        buttonIsolation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                requestBuilder.toggleIssue("Isolation");
+            }
+        });
 
     }
 }
