@@ -12,6 +12,7 @@
         <item>Local Charity</item>
         <item>Paid Carer</item>
         <item>Friend, Family or Neighbour</item>
+        <item>Person In Need of Help</item>
         <item>Other</item>
     </string-array>
 
@@ -27,6 +28,7 @@
         <item>Sthānīẏa cyāriṭi</item>
         <item>Pradatta paricaryā</item>
         <item>Bandhu, paribāra bā āśapāśa</item>
+        <item>Sāhāyya praẏōjana byaktira praẏōjana</item>
         <item>An\'yān\'ya</item>
     </string-array>
 
@@ -42,6 +44,7 @@
         <item>当地的慈善事业</item>
         <item>有偿护老者</item>
         <item>朋友，家人或邻居</item>
+        <item>需要帮助的人</item>
         <item>其他</item>
     </string-array>
 
@@ -57,6 +60,7 @@
         <item>Charité locale</item>
         <item>Payé Carer</item>
         <item>Ami, famille ou voisin</item>
+        <item>Personne ayant besoin d\'aide</item>
         <item>Autre</item>
     </string-array>
 
@@ -72,6 +76,7 @@
         <item>Caridad local</item>
         <item>Cuidador pagado</item>
         <item>Amigo, familia o vecino</item>
+        <item>Persona que necesita ayuda</item>
         <item>Otro</item>
     </string-array>
 
@@ -87,7 +92,8 @@
         <item>Carità locale</item>
         <item>Carer a pagamento</item>
         <item>Amico, famiglia o vicino</item>
-        <item>Altro </item>
+        <item>Persona che ha bisogno di aiuto</item>
+        <item>Altro</item>
     </string-array>
 
     <string-array name="somReferrerOptions">
@@ -102,6 +108,7 @@
         <item>Hay\'ad samafal oo maxalli ah</item>
         <item>Daryeele mushahar ah</item>
         <item>Saaxiibka, Qoyska ama Deriska</item>
+        <item>Qofka u baahan caawimo</item>
         <item>Kale</item>
     </string-array>
 
@@ -109,12 +116,62 @@
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="social_isolation">Social isolation</string>
+    <string name="social_isolation_on">Social isolation \n(SELECTED)</string>
+    <string name="social_isolation_off">Social isolation \n(NOT SELECTED)</string>
     <string name="safety_at_home">Safety at home</string>
+    <string name="safety_at_home_on">Safety at home \n(SELECTED)</string>
+    <string name="safety_at_home_off">Safety at home \n(NOT SELECTED)</string>
     <string name="legal_help">Legal Help</string>
+    <string name="legal_help_on">Legal Help \n(SELECTED)</string>
+    <string name="legal_help_off">Legal Help \n(NOT SELECTED)</string>
     <string name="crisis">Crisis</string>
+    <string name="crisis_on">Crisis \n(SELECTED)</string>
+    <string name="crisis_off">Crisis \n(NOT SELECTED)</string>
     <string name="transport_mobility"><![CDATA[Transport & Mobility]]></string>
+    <string name="transport_mobility_on"><![CDATA[Transport & Mobility \n(SELECTED)]]></string>
+    <string name="transport_mobility_off"><![CDATA[Transport & Mobility \n(NOT SELECTED)]]></string>
     <string name="later_life_planning">Later life planning</string>
+    <string name="later_life_planning_on">Later life planning \n(SELECTED)</string>
+    <string name="later_life_planning_off">Later life planning \n(NOT SELECTED)</string>
     <string name="help_around_the_house">Help around the house</string>
+    <string name="help_around_the_house_on">Help around the house \n(SELECTED)</string>
+    <string name="help_around_the_house_off">Help around the house \n(NOT SELECTED)</string>
     <string name="staying_in_their_home">Staying in their home</string>
+    <string name="staying_in_their_home_on">Staying in their home \n(SELECTED)</string>
+    <string name="staying_in_their_home_off">Staying in their home \n(NOT SELECTED)</string>
     <string name="money_benefits"><![CDATA[Money & Benefits]]></string>
+    <string name="money_benefits_on"><![CDATA[Money & Benefits \n(SELECTED)]]></string>
+    <string name="money_benefits_off"><![CDATA[Money & Benefits \n(NOT SELECTED)]]></string>
+    <string name="additional_information">Additional Information</string>
+    <string name="confirm">Confirm</string>
+    <string name="i_am_eng">I am a</string>
+    <string name="i_am_bng">Āmi ēkajana</string>
+    <string name="i_am_chi">我是一个</string>
+    <string name="i_am_fra">Je suis un</string>
+    <string name="i_am_esp">Soy un</string>
+    <string name="i_am_ita">Sono un</string>
+    <string name="i_am_som">Anigu waxaan ahay a</string>
+    <string name="register_eng">Register</string>
+    <string name="register_bng">Nibandhana</string>
+    <string name="register_chi">寄存器</string>
+    <string name="register_fra">Registre</string>
+    <string name="register_esp">Registro</string>
+    <string name="register_ita">Registrare</string>
+    <string name="register_som">Isdiiwaangalin</string>
+
+    <string name="dont_register_eng">Proceed without registering</string>
+    <string name="dont_register_bng">Nibandhana chāṛā\'i ēgiẏē yāna</string>
+    <string name="dont_register_chi">继续未注册</string>
+    <string name="dont_register_fra">Procéder sans inscription</string>
+    <string name="dont_register_esp">Proceda sin registrarse</string>
+    <string name="dont_register_ita">Procedere senza registrarsi</string>
+    <string name="dont_register_som">Ku sii wad inaadan diiwaangelin</string>
+
+    <string name="name_eng">Name</string>
+    <string name="name_bng">Nāma</string>
+    <string name="name_chi">名字</string>
+    <string name="name_fra">Prénom</string>
+    <string name="name_esp">Nombre</string>
+    <string name="name_ita">Nome</string>
+    <string name="name_som">Magaca</string>
 </resources>

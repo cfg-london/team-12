@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="code_for_good.linkage.IssueSelector">
 
     <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -24,8 +25,8 @@
                 android:layout_weight="1"
                 android:layout_margin="3dp"
                 android:background="@drawable/button_toggle"
-                android:textOff="@string/social_isolation"
-                android:textOn="@string/social_isolation" />
+                android:textOn="@string/social_isolation_on"
+                android:textOff="@string/social_isolation_off" />
 
             <ToggleButton
                 android:id="@+id/buttonSafetlyAtHome"
@@ -34,8 +35,8 @@
                 android:layout_weight="1"
                 android:layout_margin="3dp"
                 android:background="@drawable/button_toggle"
-                android:textOn="@string/safety_at_home"
-                android:textOff="@string/safety_at_home" />
+                android:textOff="@string/safety_at_home_off"
+                android:textOn="@string/safety_at_home_on" />
 
             <ToggleButton
                 android:id="@+id/buttonLegal"
@@ -44,8 +45,8 @@
                 android:layout_weight="1"
                 android:layout_margin="3dp"
                 android:background="@drawable/button_toggle"
-                android:textOn="@string/legal_help"
-                android:textOff="@string/legal_help" />
+                android:textOff="@string/legal_help_off"
+                android:textOn="@string/legal_help_on" />
         </TableRow>
 
         <TableRow
@@ -61,8 +62,8 @@
                 android:layout_weight="1"
                 android:layout_margin="3dp"
                 android:background="@drawable/button_toggle"
-                android:textOn="@string/crisis"
-                android:textOff="@string/crisis" />
+                android:textOff="@string/crisis_off"
+                android:textOn="@string/crisis_on" />
 
             <ToggleButton
                 android:id="@+id/buttonTransport"
@@ -71,8 +72,8 @@
                 android:layout_weight="1"
                 android:layout_margin="3dp"
                 android:background="@drawable/button_toggle"
-                android:textOn="@string/transport_mobility"
-                android:textOff="@string/transport_mobility" />
+                android:textOff="@string/transport_mobility_off"
+                android:textOn="@string/transport_mobility_on" />
 
             <ToggleButton
                 android:id="@+id/buttonLifePlanning"
@@ -81,8 +82,8 @@
                 android:layout_weight="1"
                 android:layout_margin="3dp"
                 android:background="@drawable/button_toggle"
-                android:textOn="@string/later_life_planning"
-                android:textOff="@string/later_life_planning" />
+                android:textOff="@string/later_life_planning_off"
+                android:textOn="@string/later_life_planning_on" />
         </TableRow>
 
         <TableRow
@@ -98,8 +99,8 @@
                 android:layout_weight="1"
                 android:layout_margin="3dp"
                 android:background="@drawable/button_toggle"
-                android:textOff="@string/help_around_the_house"
-                android:textOn="@string/help_around_the_house" />
+                android:textOn="@string/help_around_the_house_on"
+                android:textOff="@string/help_around_the_house_off" />
 
             <ToggleButton
                 android:id="@+id/buttonStayingInTheirHome"
@@ -108,8 +109,8 @@
                 android:layout_weight="1"
                 android:layout_margin="3dp"
                 android:background="@drawable/button_toggle"
-                android:textOn="@string/staying_in_their_home"
-                android:textOff="@string/staying_in_their_home" />
+                android:textOff="@string/staying_in_their_home_off"
+                android:textOn="@string/staying_in_their_home_on" />
 
             <ToggleButton
                 android:id="@+id/buttonMoneyAndBenefits"
@@ -118,26 +119,30 @@
                 android:layout_weight="1"
                 android:layout_margin="3dp"
                 android:background="@drawable/button_toggle"
-                android:textOn="@string/money_benefits"
-                android:textOff="@string/money_benefits" />
+                android:textOff="@string/money_benefits_off"
+                android:textOn="@string/money_benefits_on" />
         </TableRow>
 
     </TableLayout>
 
-    <TextView
+    <EditText
         android:id="@+id/textView"
-        android:layout_width="365dp"
-        android:layout_height="62dp"
-        android:text="Additional Information"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:hint="@string/additional_information"
+        android:layout_weight="1"
+        android:textSize="@dimen/textSizeSmall"
         tools:layout_editor_absoluteX="11dp"
         tools:layout_editor_absoluteY="364dp" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="361dp"
-        android:layout_height="wrap_content"
-        android:text="Confirm"
-        tools:layout_editor_absoluteX="13dp"
-        tools:layout_editor_absoluteY="445dp" />
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/confirm"
+        android:layout_weight="0.5"
+        android:textSize="@dimen/textSizeSmall"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="448dp" />
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

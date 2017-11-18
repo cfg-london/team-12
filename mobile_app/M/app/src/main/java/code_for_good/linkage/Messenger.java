@@ -19,9 +19,6 @@ import java.util.Properties;
 
 public class Messenger extends Activity {
 
-    /**
-     * Called when the activity is first created.
-     */
     @Override
     public void onCreate(Bundle savedInstanceState) {
 
