@@ -1,10 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="code_for_good.linkage.LangAndRegisterActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="I am a:"
+            android:textColor="#000000"
+            android:textSize="@dimen/fontSize"/>
+        <Spinner
+            android:id="@+id/professionDropdown"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/fontSize"
+            android:entries="@array/engReferrerOptions"
+            android:textAlignment="textEnd"
+            android:layout_weight="1"/>
+    </LinearLayout>
 
     <ImageButton
         android:id="@+id/changeLanguage"
@@ -12,26 +32,31 @@
         android:layout_height="45dp"
         android:onClick="changeLangActivity"
         app:srcCompat="@mipmap/gb"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        android:layout_marginEnd="31dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="29dp"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginRight="31dp" />
+        android:layout_margin="10dp"/>
 
-    <Button
-        android:id="@+id/toProfile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        android:onClick="toProfileAct"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginEnd="111dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginBottom="16dp"
-        android:layout_marginRight="100dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
 
-</android.support.constraint.ConstraintLayout>
+        <Button
+            android:id="@+id/toProfile"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Register"
+            android:onClick="toProfileAct" />
+
+        <Button
+            android:id="@+id/noRegister"
+            android:text="Proceed without registering"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:onClick="toUrgent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>

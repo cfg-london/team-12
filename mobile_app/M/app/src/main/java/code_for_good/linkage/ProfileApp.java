@@ -14,8 +14,7 @@ import android.widget.TextView;
 public class ProfileApp extends AppCompatActivity {
 
     private UserProfile profile;
-    private Spinner referrerDropdown;
-    private String type;
+
     private EditText name;
     private EditText phone;
     private EditText email;
@@ -33,21 +32,7 @@ public class ProfileApp extends AppCompatActivity {
 
         this.lang = (Languages) getIntent().getSerializableExtra("Language");
 
-        ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.engReferrerOptions, R.layout.custom_spinner);
-
-        adapter.setDropDownViewResource(R.layout.custom_spinner_dropdown);
-        referrerDropdown = (Spinner) findViewById(R.id.professionDropdown);
-        referrerDropdown.setAdapter(adapter);
-
-        referrerDropdown.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                type = ((TextView) findViewById(R.id.customSpinner)).getText().toString();
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {}
-        });
+        final String type = getIntent().getExtras().getString("type");
 
         name = (EditText) findViewById(R.id.profileInputName);
         phone = (EditText) findViewById(R.id.profileInputPhone);
