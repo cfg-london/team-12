@@ -6,13 +6,11 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.MenuItem;
 import android.support.v4.app.NavUtils;
 import android.widget.Button;
-import android.widget.TextView;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -179,7 +177,7 @@ public class LanguagesActivity extends AppCompatActivity {
     }
 
     public void changeLanguage(View view){
-        Intent intent = new Intent(this, ProfileApp.class);
+        Intent intent = new Intent(this, LangAndRegisterActivity.class);
         String language = ((Button) view).getText().toString();
         intent.putExtra("Language_Choice", language);
         startActivity(intent);
