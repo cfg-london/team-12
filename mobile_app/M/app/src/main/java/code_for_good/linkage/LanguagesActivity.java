@@ -6,10 +6,12 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.MenuItem;
 import android.support.v4.app.NavUtils;
+import android.widget.Button;
 import android.widget.TextView;
 
 /**
@@ -92,6 +94,7 @@ public class LanguagesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setTitle("Languages");
+        Log.v("lang","lang");
         setContentView(R.layout.activity_languages);
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
@@ -177,8 +180,11 @@ public class LanguagesActivity extends AppCompatActivity {
     }
 
     private void changeLanguage(View view){
+        Log.v("Enter onclick", "onclick");
         Intent intent = new Intent(this, UrgentCheck.class);
-        CharSequence language = ((TextView) view).getText();
+        Log.v("getting str bef", "bef get str");
+        String language = ((Button) view).getText().toString();
+        Log.v("got string", "got string");
         intent.putExtra("Language_Choice", language);
         startActivity(intent);
     }

@@ -31,11 +31,11 @@
             android:name=".LanguagesActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_languages"
-            android:parentActivityName=".ProfileApp"
+            android:parentActivityName=".UrgentCheck"
             android:theme="@style/FullscreenTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="code_for_good.linkage.ProfileApp" />
+                android:value="code_for_good.linkage.UrgentCheck" />
         </activity>
         <activity android:name=".IssueSelector"></activity>
         <activity android:name=".Messenger" />
