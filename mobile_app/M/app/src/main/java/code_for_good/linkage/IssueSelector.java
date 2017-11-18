@@ -41,6 +41,9 @@ public class IssueSelector extends AppCompatActivity {
         buttonStayingInHome = (Button) findViewById(R.id.buttonStayingInTheirHome);
         buttonMoney = (Button) findViewById(R.id.buttonMoneyAndBenefits);
 
+        /*
+        Allows toggling for other languages without using the toggle functions
+         */
         buttonIsolation.setTag(0);
         buttonSafetyAtHome.setTag(0);
         buttonLegal.setTag(0);
