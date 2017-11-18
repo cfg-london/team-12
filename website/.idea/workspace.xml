@@ -12,11 +12,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wwwroot/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1551">
-              <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="792">
+              <caret line="67" column="34" lean-forward="true" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -67,17 +67,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin_page.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="admin_page.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wwwroot/Admin/admin_page.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+            <state relative-caret-position="924">
+              <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
               <folding>
                 <element signature="n#updateHash#0;n#!!top" expanded="false" />
                 <element signature="n#updateNewName#0;n#!!top" expanded="false" />
                 <element signature="n#updateNewPass#0;n#!!top" expanded="false" />
                 <element signature="e#437#852#0#PHP" expanded="false" />
-                <element signature="e#3021#3102#0#PHP" expanded="true" />
+                <element signature="e#2562#2643#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,11 +103,11 @@
         <option value="$PROJECT_DIR$/wwwroot/Admin/update.php" />
         <option value="$PROJECT_DIR$/wwwroot/Admin/verify_login.php" />
         <option value="$PROJECT_DIR$/wwwroot/headher.html" />
-        <option value="$PROJECT_DIR$/wwwroot/index.php" />
         <option value="$PROJECT_DIR$/wwwroot/header.html" />
         <option value="$PROJECT_DIR$/login.ini.php" />
         <option value="$PROJECT_DIR$/wwwroot/Admin/login.php" />
         <option value="$PROJECT_DIR$/wwwroot/Admin/admin_page.php" />
+        <option value="$PROJECT_DIR$/wwwroot/index.php" />
       </list>
     </option>
   </component>
@@ -344,7 +344,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16947000" />
+    <option name="totallyTimeSpent" value="17467000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="3026" height="1946" extended-state="6" />
@@ -439,7 +439,7 @@
             <element signature="n#updateNewName#0;n#!!top" expanded="false" />
             <element signature="n#updateNewPass#0;n#!!top" expanded="false" />
             <element signature="e#437#852#0#PHP" expanded="false" />
-            <element signature="e#3021#3102#0#PHP" expanded="true" />
+            <element signature="e#2562#2643#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -506,7 +506,7 @@
             <element signature="n#updateNewName#0;n#!!top" expanded="false" />
             <element signature="n#updateNewPass#0;n#!!top" expanded="false" />
             <element signature="e#437#852#0#PHP" expanded="false" />
-            <element signature="e#3021#3102#0#PHP" expanded="true" />
+            <element signature="e#2562#2643#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -545,7 +545,7 @@
             <element signature="n#updateNewName#0;n#!!top" expanded="false" />
             <element signature="n#updateNewPass#0;n#!!top" expanded="false" />
             <element signature="e#437#852#0#PHP" expanded="false" />
-            <element signature="e#3021#3102#0#PHP" expanded="true" />
+            <element signature="e#2562#2643#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -633,7 +633,7 @@
             <element signature="n#updateNewName#0;n#!!top" expanded="false" />
             <element signature="n#updateNewPass#0;n#!!top" expanded="false" />
             <element signature="e#437#852#0#PHP" expanded="false" />
-            <element signature="e#3021#3102#0#PHP" expanded="true" />
+            <element signature="e#2562#2643#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -756,19 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wwwroot/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1551">
-          <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#0;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#td#1;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/login.ini.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1221">
@@ -795,14 +782,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wwwroot/Admin/admin_page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        <state relative-caret-position="924">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding>
             <element signature="n#updateHash#0;n#!!top" expanded="false" />
             <element signature="n#updateNewName#0;n#!!top" expanded="false" />
             <element signature="n#updateNewPass#0;n#!!top" expanded="false" />
             <element signature="e#437#852#0#PHP" expanded="false" />
-            <element signature="e#3021#3102#0#PHP" expanded="true" />
+            <element signature="e#2562#2643#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="67" column="34" lean-forward="true" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#1;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
