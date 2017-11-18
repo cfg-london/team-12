@@ -1,6 +1,7 @@
 package code_for_good.linkage;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -101,5 +102,12 @@ public class ProfileApp extends AppCompatActivity {
                         address.getText().toString(), work.getText().toString());
             }
         });
+    }
+
+    private void setupProfile(UserProfile profile){
+        Intent toUrgent = new Intent(this, UrgentCheck.class);
+        toUrgent.putExtra("profile", profile);
+        startActivity(toUrgent);
+        this.finish();
     }
 }
