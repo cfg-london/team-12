@@ -58,8 +58,8 @@
 
     <ImageButton
         android:id="@+id/changeLanguage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:onClick="changeLangActivity"
         app:srcCompat="@mipmap/gb"
         tools:layout_constraintRight_creator="1"
