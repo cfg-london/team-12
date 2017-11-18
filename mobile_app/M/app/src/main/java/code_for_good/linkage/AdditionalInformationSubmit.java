@@ -17,6 +17,10 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.net.URLEncoder;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 public class AdditionalInformationSubmit extends AppCompatActivity {
 
@@ -37,7 +41,7 @@ public class AdditionalInformationSubmit extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(consent.isChecked()){
-
+                    new DatabaseConnector().execute();
                 } else {
                     remindAccept();
                 }
@@ -55,16 +59,9 @@ public class AdditionalInformationSubmit extends AppCompatActivity {
         protected Void doInBackground(Request... requests) {
             URL url = null;
             try {
-                url = new URL("http://34.241.158.221/");
-                String data  = URLEncoder.encode("username", "UTF-8")
-                        + "=" + URLEncoder.encode("root", "UTF-8");
-                data += "&" + URLEncoder.encode("password", "UTF-8")
-                        + "=" + URLEncoder.encode("Pa55w0rd", "UTF-8");
-                URLConnection conn = url.openConnection();
-                OutputStreamWriter wr = new OutputStreamWriter(conn.getOutputStream());
-                wr.write(data);
-                BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
-            } catch (IOException e) {
+                Class.forName("com.mysql.jdbc.Driver").newInstance();
+                Connection con = DriverManager.getConnection("jbdc:mysql://34.241.158.221:3306/frequencies", "root", "Pa55w0rd");
+            } catch (IllegalAccessException | InstantiationException | SQLException | ClassNotFoundException e) {
                 e.printStackTrace();
             }
             return null;
