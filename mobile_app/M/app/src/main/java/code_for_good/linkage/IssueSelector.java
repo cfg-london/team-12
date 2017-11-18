@@ -22,6 +22,13 @@ public class IssueSelector extends AppCompatActivity {
         setContentView(R.layout.activity_issue_selector);
 
         buttonIsolation = (Button) findViewById(R.id.buttonIsolation);
+        buttonSafetyAtHome = (Button) findViewById(R.id.buttonSafetyAtHome);
+        buttonLegal = (Button) findViewById(R.id.buttonSafetyAtHome);
+        buttonCrisis = (Button) findViewById(R.id.buttonCrisis);
+        buttonMedical = (Button) findViewById(R.id.buttonTransport);
+        buttonTransport = (Button) findViewById(R.id.buttonHelpAroundTheHouse);
+        buttonStayingInHome = (Button) findViewById(R.id.buttonStayingInTheirHome);
+        buttonMoney = (Button) findViewById(R.id.buttonMoneyAndBenefits);
 
     }
 }
