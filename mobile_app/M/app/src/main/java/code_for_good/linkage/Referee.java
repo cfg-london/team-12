@@ -14,7 +14,8 @@ public class Referee implements Parcelable {
     private Integer age;
     private List<String> languages;
 
-    public Referee(String name, String address, String gender, String phoneNumber, Integer age, List<String> languages) {
+    public Referee(String name, String address, String gender,
+                   String phoneNumber, Integer age, List<String> languages) {
         this.name = name;
         this.address = address;
         this.gender = gender;
