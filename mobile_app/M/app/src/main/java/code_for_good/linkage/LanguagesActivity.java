@@ -94,7 +94,6 @@ public class LanguagesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setTitle("Languages");
-        Log.v("lang","lang");
         setContentView(R.layout.activity_languages);
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
@@ -180,11 +179,8 @@ public class LanguagesActivity extends AppCompatActivity {
     }
 
     public void changeLanguage(View view){
-        Log.v("Enter onclick", "onclick");
         Intent intent = new Intent(this, UrgentCheck.class);
-        Log.v("getting str bef", "bef get str");
         String language = ((Button) view).getText().toString();
-        Log.v("got string", "got string");
         intent.putExtra("Language_Choice", language);
         startActivity(intent);
     }
