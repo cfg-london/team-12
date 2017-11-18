@@ -1,6 +1,6 @@
 <?php
 session_start();
-define( 'API_ACCESS_KEY', 'ACCESS-KEY' ); //PUT API ACCESS KEY IN HERE
+define('API_ACCESS_KEY', 'ACCESS-KEY'); //PUT API ACCESS KEY IN HERE
 $username = $_POST['username'];
 $password = $_POST['pass'];
 $updateDetails = $_POST['update'];
@@ -100,21 +100,22 @@ require '../header.html';
         <div class="col">
             <form id="sendMessage" name="sendMessage" method="POST" action="admin_page.php">
                 <div class="row"><h3>Send a notification to all mobile app users:</h3></div>
-                <div class="row">Message: </div>
-                <div class="row"><input style="width: 85%;" type="text" name="message" id="message"/><input style="width: 15%" type="submit" name="sendNotification" id="sendNotification" value="Send"/></div>
+                <div class="row">Message:</div>
+                <div class="row"><input style="width: 85%;" type="text" name="message" id="message"/><input
+                            style="width: 15%" type="submit" name="sendNotification" id="sendNotification"
+                            value="Send"/></div>
             </form>
         </div>
-            <div class="col text-center">
-                <form class="float-right" id="newLogin" name="newLogin" method="POST" action="admin_page.php">
-                    <div class="row"><h5>Update Admin Login:</h5></div>
-                    <div class="row">New Username:</div>
-                    <div class="row"><input type="text" name="newUsername" id="newUsername"/></div>
-                    <div class="row">New Password: </div>
-                    <div class="row"><input type="password" name="newPass" id="newPass"/></div>
-                    <div class="row"><input type="submit" name="update" id="update" value="Update"/></div>
-                </form>
-
-            </div>
+        <div class="col text-center">
+            <form class="float-right" id="newLogin" name="newLogin" method="POST" action="admin_page.php">
+                <div class="row"><h5>Update Admin Login:</h5></div>
+                <div class="row">New Username:</div>
+                <div class="row"><input type="text" name="newUsername" id="newUsername"/></div>
+                <div class="row">New Password:</div>
+                <div class="row"><input type="password" name="newPass" id="newPass"/></div>
+                <div class="row"><input type="submit" name="update" id="update" value="Update"/></div>
+            </form>
+        </div>
     </div>
 </div>
 <?php

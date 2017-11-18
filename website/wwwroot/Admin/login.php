@@ -18,16 +18,19 @@ if ($err) {
     $_SESSION['error'] = "";
 }
 ?>
-<form id="login" name="login" method="POST" action="admin_page.php">
-  <div class ="form-group">
-    Username: <input type="text" name="username" id="username" />
-  </div>
-  <div class ="form-group">
-    Password: <input type="password" name="pass" id="pass" />
-  </div>
-
-    <input type="submit" name="submit" id="submit" value="Login" />
-</form>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 text-xs-center">
+            <form class="float-right text-xs-center" id="login" name="login" method="POST" action="admin_page.php">
+                <div class="row">Username:</div>
+                <div class="row"><input type="text" name="username" id="username" /></div>
+                <div class="row">Password:</div>
+                <div class="row"><input type="password" name="pass" id="pass" /></div>
+                <div class="row"><input type="submit" name="submit" id="submit" value="Login" /></div>
+            </form>
+        </div>
+    </div>
+</div>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
