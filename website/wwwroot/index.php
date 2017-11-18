@@ -40,7 +40,8 @@
                     array_push($variableNames, $item);
                     echo "\n\t\tvar " . $item . " = google.visualization.arrayToDataTable([\n\t\t['Referral Type', 'Frequency']";
                   } else {
-                    echo ",\n\t\t['" . $columnName . "', '" . $item . "']";
+                      $columnName = str_replace("_", " ", ucfirst($columnName));
+                    echo ",\n\t\t['" . $columnName . "', " . $item . "]";
                   }
                   //for each referral type/column
                   $counter++;
