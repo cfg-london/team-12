@@ -4,7 +4,9 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.Log;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
@@ -28,18 +30,25 @@ public class Request implements Parcelable {
     public void send() throws IOException {
         Log.v("tag", "Hello");
         String urlString = "http://34.241.158.221/send_mail.php";
-        urlString += "?urgent=" + (urgent ? "true" : "false");
-        urlString += "?referrer=" + referrer.toString();
-        urlString += "?referree=" + info.toString() + "\n Due to the following issues: ";
+        urlString += "&urgent=" + (urgent ? "true" : "false");
+        urlString += "&referrer=" + referrer.toString();
+        urlString += "&referree=" + info.toString() + "\n Due to the following issues:\n";
         for (String issue : issues) {
-            urlString += issue + " ";
+            urlString += issue + "\n";
         }
         urlString = urlString.replace(" ", "%20");
         urlString = urlString.replace("\n", "%0A");
-        Log.v("tag", urlString);
+        Log.println(Log.INFO,"tag", urlString);
         URL url = new URL(urlString);
         URLConnection connection = url.openConnection();
-        connection.connect();
+        BufferedReader in = new BufferedReader(
+                new InputStreamReader(
+                        connection.getInputStream()));
+        String inputLine;
+
+        while ((inputLine = in.readLine()) != null)
+            System.out.println(inputLine);
+        in.close();
         // Stub. Send email to specified address.
     }
 
