@@ -177,7 +177,7 @@ public class LanguagesActivity extends AppCompatActivity {
     }
 
     private void changeLanguage(View view){
-        Intent intent = new Intent(this, ProfileApp.class);
+        Intent intent = new Intent(this, UrgentCheck.class);
         CharSequence language = ((TextView) view).getText();
         intent.putExtra("Language_Choice", language);
         startActivity(intent);
