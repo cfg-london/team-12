@@ -1,6 +1,9 @@
 package code_for_good.linkage;
 
+import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -42,6 +45,21 @@ public class RefereeDetails extends AppCompatActivity {
         age = (EditText) findViewById(R.id.refereeInputAge);
         address = (EditText) findViewById(R.id.refereeInputAddress);
         languages = (TextView) findViewById(R.id.refereeInputLanguages);
+
+        final Context context = this;
+
+        languages.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder builder;
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    builder = new AlertDialog.Builder(context, android.R.style.Theme_Material_Dialog_Alert);
+                } else {
+                    builder = new AlertDialog.Builder(context);
+                }
+                builder.setTitle("Select the languages you speak");
+            }
+        });
 
         submit = (Button) findViewById(R.id.refereeInputNext);
 
