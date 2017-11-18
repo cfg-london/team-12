@@ -1,6 +1,7 @@
 package code_for_good.linkage;
 
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,11 +12,19 @@ import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+
 public class LangAndRegisterActivity extends AppCompatActivity {
 
     private Language lang;
     private Spinner referrerDropdown;
     private String type;
+    private TextView message;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +41,8 @@ public class LangAndRegisterActivity extends AppCompatActivity {
 
         Button toReg = (Button) findViewById(R.id.toProfile);
         Button noReg = (Button) findViewById(R.id.noRegister);
+
+        message = (TextView) findViewById(R.id.messageOfTheDay);
 
         if(getIntent().hasExtra("Language_Choice")){
             String languages = getIntent().getStringExtra("Language_Choice");
@@ -125,6 +136,42 @@ public class LangAndRegisterActivity extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> adapterView) {}
         });
 
+    }
+
+    private void setMessage(String s){
+        message.setText(s);
+    }
+
+    private class NotificationGetter extends AsyncTask<Void, Void, String>{
+
+        @Override
+        protected String doInBackground(Void... voids) {
+            URL url = null;
+            try {
+                url = new URL("http://34.241.158.221/Admin/message.txt");
+                HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+                connection.setDoOutput(true);
+                BufferedReader in = new BufferedReader(
+                        new InputStreamReader(
+                                connection.getInputStream()));
+                String inputLine;
+                StringBuilder sb = new StringBuilder();
+                while ((inputLine = in.readLine()) != null){
+                    System.out.println(inputLine);
+                    sb.append(inputLine);
+                }
+                in.close();
+                return sb.toString();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            return "";
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            setMessage(s);
+        }
     }
 
 
