@@ -34,8 +34,8 @@ public class Request implements Parcelable {
         for (String issue : issues) {
             urlString += issue + " ";
         }
-        urlString.replace(" ", "%20");
-        urlString.replace("\n", "%0A");
+        urlString = urlString.replace(" ", "%20");
+        urlString = urlString.replace("\n", "%0A");
         Log.v("tag", urlString);
         URL url = new URL(urlString);
         URLConnection connection = url.openConnection();
