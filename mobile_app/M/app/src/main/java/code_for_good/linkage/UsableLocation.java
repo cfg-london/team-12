@@ -18,7 +18,6 @@ public class UsableLocation extends Activity {
     private static final int REQUEST_CODE_PERMISSION = 2;
     String mPermission = Manifest.permission.ACCESS_FINE_LOCATION;
 
-    // GPSTracker class
     GPSLocation gps;
 
     @Override
@@ -33,7 +32,8 @@ public class UsableLocation extends Activity {
                 ActivityCompat.requestPermissions(this, new String[]{mPermission},
                         REQUEST_CODE_PERMISSION);
             }
-        } catch (Exception e) {
+        }
+        catch (Exception e) {
             e.printStackTrace();
         }
 
@@ -48,7 +48,7 @@ public class UsableLocation extends Activity {
                 gps = new GPSLocation(UsableLocation.this);
 
                 // check if GPS enabled
-                if(gps.canGetLocation()){
+                if(gps.canGetLocation()) {
 
                     double latitude = gps.getLatitude();
                     double longitude = gps.getLongitude();
@@ -56,10 +56,10 @@ public class UsableLocation extends Activity {
                     // \n is for new line
                     Toast.makeText(getApplicationContext(), "Your Location is - \nLat: "
                             + latitude + "\nLong: " + longitude, Toast.LENGTH_LONG).show();
-                }else{
+                }
+                else {
                     // can't get location
                     // GPS or Network is not enabled
-                    // Ask user to enable GPS/network in settings
                     gps.showSettingsAlert();
                 }
 
