@@ -29,7 +29,8 @@ if ($updateDetails) {
     $_SESSION['updated'] = "Password Updated <br>";
 }
 if ($sendMessage) {
-//    $message = $_POST['message'];
+    $message = $_POST['message'];
+    file_put_contents("message.txt", $message);
 //    //send push notification
 //    $databaseInfo = parse_ini_file("../../login.ini.php");
 //    $database = mysqli_connect($databaseInfo['dbIP'], $databaseInfo['dbUser'], $databaseInfo['dbPass'], $databaseInfo['dbDataBase'], $databaseInfo['dbSocket']);
@@ -49,18 +50,27 @@ if ($sendMessage) {
 //        }
 //    }
 //    $notification = array(
-//            'body' => $message,
+//            'message' => $message,
 //            'title' => "Notification"
 //    );
-//    foreach($deviceIDs as $deviceID) {
-//        $pushNotification = array(
-//            'to' => $deviceID,
-//            'notification' => $notification
-//        );
-//
-//    }
-
-
+//    $fields = array (
+//        'registration_ids' => $deviceIDs,
+//        'data' => $notification
+//    );
+//    $headers = array (
+//        'Authorization: key=' . API_ACCESS_KEY,
+//        'Content-Type: application/json'
+//    );
+//    $ch = curl_init();
+//    curl_setopt( $ch,CURLOPT_URL, 'https://android.googleapis.com/gcm/send' );
+//    curl_setopt( $ch,CURLOPT_POST, true );
+//    curl_setopt( $ch,CURLOPT_HTTPHEADER, $headers );
+//    curl_setopt( $ch,CURLOPT_RETURNTRANSFER, true );
+//    curl_setopt( $ch,CURLOPT_SSL_VERIFYPEER, false );
+//    curl_setopt( $ch,CURLOPT_POSTFIELDS, json_encode( $fields ) );
+//    $result = curl_exec($ch );
+//    curl_close( $ch );
+//    echo $result;
 }
 $serverLoginDetails = parse_ini_file("../../login.ini.php");
 if (!($username == $serverLoginDetails['username'] && password_verify($password, $serverLoginDetails['hashedPassword'])) && !$sendMessage) {
