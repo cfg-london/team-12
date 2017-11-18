@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -83,31 +84,49 @@ public class LangAndRegisterActivity extends AppCompatActivity {
         referrerDropdown.setAdapter(adapter);
 
         TextView iama = (TextView) findViewById(R.id.i_am_a_view);
+        Button toReg = (Button) findViewById(R.id.toProfile);
+        Button noReg = (Button) findViewById(R.id.noRegister);
 
         switch (lang) {
             case ENG:
                 iama.setText(getString(R.string.i_am_eng));
+                toReg.setText(getString(R.string.register_eng));
+                noReg.setText(getString(R.string.dont_register_eng));
                 break;
             case BNG:
                 iama.setText(getString(R.string.i_am_bng));
+                toReg.setText(getString(R.string.register_bng));
+                noReg.setText(getString(R.string.dont_register_bng));
                 break;
             case CHI:
                 iama.setText(getString(R.string.i_am_chi));
+                toReg.setText(getString(R.string.register_chi));
+                noReg.setText(getString(R.string.dont_register_chi));
                 break;
             case FRA:
                 iama.setText(getString(R.string.i_am_fra));
+                toReg.setText(getString(R.string.register_fra));
+                noReg.setText(getString(R.string.dont_register_fra));
                 break;
             case ESP:
                 iama.setText(getString(R.string.i_am_esp));
+                toReg.setText(getString(R.string.register_esp));
+                noReg.setText(getString(R.string.dont_register_esp));
                 break;
             case ITA:
                 iama.setText(getString(R.string.i_am_ita));
+                toReg.setText(getString(R.string.register_ita));
+                noReg.setText(getString(R.string.dont_register_ita));
                 break;
             case SOM:
                 iama.setText(getString(R.string.i_am_som));
+                toReg.setText(getString(R.string.register_som));
+                noReg.setText(getString(R.string.dont_register_som));
                 break;
             default:
                 iama.setText(getString(R.string.i_am_eng));
+                toReg.setText(getString(R.string.register_eng));
+                noReg.setText(getString(R.string.dont_register_eng));
         }
 
         referrerDropdown.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
