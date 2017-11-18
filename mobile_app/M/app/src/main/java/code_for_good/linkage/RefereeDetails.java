@@ -1,8 +1,7 @@
 package code_for_good.linkage;
 
-import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
-import android.os.Build;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,10 +9,13 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class RefereeDetails extends AppCompatActivity {
 
@@ -23,7 +25,7 @@ public class RefereeDetails extends AppCompatActivity {
     private EditText phone;
     private EditText age;
     private EditText address;
-    private TextView languages;
+    private LinearLayout languages;
     private Button submit;
 
     private RequestBuilder rb;
@@ -44,20 +46,48 @@ public class RefereeDetails extends AppCompatActivity {
         phone = (EditText) findViewById(R.id.refereeInputPhone);
         age = (EditText) findViewById(R.id.refereeInputAge);
         address = (EditText) findViewById(R.id.refereeInputAddress);
-        languages = (TextView) findViewById(R.id.refereeInputLanguages);
+        languages = (LinearLayout) findViewById(R.id.refereeInputLanguages);
 
-        final Context context = this;
+        final List<String> languagesSpoken = new ArrayList<>();
+        final AppCompatActivity context = this;
 
         languages.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AlertDialog.Builder builder;
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    builder = new AlertDialog.Builder(context, android.R.style.Theme_Material_Dialog_Alert);
-                } else {
-                    builder = new AlertDialog.Builder(context);
-                }
-                builder.setTitle("Select the languages you speak");
+                final CharSequence[] items = {"English","বাঙালি","中文","Français", "Español", "Italiano", "Somali"};
+
+                final ArrayList<Integer> seletedItems = new ArrayList<>();
+
+                AlertDialog dialog = new AlertDialog.Builder(context)
+                        .setTitle("Select languages you speak")
+                        .setMultiChoiceItems(items, null, new DialogInterface.OnMultiChoiceClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int indexSelected, boolean isChecked) {
+                                if (isChecked) {
+                                    seletedItems.add(indexSelected);
+                                } else if (seletedItems.contains(indexSelected)) {
+                                    seletedItems.remove(Integer.valueOf(indexSelected));
+                                }
+                            }
+                        }).setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int id) {
+                                StringBuilder sb = new StringBuilder();
+                                for(int pos : seletedItems){
+                                    String language = items[pos].toString();
+                                    languagesSpoken.add(language);
+                                    sb.append(language).append(", ");
+                                }
+                                sb.setLength(sb.length() - 2);
+                                ((TextView) findViewById(R.id.languagesSelect)).setText(sb.toString());
+                            }
+                        }).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int id) {
+
+                            }
+                        }).create();
+                dialog.show();
             }
         });
 
@@ -66,14 +96,18 @@ public class RefereeDetails extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                rb.setReferee(new Referee(name.getText().toString(),
-                        address.getText().toString(),
-                        ((TextView) findViewById(R.id.customSpinner)).getText().toString(),
-                        phone.getText().toString(), Integer.parseInt(age.getText().toString()),
-                        new ArrayList<String>()
-                        ));
-                //TODO lanuages
-                toIssues();
+                try {
+                    int i = Integer.parseInt(age.getText().toString());
+                    rb.setReferee(new Referee(name.getText().toString(),
+                            address.getText().toString(),
+                            ((TextView) findViewById(R.id.customSpinner)).getText().toString(),
+                            phone.getText().toString(), i,
+                            languagesSpoken
+                    ));
+                    toIssues();
+                } catch (NumberFormatException e){
+                    Toast.makeText(context, "Invalid age", Toast.LENGTH_LONG);
+                }
             }
         });
 

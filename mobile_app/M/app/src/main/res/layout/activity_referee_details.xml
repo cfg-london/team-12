@@ -93,7 +93,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="@string/age_eng"
-            android:inputType="number"
+            android:text="Age:"
             android:textColor="#000000"
             android:textSize="@dimen/fontSize"/>
         <EditText
@@ -103,7 +103,7 @@
             android:layout_weight="1"
             android:hint="@string/approx_eng"
             android:background="@android:color/transparent"
-            android:inputType="textEmailAddress"
+            android:inputType="number"
             android:textSize="@dimen/textSizeSmall"
             android:textAlignment="textEnd"/>
     </LinearLayout>
@@ -141,17 +141,24 @@
         android:layout_height="1dp"
         android:background="@color/colorSeparatorLine"/>
     <LinearLayout
+        android:id="@+id/refereeInputLanguages"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
-            android:id="@+id/refereeInputLanguages"
-            android:layout_width="0dp"
+            android:id="@+id/langRef"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Languages:"
-            android:layout_weight="1"
             android:textColor="#000000"
             android:textSize="@dimen/fontSize"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/languagesSelect"
+            android:textColor="#000000"
+            android:textAlignment="textEnd"
+            android:textSize="@dimen/textSizeSmall"/>
     </LinearLayout>
     <TextView
         android:id="@+id/moreinfoRef"
