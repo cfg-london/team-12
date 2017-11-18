@@ -18,15 +18,15 @@ if ($err) {
     $_SESSION['error'] = "";
 }
 ?>
-<div class="container text-center">
-    <div class="row text-center">
-        <div class="col text-center">
-            <form class="text-center" id="login" name="login" method="POST" action="admin_page.php">
-                <div class="row text-center">Username: </div>
-                <div class="row text-center"><input type="text" name="username" id="username" /></div>
-                <div class="row text-center">Password: </div>
-                <div class="row text-center"><input type="password" name="pass" id="pass" /></div>
-                <div class="row text-center"><input type="submit" name="submit" id="submit" value="Login" /></div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 text-xs-center">
+            <form class="float-right text-xs-center" id="login" name="login" method="POST" action="admin_page.php">
+                <div class="row">Username:</div>
+                <div class="row"><input type="text" name="username" id="username" /></div>
+                <div class="row">Password:</div>
+                <div class="row"><input type="password" name="pass" id="pass" /></div>
+                <div class="row"><input type="submit" name="submit" id="submit" value="Login" /></div>
             </form>
         </div>
     </div>
