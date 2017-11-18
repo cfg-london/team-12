@@ -32,7 +32,6 @@ public class LangAndRegisterActivity extends AppCompatActivity {
 
         Button toReg = (Button) findViewById(R.id.toProfile);
         Button noReg = (Button) findViewById(R.id.noRegister);
-        Button volun = (Button) findViewById(R.id.urgentCheckVolunteer);
 
         if(getIntent().hasExtra("Language_Choice")){
             String languages = getIntent().getStringExtra("Language_Choice");
@@ -45,7 +44,6 @@ public class LangAndRegisterActivity extends AppCompatActivity {
                             R.array.engReferrerOptions, R.layout.custom_spinner);
                     toReg.setText(getString(R.string.register_eng));
                     noReg.setText(getString(R.string.dont_register_eng));
-                    volun.setText(getString(R.string.volunteer_eng));
                     break;
                 case "বাঙালি":
                     lang = Languages.BNG;
@@ -55,7 +53,6 @@ public class LangAndRegisterActivity extends AppCompatActivity {
                             R.array.bngReferrerOptions, R.layout.custom_spinner);
                     toReg.setText(getString(R.string.register_bng));
                     noReg.setText(getString(R.string.dont_register_bng));
-                    volun.setText(getString(R.string.volunteer_bng));
                     break;
                 case "中文":
                     lang = Languages.CHI;
@@ -65,7 +62,6 @@ public class LangAndRegisterActivity extends AppCompatActivity {
                             R.array.chiReferrerOptions, R.layout.custom_spinner);
                     toReg.setText(getString(R.string.register_chi));
                     noReg.setText(getString(R.string.dont_register_chi));
-                    volun.setText(getString(R.string.volunteer_chi));
                     break;
                 case "Français":
                     lang = Languages.FRA;
@@ -75,7 +71,6 @@ public class LangAndRegisterActivity extends AppCompatActivity {
                             R.array.fraReferrerOptions, R.layout.custom_spinner);
                     toReg.setText(getString(R.string.register_fra));
                     noReg.setText(getString(R.string.dont_register_fra));
-                    volun.setText(getString(R.string.volunteer_fra));
                     break;
                 case "Español":
                     lang = Languages.ESP;
@@ -85,7 +80,6 @@ public class LangAndRegisterActivity extends AppCompatActivity {
                             R.array.espReferrerOptions, R.layout.custom_spinner);
                     toReg.setText(getString(R.string.register_esp));
                     noReg.setText(getString(R.string.dont_register_esp));
-                    volun.setText(getString(R.string.volunteer_esp));
                     break;
                 case "Italiano":
                     imageButton.setImageResource(R.mipmap.it);
@@ -95,7 +89,6 @@ public class LangAndRegisterActivity extends AppCompatActivity {
                             R.array.itaReferrerOptions, R.layout.custom_spinner);
                     toReg.setText(getString(R.string.register_ita));
                     noReg.setText(getString(R.string.dont_register_ita));
-                    volun.setText(getString(R.string.volunteer_ita));
                     break;
                 case "Somali":
                     lang = Languages.SOM;
@@ -105,7 +98,6 @@ public class LangAndRegisterActivity extends AppCompatActivity {
                             R.array.somReferrerOptions, R.layout.custom_spinner);
                     toReg.setText(getString(R.string.register_som));
                     noReg.setText(getString(R.string.dont_register_som));
-                    volun.setText(getString(R.string.volunteer_som));
                     break;
                 default:
                     lang = Languages.ENG;
@@ -115,7 +107,6 @@ public class LangAndRegisterActivity extends AppCompatActivity {
                             R.array.engReferrerOptions, R.layout.custom_spinner);
                     toReg.setText(getString(R.string.register_eng));
                     noReg.setText(getString(R.string.dont_register_eng));
-                    volun.setText(getString(R.string.volunteer_eng));
                     break;
             }
         }
