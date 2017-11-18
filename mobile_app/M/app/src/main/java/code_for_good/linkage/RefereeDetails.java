@@ -60,6 +60,8 @@ public class RefereeDetails extends AppCompatActivity {
         TextView langref = (TextView) findViewById(R.id.langRef);
         TextView moreinforef = (TextView) findViewById(R.id.moreinfoRef);
 
+        submit = (Button) findViewById(R.id.refereeInputNext);
+
         switch (lang) {
             case ENG:
                 nameref.setText(getString(R.string.name_eng));
@@ -70,6 +72,7 @@ public class RefereeDetails extends AppCompatActivity {
                 addrref.setText(getString(R.string.addr_eng));
                 langref.setText(getString(R.string.lang_eng));
                 moreinforef.setText(getString(R.string.more_info_eng));
+                submit.setText(getString(R.string.next_eng));
                 break;
             case BNG:
                 nameref.setText(getString(R.string.name_bng));
@@ -80,6 +83,7 @@ public class RefereeDetails extends AppCompatActivity {
                 addrref.setText(getString(R.string.addr_bng));
                 langref.setText(getString(R.string.lang_bng));
                 moreinforef.setText(getString(R.string.more_info_bng));
+                submit.setText(getString(R.string.next_bng));
                 break;
             case CHI:
                 nameref.setText(getString(R.string.name_chi));
@@ -90,6 +94,7 @@ public class RefereeDetails extends AppCompatActivity {
                 addrref.setText(getString(R.string.addr_chi));
                 langref.setText(getString(R.string.lang_chi));
                 moreinforef.setText(getString(R.string.more_info_chi));
+                submit.setText(getString(R.string.next_chi));
                 break;
             case FRA:
                 nameref.setText(getString(R.string.name_fra));
@@ -100,6 +105,7 @@ public class RefereeDetails extends AppCompatActivity {
                 addrref.setText(getString(R.string.addr_fra));
                 langref.setText(getString(R.string.lang_fra));
                 moreinforef.setText(getString(R.string.more_info_fra));
+                submit.setText(getString(R.string.next_fra));
                 break;
             case ESP:
                 nameref.setText(getString(R.string.name_esp));
@@ -110,6 +116,7 @@ public class RefereeDetails extends AppCompatActivity {
                 addrref.setText(getString(R.string.addr_esp));
                 langref.setText(getString(R.string.lang_esp));
                 moreinforef.setText(getString(R.string.more_info_esp));
+                submit.setText(getString(R.string.next_esp));
                 break;
             case ITA:
                 nameref.setText(getString(R.string.name_ita));
@@ -120,6 +127,7 @@ public class RefereeDetails extends AppCompatActivity {
                 addrref.setText(getString(R.string.addr_ita));
                 langref.setText(getString(R.string.lang_ita));
                 moreinforef.setText(getString(R.string.more_info_ita));
+                submit.setText(getString(R.string.next_ita));
                 break;
             case SOM:
                 nameref.setText(getString(R.string.name_som));
@@ -130,6 +138,7 @@ public class RefereeDetails extends AppCompatActivity {
                 addrref.setText(getString(R.string.addr_som));
                 langref.setText(getString(R.string.lang_som));
                 moreinforef.setText(getString(R.string.more_info_som));
+                submit.setText(getString(R.string.next_som));
                 break;
             default:
                 nameref.setText(getString(R.string.name_eng));
@@ -140,6 +149,7 @@ public class RefereeDetails extends AppCompatActivity {
                 addrref.setText(getString(R.string.addr_eng));
                 langref.setText(getString(R.string.lang_eng));
                 moreinforef.setText(getString(R.string.more_info_eng));
+                submit.setText(getString(R.string.next_eng));
         }
 
         final List<String> languagesSpoken = new ArrayList<>();
@@ -184,8 +194,6 @@ public class RefereeDetails extends AppCompatActivity {
                 dialog.show();
             }
         });
-
-        submit = (Button) findViewById(R.id.refereeInputNext);
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
