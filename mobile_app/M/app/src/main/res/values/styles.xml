@@ -1,5 +1,7 @@
 <resources>
 
+    <string name="latitude_label">Latitude</string>
+    <string name="longitude_label">Longitude</string>
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->

@@ -172,45 +172,45 @@
     <string name="dont_register_ita">Procedere senza registrarsi</string>
     <string name="dont_register_som">Ku sii wad inaadan diiwaangelin</string>
 
-    <string name="name_eng">Name</string>
-    <string name="name_bng">Nāma</string>
-    <string name="name_chi">名字</string>
-    <string name="name_fra">Prénom</string>
-    <string name="name_esp">Nombre</string>
-    <string name="name_ita">Nome</string>
-    <string name="name_som">Magaca</string>
+    <string name="name_eng">Name:</string>
+    <string name="name_bng">Nāma:</string>
+    <string name="name_chi">名字:</string>
+    <string name="name_fra">Prénom:</string>
+    <string name="name_esp">Nombre:</string>
+    <string name="name_ita">Nome:</string>
+    <string name="name_som">Magaca:</string>
 
-    <string name="email_eng">Email</string>
-    <string name="email_bng">I-mē\'ila</string>
-    <string name="email_chi">电子邮件</string>
-    <string name="email_fra">Email</string>
-    <string name="email_esp">correo electrónico</string>
-    <string name="email_ita">Email</string>
-    <string name="email_som">Email</string>
+    <string name="email_eng">Email:</string>
+    <string name="email_bng">I-mē\'ila:</string>
+    <string name="email_chi">电子邮件:</string>
+    <string name="email_fra">Email:</string>
+    <string name="email_esp">correo electrónico:</string>
+    <string name="email_ita">Email:</string>
+    <string name="email_som">Email:</string>
 
-    <string name="phone_eng">Phone</string>
-    <string name="phone_bng">Phōna</string>
-    <string name="phone_chi">电话号码</string>
-    <string name="phone_fra">Téléphone</string>
-    <string name="phone_esp">Teléfono</string>
-    <string name="phone_ita">Telefono</string>
-    <string name="phone_som">telefoonka</string>
+    <string name="phone_eng">Phone:</string>
+    <string name="phone_bng">Phōna:</string>
+    <string name="phone_chi">电话号码:</string>
+    <string name="phone_fra">Téléphone:</string>
+    <string name="phone_esp">Teléfono:</string>
+    <string name="phone_ita">Telefono:</string>
+    <string name="phone_som">telefoonka:</string>
 
-    <string name="addr_eng">Address</string>
-    <string name="addr_bng">Ṭhikānā</string>
-    <string name="addr_fra">Adresse</string>
-    <string name="addr_esp">Dirección</string>
-    <string name="addr_ita">Indirizzo</string>
-    <string name="addr_chi">地址</string>
-    <string name="addr_som">Cinwaanka</string>
+    <string name="addr_eng">Address:</string>
+    <string name="addr_bng">Ṭhikānā:</string>
+    <string name="addr_fra">Adresse:</string>
+    <string name="addr_esp">Dirección:</string>
+    <string name="addr_ita">Indirizzo:</string>
+    <string name="addr_chi">地址:</string>
+    <string name="addr_som">Cinwaanka:</string>
 
-    <string name="work_eng">Work Address</string>
-    <string name="work_bng">Kājēra ṭhikānā</string>
-    <string name="work_chi">工作地址</string>
-    <string name="work_fra">Adresse de travail</string>
-    <string name="work_esp">Dirección del trabajo</string>
-    <string name="work_ita">Indirizzo di lavoro</string>
-    <string name="work_som">Cinwaanka shaqada</string>
+    <string name="work_eng">Work Address:</string>
+    <string name="work_bng">Kājēra ṭhikānā:</string>
+    <string name="work_chi">工作地址:</string>
+    <string name="work_fra">Adresse de travail:</string>
+    <string name="work_esp">Dirección del trabajo:</string>
+    <string name="work_ita">Indirizzo di lavoro:</string>
+    <string name="work_som">Cinwaanka shaqada:</string>
 
     <string name="more_info_eng">Please provide as much information as possible</string>
     <string name="more_info_bng">Ānugraha karē yatagulō sambhaba tathya sarabarāha karuna</string>
@@ -255,5 +255,30 @@
 
     <string name="medical_off">Medical Issue (Not Selected)</string>
     <string name="medical_on">Medical Issue (Selected)</string>
+    <string name="title_activity_additional_information_submit">AdditionalInformationSubmit</string>
+
+    <string name="Gender_eng">Gender:</string>
+    <string name="Gender_bng">Liṅga:</string>
+    <string name="Gender_chi">性:</string>
+    <string name="Gender_fra">Le genre:</string>
+    <string name="Gender_esp">Género:</string>
+    <string name="Gender_ita">Genere:</string>
+    <string name="Gender_som">Jinsiga:</string>
+
+    <string name="age_eng">Age:</string>
+    <string name="age_bng">Baẏasa:</string>
+    <string name="age_chi">年龄:</string>
+    <string name="age_fra">Âge:</string>
+    <string name="age_esp">Años:</string>
+    <string name="age_ita">Età:</string>
+    <string name="age_som">Da\':</string>
+
+    <string name="approx_eng">Approximate</string>
+    <string name="approx_bng">Ānumānika</string>
+    <string name="approx_chi">近似</string>
+    <string name="approx_fra">Approximatif</string>
+    <string name="approx_esp">Aproximado</string>
+    <string name="approx_ita">Approssimativo</string>
+    <string name="approx_som">Qiyaas ahaan</string>
 
 </resources>
