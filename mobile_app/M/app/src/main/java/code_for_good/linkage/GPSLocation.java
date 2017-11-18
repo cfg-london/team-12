@@ -30,17 +30,16 @@ public class GPSLocation extends Service implements LocationListener {
     // flag for GPS status
     boolean canGetLocation = false;
 
-    Location location; // location
-    double latitude; // latitude
-    double longitude; // longitude
+    Location location;
+    double latitude;
+    double longitude;
 
     // The minimum distance to change Updates in meters
-    private static final long MIN_DISTANCE_CHANGE_FOR_UPDATES = 10; // 10 meters
+    private static final long MIN_DISTANCE_CHANGE_FOR_UPDATES = 10;
 
     // The minimum time between updates in milliseconds
-    private static final long MIN_TIME_BW_UPDATES = 1000 * 60; // 1 minute
+    private static final long MIN_TIME_BW_UPDATES = 1000 * 60;
 
-    // Declaring a Location Manager
     protected LocationManager locationManager;
 
     public GPSLocation(Context context) {
@@ -64,7 +63,8 @@ public class GPSLocation extends Service implements LocationListener {
 
             if (!isGPSEnabled && !isNetworkEnabled) {
                 // no network provider is enabled
-            } else {
+            }
+            else {
                 this.canGetLocation = true;
                 // First get location from Network Provider
                 if (isNetworkEnabled) {
