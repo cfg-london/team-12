@@ -1,146 +1,168 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:app="http://schemas.android.com/apk/res-auto"
-              android:orientation="vertical"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:layout_margin="15dp">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:orientation="vertical">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Name:"
             android:textColor="#000000"
-            android:textSize="@dimen/fontSize"/>
+            android:textSize="@dimen/fontSize" />
+
         <EditText
-            android:layout_width="0dp"
             android:id="@+id/profileInputName"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:inputType="textPersonName"
             android:background="@android:color/transparent"
-            android:textSize="@dimen/fontSize"
-            android:textAlignment="textEnd"/>
+            android:inputType="textPersonName"
+            android:textAlignment="textEnd"
+            android:textSize="@dimen/fontSize" />
     </LinearLayout>
+
     <View
-        android:layout_marginTop="@dimen/lineSplitMargin"
-        android:layout_marginBottom="@dimen/lineSplitMargin"
         android:layout_width="wrap_content"
         android:layout_height="1dp"
-        android:background="@color/colorSeparatorLine"/>
+        android:layout_marginBottom="@dimen/lineSplitMargin"
+        android:layout_marginTop="@dimen/lineSplitMargin"
+        android:background="@color/colorSeparatorLine" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Phone:"
             android:textColor="#000000"
-            android:textSize="@dimen/fontSize"/>
+            android:textSize="@dimen/fontSize" />
+
         <EditText
-            android:layout_width="0dp"
-            android:inputType="phone"
             android:id="@+id/profileInputPhone"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@android:color/transparent"
-            android:textSize="@dimen/fontSize"
-            android:textAlignment="textEnd"/>
+            android:inputType="phone"
+            android:textAlignment="textEnd"
+            android:textSize="@dimen/fontSize" />
     </LinearLayout>
+
     <View
-        android:layout_marginTop="@dimen/lineSplitMargin"
-        android:layout_marginBottom="@dimen/lineSplitMargin"
         android:layout_width="wrap_content"
         android:layout_height="1dp"
-        android:background="@color/colorSeparatorLine"/>
+        android:layout_marginBottom="@dimen/lineSplitMargin"
+        android:layout_marginTop="@dimen/lineSplitMargin"
+        android:background="@color/colorSeparatorLine" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Email:"
             android:textColor="#000000"
-            android:textSize="@dimen/fontSize"/>
+            android:textSize="@dimen/fontSize" />
+
         <EditText
-            android:layout_width="0dp"
             android:id="@+id/profileInputEmail"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:inputType="textEmailAddress"
-            android:textSize="@dimen/textSizeSmall"
-            android:textAlignment="textEnd"/>
+            android:textAlignment="textEnd"
+            android:textSize="@dimen/textSizeSmall" />
     </LinearLayout>
+
     <View
-        android:layout_marginTop="@dimen/lineSplitMargin"
-        android:layout_marginBottom="@dimen/lineSplitMargin"
         android:layout_width="wrap_content"
         android:layout_height="1dp"
-        android:background="@color/colorSeparatorLine"/>
+        android:layout_marginBottom="@dimen/lineSplitMargin"
+        android:layout_marginTop="@dimen/lineSplitMargin"
+        android:background="@color/colorSeparatorLine" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Address:"
             android:textColor="#000000"
-            android:textSize="@dimen/fontSize"/>
+            android:textSize="@dimen/fontSize" />
+
         <EditText
-            android:layout_width="0dp"
             android:id="@+id/profileInputAddress"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@android:color/transparent"
-            android:textSize="@dimen/textSizeSmall"
-            android:textAlignment="textEnd"/>
+            android:textAlignment="textEnd"
+            android:textSize="@dimen/textSizeSmall" />
     </LinearLayout>
+
     <View
-        android:layout_marginTop="@dimen/lineSplitMargin"
-        android:layout_marginBottom="@dimen/lineSplitMargin"
         android:layout_width="wrap_content"
         android:layout_height="1dp"
-        android:background="@color/colorSeparatorLine"/>
+        android:layout_marginBottom="@dimen/lineSplitMargin"
+        android:layout_marginTop="@dimen/lineSplitMargin"
+        android:background="@color/colorSeparatorLine" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Work:"
             android:textColor="#000000"
-            android:textSize="@dimen/fontSize"/>
+            android:textSize="@dimen/fontSize" />
+
         <EditText
-            android:layout_width="0dp"
             android:id="@+id/profileInputWorkAddress"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@android:color/transparent"
-            android:textSize="@dimen/textSizeSmall"
-            android:textAlignment="textEnd"/>
+            android:textAlignment="textEnd"
+            android:textSize="@dimen/textSizeSmall" />
     </LinearLayout>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
         android:text="Please provide as much information as possible"
-        android:textSize="@dimen/textSizeSmall"/>
+        android:textAlignment="center"
+        android:textSize="@dimen/textSizeSmall" />
+
     <View
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_weight="1" />
+
     <Button
         android:id="@+id/profileInputNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/fontSize"
+        android:layout_gravity="end"
         android:text="Next"
-        android:layout_gravity="end"/>
+        android:textSize="@dimen/fontSize" />
 </LinearLayout>

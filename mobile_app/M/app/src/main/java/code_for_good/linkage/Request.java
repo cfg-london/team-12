@@ -5,7 +5,7 @@ import android.os.Parcelable;
 
 import java.util.List;
 
-public class Request implements Parcelable{
+public class Request implements Parcelable {
 
     private boolean urgent; // Is the request urgent?
     private UserProfile referrer; // Who is sending the referral?

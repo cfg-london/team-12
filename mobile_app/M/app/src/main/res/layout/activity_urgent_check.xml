@@ -1,9 +1,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:app="http://schemas.android.com/apk/res-auto"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:layout_margin="15dp">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:orientation="vertical">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -15,28 +16,20 @@
             android:id="@+id/urgentCheckUrgent"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="10"
-            android:textSize="@dimen/fontSize"
             android:layout_margin="5dp"
-            android:background="@color/button"
-            android:text="Urgent" />
+            android:layout_weight="10"
+            android:background="@color/button_red"
+            android:text="Urgent"
+            android:textSize="@dimen/fontSize" />
 
         <Button
             android:id="@+id/urgentCheckNotUrgent"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="10"
-            android:textSize="@dimen/fontSize"
             android:layout_margin="5dp"
+            android:layout_weight="10"
             android:background="@color/button"
-            android:text="Non Urgent" />
-
-        <Button
-            android:id="@+id/urgentCheckVolunteer"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:textSize="@dimen/textSizeSmall"
-            android:layout_weight="3"
-            android:text="Volunteer" />
+            android:text="Non Urgent"
+            android:textSize="@dimen/fontSize" />
     </LinearLayout>
 </LinearLayout>

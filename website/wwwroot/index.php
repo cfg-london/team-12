@@ -76,18 +76,18 @@
   }
   ?><table align="center">
       <tr valign="top">
-        <td colSpan=2>
+        <td colSpan=1>
           <div id="piechart" style="width: 900px; height: 500px;"></div>
         </td>
-        <td colSpan=2>
+        <td colSpan=1>
           <div id="piechart1" style="width: 900px; height: 500px;"></div>
         </td>
       </tr>
       <tr>
-        <td colSpan=2>
+        <td colSpan=1>
           <div id="piechart2" style="width: 900px; height: 500px;"></div>
         </td>
-        <td colSpan=2>
+        <td colSpan=1>
           <div id="piechart3" style="width: 900px; height: 500px;"></div>
         </td>
       </tr>
