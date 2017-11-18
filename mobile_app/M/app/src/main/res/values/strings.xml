@@ -44,7 +44,7 @@
         <item>当地的慈善事业</item>
         <item>有偿护老者</item>
         <item>朋友，家人或邻居</item>
-        <item>一个需要帮助的人</item>
+        <item>需要帮助的人</item>
         <item>其他</item>
     </string-array>
 
@@ -124,4 +124,13 @@
     <string name="help_around_the_house">Help around the house</string>
     <string name="staying_in_their_home">Staying in their home</string>
     <string name="money_benefits"><![CDATA[Money & Benefits]]></string>
+
+    <string name="i_am_eng">I am a</string>
+    <string name="i_am_bng">Āmi ēkajana</string>
+    <string name="i_am_chi">我是一个</string>
+    <string name="i_am_fra">Je suis un</string>
+    <string name="i_am_esp">Soy un</string>
+    <string name="i_am_ita">Sono un</string>
+    <string name="i_am_som">Anigu waxaan ahay a</string>
+
 </resources>
