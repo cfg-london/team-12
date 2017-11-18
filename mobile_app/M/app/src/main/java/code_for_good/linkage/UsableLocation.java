@@ -46,80 +46,80 @@ public class UsableLocation extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.location);
-
-        mLatitudeLabel = getResources().getString(R.string.latitude_label);
-        mLongitudeLabel = getResources().getString(R.string.longitude_label);
-        mLatitudeText = (TextView) findViewById((R.id.latitude_text));
-        mLongitudeText = (TextView) findViewById((R.id.longitude_text));
-
-        mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
-    }
-
-    public void onStart() {
-        super.onStart();
-        getLastLocation();
-    }
-
-    private void getLastLocation() {
-        mFusedLocationClient.getLastLocation()
-                .addOnCompleteListener(this, new OnCompleteListener<Location>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Location> task) {
-                        if (task.isSuccessful() && task.getResult() != null) {
-                            mLastLocation = task.getResult();
-                            mLatitudeText.setText(String.format(Locale.ENGLISH, "%s: %f",
-                                    mLatitudeLabel,
-                                    mLastLocation.getLatitude()));
-                            mLongitudeText.setText(String.format(Locale.ENGLISH, "%s: %f",
-                                    mLongitudeLabel,
-                                    mLastLocation.getLongitude()));
-                        } else {
-                            Log.w(TAG, "getLastLocation:exception", task.getException());
-                        }
-                    }
-                });
-    }
 //
-//        try {
-//            if (ActivityCompat.checkSelfPermission(this, mPermission)
-//                    != MockPackageManager.PERMISSION_GRANTED) {
+//        mLatitudeLabel = getResources().getString(R.string.latitude_label);
+//        mLongitudeLabel = getResources().getString(R.string.longitude_label);
+//        mLatitudeText = (TextView) findViewById((R.id.latitude_text));
+//        mLongitudeText = (TextView) findViewById((R.id.longitude_text));
 //
-//                ActivityCompat.requestPermissions(this, new String[]{mPermission},
-//                        REQUEST_CODE_PERMISSION);
-//            }
-//        }
-//        catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//
-//        btnShowLocation = (Button) findViewById(R.id.button);
-//
-//        // show location button click event
-//        btnShowLocation.setOnClickListener(new View.OnClickListener() {
-//
-//            @Override
-//            public void onClick(View arg0) {
-//                // create class object
-//                gps = new GPSLocation(UsableLocation.this);
-//
-//                // check if GPS enabled
-//                if(gps.canGetLocation()) {
-//
-//                    double latitude = gps.getLatitude();
-//                    double longitude = gps.getLongitude();
-//
-//                    // \n is for new line
-//                    Toast.makeText(getApplicationContext(), "Your Location is - \nLat: "
-//                            + latitude + "\nLong: " + longitude, Toast.LENGTH_LONG).show();
-//                }
-//                else {
-//                    // can't get location
-//                    // GPS or Network is not enabled
-//                    gps.showSettingsAlert();
-//                }
-//
-//            }
-//        });
+//        mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
 //    }
+//
+//    public void onStart() {
+//        super.onStart();
+//        getLastLocation();
+//    }
+//
+//    private void getLastLocation() {
+//        mFusedLocationClient.getLastLocation()
+//                .addOnCompleteListener(this, new OnCompleteListener<Location>() {
+//                    @Override
+//                    public void onComplete(@NonNull Task<Location> task) {
+//                        if (task.isSuccessful() && task.getResult() != null) {
+//                            mLastLocation = task.getResult();
+//                            mLatitudeText.setText(String.format(Locale.ENGLISH, "%s: %f",
+//                                    mLatitudeLabel,
+//                                    mLastLocation.getLatitude()));
+//                            mLongitudeText.setText(String.format(Locale.ENGLISH, "%s: %f",
+//                                    mLongitudeLabel,
+//                                    mLastLocation.getLongitude()));
+//                        } else {
+//                            Log.w(TAG, "getLastLocation:exception", task.getException());
+//                        }
+//                    }
+//                });
+//    }
+
+        try {
+            if (ActivityCompat.checkSelfPermission(this, mPermission)
+                    != MockPackageManager.PERMISSION_GRANTED) {
+
+                ActivityCompat.requestPermissions(this, new String[]{mPermission},
+                        REQUEST_CODE_PERMISSION);
+            }
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        btnShowLocation = (Button) findViewById(R.id.button);
+
+        // show location button click event
+        btnShowLocation.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+                // create class object
+                gps = new GPSLocation(UsableLocation.this);
+
+                // check if GPS enabled
+                if(gps.canGetLocation()) {
+
+                    double latitude = gps.getLatitude();
+                    double longitude = gps.getLongitude();
+
+                    // \n is for new line
+                    Toast.makeText(getApplicationContext(), "Your Location is - \nLat: "
+                            + latitude + "\nLong: " + longitude, Toast.LENGTH_LONG).show();
+                }
+                else {
+                    // can't get location
+                    // GPS or Network is not enabled
+                    gps.showSettingsAlert();
+                }
+
+            }
+        });
+    }
 }
 
