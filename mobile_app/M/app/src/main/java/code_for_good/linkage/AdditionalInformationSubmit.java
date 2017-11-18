@@ -46,7 +46,8 @@ public class AdditionalInformationSubmit extends AppCompatActivity {
             public void onClick(View view) {
                 if(consent.isChecked()){
                     new DatabaseConnector().execute(request);
-                } else {
+                }
+                else {
                     remindAccept();
                 }
             }

@@ -27,9 +27,7 @@ public class RefereeDetails extends AppCompatActivity {
     private EditText address;
     private LinearLayout languages;
     private Button submit;
-
     private Language lang;
-
     private RequestBuilder rb;
 
     @Override
