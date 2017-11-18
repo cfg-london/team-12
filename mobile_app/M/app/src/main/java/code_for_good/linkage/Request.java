@@ -3,6 +3,10 @@ package code_for_good.linkage;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLConnection;
 import java.util.List;
 
 public class Request implements Parcelable {
@@ -19,7 +23,17 @@ public class Request implements Parcelable {
         this.info = info;
     }
 
-    public void send() {
+    public void send() throws IOException {
+        String urlString = "http://34.241.158.221/send_mail.php";
+        urlString += "?urgent=" + (urgent ? "true" : "false");
+        urlString += "?referrer=" + referrer.toString();
+        urlString += "?referree=" + info.toString() + "\n Due to the following issues: ";
+        for (String issue : issues) {
+            urlString += issue + " ";
+        }
+        urlString.replace(" ", "%20")
+        URL url = new URL(urlString);
+        URLConnection connection = url.openConnection();
         // Stub. Send email to specified address.
     }
 
