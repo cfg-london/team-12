@@ -24,7 +24,41 @@ public class UrgentCheck extends AppCompatActivity {
 
         urgent = (Button) findViewById(R.id.urgentCheckUrgent);
         notUrgent = (Button) findViewById(R.id.urgentCheckNotUrgent);
-        volunteer = (Button) findViewById(R.id.urgentCheckVolunteer);
+
+        switch (lang) {
+            case ENG:
+                urgent.setText(getString(R.string.urgent_eng));
+                notUrgent.setText(getString(R.string.nonurgent_eng));
+                break;
+            case BNG:
+                urgent.setText(getString(R.string.urgent_bng));
+                notUrgent.setText(getString(R.string.nonurgent_bng));
+                break;
+            case CHI:
+                urgent.setText(getString(R.string.urgent_chi));
+                notUrgent.setText(getString(R.string.nonurgent_chi));
+                break;
+            case FRA:
+                urgent.setText(getString(R.string.urgent_fra));
+                notUrgent.setText(getString(R.string.nonurgent_fra));
+                break;
+            case ESP:
+                urgent.setText(getString(R.string.urgent_esp));
+                notUrgent.setText(getString(R.string.nonurgent_esp));
+                break;
+            case ITA:
+                urgent.setText(getString(R.string.urgent_ita));
+                notUrgent.setText(getString(R.string.nonurgent_ita));
+                break;
+            case SOM:
+                urgent.setText(getString(R.string.urgent_som));
+                notUrgent.setText(getString(R.string.nonurgent_som));
+                break;
+            default:
+                urgent.setText(getString(R.string.urgent_eng));
+                notUrgent.setText(getString(R.string.nonurgent_eng));
+                break;
+        }
 
         urgent.setOnClickListener(new View.OnClickListener() {
             @Override
