@@ -179,7 +179,7 @@ public class LanguagesActivity extends AppCompatActivity {
         mHideHandler.postDelayed(mHideRunnable, delayMillis);
     }
 
-    private void changeLanguage(View view){
+    public void changeLanguage(View view){
         Log.v("Enter onclick", "onclick");
         Intent intent = new Intent(this, UrgentCheck.class);
         Log.v("getting str bef", "bef get str");
