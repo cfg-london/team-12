@@ -58,6 +58,13 @@ class UserProfile implements Parcelable {
     }
 
     @Override
+    public String toString() {
+        return "Name: " + name + "\nType: " + type + "\nWorkplace: " + workplace +
+                "\nPhone number: " + phone + "\nEmail address: " + email + "\nAddress: " +
+                address + "\n";
+    }
+
+    @Override
     public int describeContents() {
         return 0;
     }
