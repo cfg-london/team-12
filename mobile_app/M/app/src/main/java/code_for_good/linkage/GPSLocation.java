@@ -120,7 +120,8 @@ public class GPSLocation extends Service implements LocationListener {
      * Calling this function will stop using GPS in your app
      * */
 
-    public void stopUsingGPS(){
+    public void stopUsingGPS() {
+        
         if(locationManager != null){
             locationManager.removeUpdates(GPSLocation.this);
         }
@@ -130,12 +131,12 @@ public class GPSLocation extends Service implements LocationListener {
      * Function to get latitude
      * */
 
-    public double getLatitude(){
+    public double getLatitude() {
+
         if(location != null){
             latitude = location.getLatitude();
         }
 
-        // return latitude
         return latitude;
     }
 
