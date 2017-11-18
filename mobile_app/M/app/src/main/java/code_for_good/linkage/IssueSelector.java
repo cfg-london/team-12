@@ -34,7 +34,7 @@ public class IssueSelector extends AppCompatActivity {
 
         buttonIsolation = (Button) findViewById(R.id.buttonIsolation);
         buttonSafetyAtHome = (Button) findViewById(R.id.buttonSafetyAtHome);
-        buttonLegal = (Button) findViewById(R.id.buttonSafetyAtHome);
+        buttonLegal = (Button) findViewById(R.id.buttonLegal);
         buttonCrisis = (Button) findViewById(R.id.buttonCrisis);
         buttonMedical = (Button) findViewById(R.id.buttonMedical);
         buttonTransport = (Button) findViewById(R.id.buttonTransport);
