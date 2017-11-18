@@ -18,7 +18,7 @@
             android:layout_weight="10"
             android:textSize="@dimen/fontSize"
             android:layout_margin="5dp"
-            android:background="@color/button"
+            android:background="@color/button_red"
             android:text="Urgent" />
 
         <Button
