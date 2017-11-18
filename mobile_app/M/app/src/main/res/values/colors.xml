@@ -8,4 +8,5 @@
     <color name="unchecked_button">@color/button</color>
     <color name="checked_button">#A1D490</color>
     <color name="button">#90C3D4</color>
+    <color name="button_red">#FF8080</color>
 </resources>
