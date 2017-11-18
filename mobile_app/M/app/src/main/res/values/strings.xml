@@ -16,6 +16,11 @@
         <item>Other</item>
     </string-array>
 
+    <string-array name="genderOptions">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
     <string-array name="bngReferrerOptions">
         <item>Sādhāraṇa anuśīlanakārī</item>
         <item>Puliśa</item>
