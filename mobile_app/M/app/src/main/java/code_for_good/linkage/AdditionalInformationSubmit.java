@@ -41,7 +41,12 @@ public class AdditionalInformationSubmit extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(consent.isChecked()){
-                    new DatabaseConnector().execute();
+                    try {
+                        request.send();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                    // new DatabaseConnector().execute();
                 } else {
                     remindAccept();
                 }
@@ -59,6 +64,11 @@ public class AdditionalInformationSubmit extends AppCompatActivity {
         protected Void doInBackground(Request... requests) {
             URL url = null;
             try {
+                try {
+                    requests[0].send();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
                 Class.forName("com.mysql.jdbc.Driver").newInstance();
                 Connection con = DriverManager.getConnection("jbdc:mysql://34.241.158.221:3306/frequencies", "root", "Pa55w0rd");
             } catch (IllegalAccessException | InstantiationException | SQLException | ClassNotFoundException e) {
