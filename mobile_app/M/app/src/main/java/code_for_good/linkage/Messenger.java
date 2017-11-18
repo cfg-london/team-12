@@ -22,6 +22,7 @@ public class Messenger extends Activity{
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         String to = "cfg-team12@mail.com";
         String from = "anon.mystery@mail.ru";
@@ -36,9 +37,8 @@ public class Messenger extends Activity{
             message.setFrom(new InternetAddress(from));
             message.addRecipient(Message.RecipientType.TO,new InternetAddress(to));
             message.setSubject("Ping");
-            message.setText("Hello, this is example of sending email  ");
+            message.setText("Testing");
 
-            // Send message
             Transport.send(message);
             System.out.println("message sent successfully....");
 
