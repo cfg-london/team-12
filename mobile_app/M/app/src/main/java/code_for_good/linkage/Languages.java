@@ -1,6 +1,6 @@
 package code_for_good.linkage;
 
-public enum Langauges {
+public enum Languages {
     ENG,
     BNG,
     CHI,
