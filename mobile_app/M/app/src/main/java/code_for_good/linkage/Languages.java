@@ -8,6 +8,4 @@ public enum Languages {
     ITA,
     ESP,
     SOM,
-    RUS,
-    DEU
 }
