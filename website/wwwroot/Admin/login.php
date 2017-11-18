@@ -14,7 +14,7 @@ require '../header.html';
 echo $_SESSION['error'];
 $_SESSION['error'] = "";
 ?>
-<form id="login" name="login" method="POST" action="verify_login.php">
+<form id="login" name="login" method="POST" action="admin_page.php">
     Username: <input type="text" name="username" id="username" />
     Password: <input type="password" name="pass" id="pass" />
     <input type="submit" name="submit" id="submit" value="Login" />
