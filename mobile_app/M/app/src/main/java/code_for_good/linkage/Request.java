@@ -2,6 +2,7 @@ package code_for_good.linkage;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+import android.util.Log;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -33,8 +34,10 @@ public class Request implements Parcelable {
             urlString += issue + " ";
         }
         urlString.replace(" ", "%20");
+        Log.v("tag", urlString);
         URL url = new URL(urlString);
         URLConnection connection = url.openConnection();
+        connection.connect();
         // Stub. Send email to specified address.
     }
 
