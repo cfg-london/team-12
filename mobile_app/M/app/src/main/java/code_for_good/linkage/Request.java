@@ -43,7 +43,7 @@ public class Request implements Parcelable {
 
     public Request(Parcel in) {
         urgent = in.readByte() != 0;
-        referrer = (UserProfile) in.readParcelable(UserProfile.class.getClassLoader());
+        referrer = in.readParcelable(UserProfile.class.getClassLoader());
         in.readStringList(issues);
         info = in.readParcelable(Referee.class.getClassLoader());
     }
@@ -71,4 +71,11 @@ public class Request implements Parcelable {
         }
     };
 
+    public String getJobType() {
+        return referrer.getType();
+    }
+
+    public List<String> getIssues() {
+        return issues;
+    }
 }

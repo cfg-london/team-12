@@ -83,7 +83,7 @@ public class IssueSelector extends AppCompatActivity {
         buttonIsolation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                requestBuilder.toggleIssue("Isolation");
+                requestBuilder.toggleIssue("Social Isolation");
             }
         });
 
@@ -104,7 +104,7 @@ public class IssueSelector extends AppCompatActivity {
         buttonCrisis.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                requestBuilder.toggleIssue("Crisis / Mental Issues");
+                requestBuilder.toggleIssue("Crisis");
             }
         });
 
