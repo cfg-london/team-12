@@ -16,6 +16,11 @@
         <item>Other</item>
     </string-array>
 
+    <string-array name="genderOptions">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
     <string-array name="bngReferrerOptions">
         <item>Sādhāraṇa anuśīlanakārī</item>
         <item>Puliśa</item>
@@ -124,15 +129,15 @@
     <string name="legal_help">Legal Help</string>
     <string name="legal_help_on">Legal Help \n(SELECTED)</string>
     <string name="legal_help_off">Legal Help \n(NOT SELECTED)</string>
-    <string name="crisis">Mental Health / Crisis</string>
-    <string name="crisis_on">Mental Health / Crisis \n(SELECTED)</string>
-    <string name="crisis_off">Mental Health / Crisis \n(NOT SELECTED)</string>
+    <string name="crisis">Crisis</string>
+    <string name="crisis_on">Crisis \n(SELECTED)</string>
+    <string name="crisis_off">Crisis \n(NOT SELECTED)</string>
     <string name="transport_mobility"><![CDATA[Transport & Mobility]]></string>
     <string name="transport_mobility_on"><![CDATA[Transport & Mobility \n(SELECTED)]]></string>
     <string name="transport_mobility_off"><![CDATA[Transport & Mobility \n(NOT SELECTED)]]></string>
-    <string name="medical">Later life planning</string>
-    <string name="medical_on">Medical issue \n(SELECTED)</string>
-    <string name="medical_off">Medical issue \n(NOT SELECTED)</string>
+    <string name="later_life_planning">Later life planning</string>
+    <string name="later_life_planning_on">Later life planning \n(SELECTED)</string>
+    <string name="later_life_planning_off">Later life planning \n(NOT SELECTED)</string>
     <string name="help_around_the_house">Help around the house</string>
     <string name="help_around_the_house_on">Help around the house \n(SELECTED)</string>
     <string name="help_around_the_house_off">Help around the house \n(NOT SELECTED)</string>
@@ -142,7 +147,7 @@
     <string name="money_benefits"><![CDATA[Money & Benefits]]></string>
     <string name="money_benefits_on"><![CDATA[Money & Benefits \n(SELECTED)]]></string>
     <string name="money_benefits_off"><![CDATA[Money & Benefits \n(NOT SELECTED)]]></string>
-    <string name="additional_information">Other / Additional Information</string>
+    <string name="additional_information">Additional Information</string>
     <string name="confirm">Confirm</string>
     <string name="i_am_eng">I am a</string>
     <string name="i_am_bng">Āmi ēkajana</string>
@@ -214,5 +219,40 @@
     <string name="more_info_esp">Por favor, proporcione tanta información como sea posible</string>
     <string name="more_info_ita">Si prega di fornire quante più informazioni possibili</string>
     <string name="more_info_som">Fadlan sii sida ugu badan ee suurtogalka ah</string>
+
+    <string name="next_eng">Next</string>
+    <string name="next_bng">Parabartī</string>
+    <string name="next_chi">下一个</string>
+    <string name="next_fra">Prochain</string>
+    <string name="next_esp">Siguiente</string>
+    <string name="next_ita">Il prossimo</string>
+    <string name="next_som">Xigta</string>
+    
+    <string name="volunteer_eng">Volunteer</string>
+    <string name="volunteer_bng">Sbēcchāsēbaka</string>
+    <string name="volunteer_chi">志愿者</string>
+    <string name="volunteer_fra">Bénévole</string>
+    <string name="volunteer_esp">Voluntario</string>
+    <string name="volunteer_ita">Volontario</string>
+    <string name="volunteer_som">Tabaruciin</string>
+
+    <string name="urgent_eng">Urgent</string>
+    <string name="urgent_bng">Jarurī</string>
+    <string name="urgent_chi">紧急</string>
+    <string name="urgent_fra">Urgent</string>
+    <string name="urgent_esp">Urgente</string>
+    <string name="urgent_ita">Urgente</string>
+    <string name="urgent_som">Degdeg ah</string>
+
+    <string name="nonurgent_eng">Non-Urgent</string>
+    <string name="nonurgent_bng">A jarurī</string>
+    <string name="nonurgent_chi">非紧急</string>
+    <string name="nonurgent_fra">Non urgent</string>
+    <string name="nonurgent_esp">No urgente</string>
+    <string name="nonurgent_ita">Non urgenti</string>
+    <string name="nonurgent_som">Xaalad degdeg ah</string>
+
+    <string name="medical_off">Medical Issue (Not Selected)</string>
+    <string name="medical_on">Medical Issue (Selected)</string>
 
 </resources>

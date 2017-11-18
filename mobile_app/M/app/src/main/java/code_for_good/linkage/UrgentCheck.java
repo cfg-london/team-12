@@ -30,6 +30,7 @@ public class UrgentCheck extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 rb.setUrgency(true);
+                rb.setReferrer(userProfile);
                 toRefDetails(rb, userProfile);
             }
         });
@@ -38,6 +39,7 @@ public class UrgentCheck extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 rb.setUrgency(false);
+                rb.setReferrer(userProfile);
                 toRefDetails(rb, userProfile);
             }
         });
@@ -47,7 +49,6 @@ public class UrgentCheck extends AppCompatActivity {
     public void toRefDetails(RequestBuilder rb, UserProfile userProfile){
         Intent intent = new Intent(this, RefereeDetails.class);
         intent.putExtra("request", rb);
-        intent.putExtra("profile", userProfile);
         startActivity(intent);
     }
 }
