@@ -252,4 +252,7 @@
     <string name="nonurgent_ita">Non urgenti</string>
     <string name="nonurgent_som">Xaalad degdeg ah</string>
 
+    <string name="medical_off">Medical Issue (Not Selected)</string>
+    <string name="medical_on">Medical Issue (Selected)</string>
+
 </resources>
