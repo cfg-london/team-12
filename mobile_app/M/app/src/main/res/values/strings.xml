@@ -76,18 +76,18 @@
     </string-array>
 
     <string-array name="itaReferrerOptions">
-        <item>GP</item>
-        <item>Police</item>
-        <item>Fire and Rescue</item>
-        <item>Paramedic</item>
-        <item>Pharmacist</item>
-        <item>Meals on Wheels</item>
-        <item>Linkage</item>
-        <item>Social Worker</item>
-        <item>Local Charity</item>
-        <item>Paid Carer</item>
-        <item>Friend, Family or Neighbour</item>
-        <item>Other</item>
+        <item>Medico di famiglia</item>
+        <item>Polizia</item>
+        <item>Fuoco e salvataggio</item>
+        <item>Paramedico</item>
+        <item>Farmacista</item>
+        <item>Pasti su ruote</item>
+        <item>Collegamento</item>
+        <item>Assistente sociale</item>
+        <item>Carità locale</item>
+        <item>Carer a pagamento</item>
+        <item>Amico, famiglia o vicino</item>
+        <item>Altro</item>
     </string-array>
 
     <string-array name="somReferrerOptions">
