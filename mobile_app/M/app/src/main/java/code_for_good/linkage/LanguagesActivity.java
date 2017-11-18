@@ -12,6 +12,14 @@ import android.view.MenuItem;
 import android.support.v4.app.NavUtils;
 import android.widget.Button;
 
+
+/*
+Design choice not to use Locales (due to possible problems),
+or a translation API due to short time frame, and context of words
+Possibly could use google translate API which is not free
+Need to implement text to speech using APIs
+ */
+
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
  * status bar and navigation/system bar) with user interaction.
