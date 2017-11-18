@@ -11,14 +11,14 @@ public class UrgentCheck extends AppCompatActivity {
     private Button urgent;
     private Button notUrgent;
     private Button volunteer;
-    private Languages lang;
+    private Language lang;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_urgent_check);
 
-        this.lang = (Languages) getIntent().getSerializableExtra("Language");
+        this.lang = (Language) getIntent().getSerializableExtra("Language");
         final RequestBuilder rb = new RequestBuilder();
         final UserProfile userProfile = getIntent().getParcelableExtra("profile");
 
