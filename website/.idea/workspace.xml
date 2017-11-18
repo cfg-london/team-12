@@ -15,13 +15,37 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wwwroot/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="891">
-              <caret line="42" column="78" lean-forward="false" selection-start-line="42" selection-start-column="78" selection-end-line="42" selection-end-column="78" />
+            <state relative-caret-position="825">
+              <caret line="65" column="81" lean-forward="false" selection-start-line="65" selection-start-column="81" selection-end-line="65" selection-end-column="81" />
               <folding>
-                <marker date="1510983515244" expanded="true" signature="1180:1198" ph="SELECT * FRO... jobs" />
-                <marker date="1510983515244" expanded="true" signature="3206:3318" ph="..." />
-                <marker date="1510983515244" expanded="true" signature="3340:3416" ph="..." />
-                <marker date="1510983515244" expanded="true" signature="3439:3463" ph="..." />
+                <marker date="1510986215383" expanded="true" signature="1180:1198" ph="SELECT * FRO... jobs" />
+                <marker date="1510986215383" expanded="true" signature="3499:3611" ph="..." />
+                <marker date="1510986215383" expanded="true" signature="3633:3709" ph="..." />
+                <marker date="1510986215383" expanded="true" signature="3732:3756" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wwwroot/Admin/register.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1254">
+              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+              <folding>
+                <marker date="1510985796255" expanded="true" signature="537:562" ph="SELECT job_t... jobs" />
+                <marker date="1510985796255" expanded="true" signature="788:806" ph="SELECT * FRO... jobs" />
+                <marker date="1510985796255" expanded="true" signature="1502:1517" ph="UPDATE jobs " />
+                <marker date="1510985796255" expanded="true" signature="1502:1518" ph="UPDATE jobs " />
+                <marker date="1510985796255" expanded="true" signature="1502:1541" ph="UPDATE jobs " />
+                <marker date="1510985796255" expanded="true" signature="1502:1542" ph="UPDATE jobs " />
+                <marker date="1510985796255" expanded="true" signature="1502:1543" ph="UPDATE jobs " />
+                <marker date="1510985796255" expanded="true" signature="1502:1567" ph="UPDATE jobs " />
+                <marker date="1510985796255" expanded="true" signature="1502:1584" ph="UPDATE jobs " />
+                <marker date="1510985796255" expanded="true" signature="1502:1585" ph="UPDATE jobs " />
+                <marker date="1510985796255" expanded="true" signature="1502:1587" ph="UPDATE jobs " />
+                <marker date="1510985796255" expanded="true" signature="1502:1609" ph="UPDATE jobs " />
+                <marker date="1510985796255" expanded="true" signature="1502:1610" ph="UPDATE jobs " />
               </folding>
             </state>
           </provider>
@@ -95,6 +119,7 @@
         <option value="$PROJECT_DIR$/wwwroot/Admin/login.php" />
         <option value="$PROJECT_DIR$/login.ini.php" />
         <option value="$PROJECT_DIR$/wwwroot/Admin/admin_page.php" />
+        <option value="$PROJECT_DIR$/wwwroot/Admin/register.php" />
         <option value="$PROJECT_DIR$/wwwroot/index.php" />
       </list>
     </option>
@@ -335,7 +360,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28138000" />
+    <option name="totallyTimeSpent" value="30830000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="3026" height="1946" extended-state="6" />
@@ -374,7 +399,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wwwroot/Admin/update.php" />
     <entry file="file://$PROJECT_DIR$/wwwroot/Admin/verify_login.php" />
     <entry file="file://$PROJECT_DIR$/wwwroot/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
@@ -397,10 +421,10 @@
         <state relative-caret-position="66">
           <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
-            <marker date="1510983515244" expanded="true" signature="1180:1198" ph="SELECT * FRO... jobs" />
-            <marker date="1510983515244" expanded="true" signature="3206:3318" ph="..." />
-            <marker date="1510983515244" expanded="true" signature="3340:3416" ph="..." />
-            <marker date="1510983515244" expanded="true" signature="3439:3463" ph="..." />
+            <marker date="1510986215383" expanded="true" signature="1180:1198" ph="SELECT * FRO... jobs" />
+            <marker date="1510986215383" expanded="true" signature="3499:3611" ph="..." />
+            <marker date="1510986215383" expanded="true" signature="3633:3709" ph="..." />
+            <marker date="1510986215383" expanded="true" signature="3732:3756" ph="..." />
           </folding>
         </state>
       </provider>
@@ -447,10 +471,10 @@
         <state relative-caret-position="33">
           <caret line="1" column="9" lean-forward="true" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
           <folding>
-            <marker date="1510983515244" expanded="true" signature="1180:1198" ph="SELECT * FRO... jobs" />
-            <marker date="1510983515244" expanded="true" signature="3206:3318" ph="..." />
-            <marker date="1510983515244" expanded="true" signature="3340:3416" ph="..." />
-            <marker date="1510983515244" expanded="true" signature="3439:3463" ph="..." />
+            <marker date="1510986215383" expanded="true" signature="1180:1198" ph="SELECT * FRO... jobs" />
+            <marker date="1510986215383" expanded="true" signature="3499:3611" ph="..." />
+            <marker date="1510986215383" expanded="true" signature="3633:3709" ph="..." />
+            <marker date="1510986215383" expanded="true" signature="3732:3756" ph="..." />
           </folding>
         </state>
       </provider>
@@ -543,10 +567,10 @@
         <state relative-caret-position="990">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="32" selection-end-column="4" />
           <folding>
-            <marker date="1510983515244" expanded="true" signature="1180:1198" ph="SELECT * FRO... jobs" />
-            <marker date="1510983515244" expanded="true" signature="3206:3318" ph="..." />
-            <marker date="1510983515244" expanded="true" signature="3340:3416" ph="..." />
-            <marker date="1510983515244" expanded="true" signature="3439:3463" ph="..." />
+            <marker date="1510986215383" expanded="true" signature="1180:1198" ph="SELECT * FRO... jobs" />
+            <marker date="1510986215383" expanded="true" signature="3499:3611" ph="..." />
+            <marker date="1510986215383" expanded="true" signature="3633:3709" ph="..." />
+            <marker date="1510986215383" expanded="true" signature="3732:3756" ph="..." />
           </folding>
         </state>
       </provider>
@@ -572,10 +596,10 @@
         <state relative-caret-position="33">
           <caret line="1" column="9" lean-forward="true" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
           <folding>
-            <marker date="1510983515244" expanded="true" signature="1180:1198" ph="SELECT * FRO... jobs" />
-            <marker date="1510983515244" expanded="true" signature="3206:3318" ph="..." />
-            <marker date="1510983515244" expanded="true" signature="3340:3416" ph="..." />
-            <marker date="1510983515244" expanded="true" signature="3439:3463" ph="..." />
+            <marker date="1510986215383" expanded="true" signature="1180:1198" ph="SELECT * FRO... jobs" />
+            <marker date="1510986215383" expanded="true" signature="3499:3611" ph="..." />
+            <marker date="1510986215383" expanded="true" signature="3633:3709" ph="..." />
+            <marker date="1510986215383" expanded="true" signature="3732:3756" ph="..." />
           </folding>
         </state>
       </provider>
@@ -663,10 +687,10 @@
         <state relative-caret-position="528">
           <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
           <folding>
-            <marker date="1510983515244" expanded="true" signature="1180:1198" ph="SELECT * FRO... jobs" />
-            <marker date="1510983515244" expanded="true" signature="3206:3318" ph="..." />
-            <marker date="1510983515244" expanded="true" signature="3340:3416" ph="..." />
-            <marker date="1510983515244" expanded="true" signature="3439:3463" ph="..." />
+            <marker date="1510986215383" expanded="true" signature="1180:1198" ph="SELECT * FRO... jobs" />
+            <marker date="1510986215383" expanded="true" signature="3499:3611" ph="..." />
+            <marker date="1510986215383" expanded="true" signature="3633:3709" ph="..." />
+            <marker date="1510986215383" expanded="true" signature="3732:3756" ph="..." />
           </folding>
         </state>
       </provider>
@@ -684,10 +708,10 @@
         <state relative-caret-position="33">
           <caret line="1" column="9" lean-forward="true" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
           <folding>
-            <marker date="1510983515244" expanded="true" signature="1180:1198" ph="SELECT * FRO... jobs" />
-            <marker date="1510983515244" expanded="true" signature="3206:3318" ph="..." />
-            <marker date="1510983515244" expanded="true" signature="3340:3416" ph="..." />
-            <marker date="1510983515244" expanded="true" signature="3439:3463" ph="..." />
+            <marker date="1510986215383" expanded="true" signature="1180:1198" ph="SELECT * FRO... jobs" />
+            <marker date="1510986215383" expanded="true" signature="3499:3611" ph="..." />
+            <marker date="1510986215383" expanded="true" signature="3633:3709" ph="..." />
+            <marker date="1510986215383" expanded="true" signature="3732:3756" ph="..." />
           </folding>
         </state>
       </provider>
@@ -780,15 +804,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wwwroot/Admin/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1254">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <marker date="1510985796255" expanded="true" signature="537:562" ph="SELECT job_t... jobs" />
+            <marker date="1510985796255" expanded="true" signature="788:806" ph="SELECT * FRO... jobs" />
+            <marker date="1510985796255" expanded="true" signature="1502:1517" ph="UPDATE jobs " />
+            <marker date="1510985796255" expanded="true" signature="1502:1518" ph="UPDATE jobs " />
+            <marker date="1510985796255" expanded="true" signature="1502:1541" ph="UPDATE jobs " />
+            <marker date="1510985796255" expanded="true" signature="1502:1542" ph="UPDATE jobs " />
+            <marker date="1510985796255" expanded="true" signature="1502:1543" ph="UPDATE jobs " />
+            <marker date="1510985796255" expanded="true" signature="1502:1567" ph="UPDATE jobs " />
+            <marker date="1510985796255" expanded="true" signature="1502:1584" ph="UPDATE jobs " />
+            <marker date="1510985796255" expanded="true" signature="1502:1585" ph="UPDATE jobs " />
+            <marker date="1510985796255" expanded="true" signature="1502:1587" ph="UPDATE jobs " />
+            <marker date="1510985796255" expanded="true" signature="1502:1609" ph="UPDATE jobs " />
+            <marker date="1510985796255" expanded="true" signature="1502:1610" ph="UPDATE jobs " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wwwroot/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="891">
-          <caret line="42" column="78" lean-forward="false" selection-start-line="42" selection-start-column="78" selection-end-line="42" selection-end-column="78" />
+        <state relative-caret-position="825">
+          <caret line="65" column="81" lean-forward="false" selection-start-line="65" selection-start-column="81" selection-end-line="65" selection-end-column="81" />
           <folding>
-            <marker date="1510983515244" expanded="true" signature="1180:1198" ph="SELECT * FRO... jobs" />
-            <marker date="1510983515244" expanded="true" signature="3206:3318" ph="..." />
-            <marker date="1510983515244" expanded="true" signature="3340:3416" ph="..." />
-            <marker date="1510983515244" expanded="true" signature="3439:3463" ph="..." />
+            <marker date="1510986215383" expanded="true" signature="1180:1198" ph="SELECT * FRO... jobs" />
+            <marker date="1510986215383" expanded="true" signature="3499:3611" ph="..." />
+            <marker date="1510986215383" expanded="true" signature="3633:3709" ph="..." />
+            <marker date="1510986215383" expanded="true" signature="3732:3756" ph="..." />
           </folding>
         </state>
       </provider>
