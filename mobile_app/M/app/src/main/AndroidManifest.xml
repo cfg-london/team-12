@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="code_for_good.linkage">
+          package="code_for_good.linkage">
 
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
 
     <application
         android:allowBackup="true"
@@ -13,20 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".ProfileApp"
-            android:parentActivityName=".LangAndRegisterActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="code_for_good.linkage.LangAndRegisterActivity" />
-        </activity>
-
-        <activity android:name=".UrgentCheck"
-            android:parentActivityName=".ProfileApp">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="code_for_good.linkage.ProfileApp" />
-
+        <activity android:name=".ProfileApp">
         </activity>
         <activity
             android:name=".LanguagesActivity"
@@ -37,6 +24,9 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="code_for_good.linkage.LangAndRegisterActivity" />
+        </activity>
+        <activity android:name=".UrgentCheck"/>
+        <activity android:name=".RefereeDetails">
         </activity>
         <activity android:name=".IssueSelector" />
         <activity android:name=".Messenger" />
