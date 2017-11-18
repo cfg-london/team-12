@@ -3,6 +3,7 @@ package code_for_good.linkage;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Referee implements Parcelable {
@@ -12,7 +13,7 @@ public class Referee implements Parcelable {
     private String gender;
     private String phoneNumber;
     private Integer age;
-    private List<String> languages;
+    private List<String> languages = new ArrayList<>();
 
     public Referee(String name, String address, String gender,
                    String phoneNumber, Integer age, List<String> languages) {
@@ -64,11 +65,7 @@ public class Referee implements Parcelable {
         address = in.readString();
         gender = in.readString();
         phoneNumber = in.readString();
-        try{
-            in.readStringList(languages);
-        } catch (NullPointerException e){
-            languages = in.createStringArrayList();
-        }
+        in.readStringList(languages);
     }
 
     @Override

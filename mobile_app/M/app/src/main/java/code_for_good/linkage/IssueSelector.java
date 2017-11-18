@@ -19,6 +19,8 @@ public class IssueSelector extends AppCompatActivity {
     private Button buttonStayingInHome;
     private Button buttonMoney;
 
+    private Languages lang;
+
     private EditText additional;
     private Button confirm;
 
@@ -26,6 +28,8 @@ public class IssueSelector extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_issue_selector);
+
+        lang = (Languages) getIntent().getSerializableExtra("Language");
 
         buttonIsolation = (Button) findViewById(R.id.buttonIsolation);
         buttonSafetyAtHome = (Button) findViewById(R.id.buttonSafetyAtHome);
@@ -39,6 +43,40 @@ public class IssueSelector extends AppCompatActivity {
 
         additional = (EditText) findViewById(R.id.additional);
         confirm = (Button) findViewById(R.id.confirm);
+
+        switch (lang) {
+            case ENG:
+                additional.setHint(getString(R.string.addInfo_eng));
+                confirm.setText(getString(R.string.cfm_eng));
+                break;
+            case BNG:
+                additional.setHint(getString(R.string.addInfo_bng));
+                confirm.setText(getString(R.string.cfm_bng));
+                break;
+            case CHI:
+                additional.setHint(getString(R.string.addInfo_chi));
+                confirm.setText(getString(R.string.cfm_chi));
+                break;
+            case FRA:
+                additional.setHint(getString(R.string.addInfo_fra));
+                confirm.setText(getString(R.string.cfm_fra));
+                break;
+            case ESP:
+                additional.setHint(getString(R.string.addInfo_esp));
+                confirm.setText(getString(R.string.cfm_esp));
+                break;
+            case ITA:
+                additional.setHint(getString(R.string.addInfo_ita));
+                confirm.setText(getString(R.string.cfm_ita));
+                break;
+            case SOM:
+                additional.setHint(getString(R.string.addInfo_som));
+                confirm.setText(getString(R.string.cfm_som));
+                break;
+            default:
+                additional.setHint(getString(R.string.addInfo_eng));
+                confirm.setText(getString(R.string.cfm_eng));
+        }
 
         final RequestBuilder requestBuilder = getIntent().getParcelableExtra("request");
 
