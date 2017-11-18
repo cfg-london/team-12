@@ -3,7 +3,6 @@ package code_for_good.linkage;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -20,7 +19,7 @@ public class IssueSelector extends AppCompatActivity {
     private Button buttonStayingInHome;
     private Button buttonMoney;
 
-    private Languages lang;
+    private Language lang;
 
     private EditText additional;
     private Button confirm;
@@ -30,7 +29,7 @@ public class IssueSelector extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_issue_selector);
 
-        lang = (Languages) getIntent().getSerializableExtra("Language");
+        lang = (Language) getIntent().getSerializableExtra("Language");
 
         buttonIsolation = (Button) findViewById(R.id.buttonIsolation);
         buttonSafetyAtHome = (Button) findViewById(R.id.buttonSafetyAtHome);

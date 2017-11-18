@@ -99,7 +99,7 @@ public class LanguagesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setTitle("Languages");
+        setTitle("Language");
         setContentView(R.layout.activity_languages);
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {

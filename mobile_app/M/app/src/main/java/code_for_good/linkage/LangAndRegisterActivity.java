@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 public class LangAndRegisterActivity extends AppCompatActivity {
 
-    private Languages lang;
+    private Language lang;
     private Spinner referrerDropdown;
     private String type;
 
@@ -26,96 +26,87 @@ public class LangAndRegisterActivity extends AppCompatActivity {
 
         TextView iama = (TextView) findViewById(R.id.i_am_a_view);
 
-        this.lang = Languages.ENG;
+        this.lang = Language.ENG;
 
         ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.engReferrerOptions, R.layout.custom_spinner);
 
         Button toReg = (Button) findViewById(R.id.toProfile);
         Button noReg = (Button) findViewById(R.id.noRegister);
-        Button volun = (Button) findViewById(R.id.urgentCheckVolunteer);
 
         if(getIntent().hasExtra("Language_Choice")){
             String languages = getIntent().getStringExtra("Language_Choice");
             switch (languages) {
                 case "English":
-                    lang = Languages.ENG;
+                    lang = Language.ENG;
                     imageButton.setImageResource(R.mipmap.gb);
                     iama.setText(getString(R.string.i_am_eng));
                     adapter = ArrayAdapter.createFromResource(this,
                             R.array.engReferrerOptions, R.layout.custom_spinner);
                     toReg.setText(getString(R.string.register_eng));
                     noReg.setText(getString(R.string.dont_register_eng));
-                    volun.setText(getString(R.string.volunteer_eng));
                     break;
                 case "বাঙালি":
-                    lang = Languages.BNG;
+                    lang = Language.BNG;
                     imageButton.setImageResource(R.mipmap.bd);
                     iama.setText(getString(R.string.i_am_bng));
                     adapter = ArrayAdapter.createFromResource(this,
                             R.array.bngReferrerOptions, R.layout.custom_spinner);
                     toReg.setText(getString(R.string.register_bng));
                     noReg.setText(getString(R.string.dont_register_bng));
-                    volun.setText(getString(R.string.volunteer_bng));
                     break;
                 case "中文":
-                    lang = Languages.CHI;
+                    lang = Language.CHI;
                     imageButton.setImageResource(R.mipmap.cn);
                     iama.setText(getString(R.string.i_am_chi));
                     adapter = ArrayAdapter.createFromResource(this,
                             R.array.chiReferrerOptions, R.layout.custom_spinner);
                     toReg.setText(getString(R.string.register_chi));
                     noReg.setText(getString(R.string.dont_register_chi));
-                    volun.setText(getString(R.string.volunteer_chi));
                     break;
                 case "Français":
-                    lang = Languages.FRA;
+                    lang = Language.FRA;
                     imageButton.setImageResource(R.mipmap.fr);
                     iama.setText(getString(R.string.i_am_fra));
                     adapter = ArrayAdapter.createFromResource(this,
                             R.array.fraReferrerOptions, R.layout.custom_spinner);
                     toReg.setText(getString(R.string.register_fra));
                     noReg.setText(getString(R.string.dont_register_fra));
-                    volun.setText(getString(R.string.volunteer_fra));
                     break;
                 case "Español":
-                    lang = Languages.ESP;
+                    lang = Language.ESP;
                     imageButton.setImageResource(R.mipmap.es);
                     iama.setText(getString(R.string.i_am_esp));
                     adapter = ArrayAdapter.createFromResource(this,
                             R.array.espReferrerOptions, R.layout.custom_spinner);
                     toReg.setText(getString(R.string.register_esp));
                     noReg.setText(getString(R.string.dont_register_esp));
-                    volun.setText(getString(R.string.volunteer_esp));
                     break;
                 case "Italiano":
                     imageButton.setImageResource(R.mipmap.it);
-                    lang = Languages.ITA;
+                    lang = Language.ITA;
                     iama.setText(getString(R.string.i_am_ita));
                     adapter = ArrayAdapter.createFromResource(this,
                             R.array.itaReferrerOptions, R.layout.custom_spinner);
                     toReg.setText(getString(R.string.register_ita));
                     noReg.setText(getString(R.string.dont_register_ita));
-                    volun.setText(getString(R.string.volunteer_ita));
                     break;
                 case "Somali":
-                    lang = Languages.SOM;
+                    lang = Language.SOM;
                     imageButton.setImageResource(R.mipmap.so);
                     iama.setText(getString(R.string.i_am_som));
                     adapter = ArrayAdapter.createFromResource(this,
                             R.array.somReferrerOptions, R.layout.custom_spinner);
                     toReg.setText(getString(R.string.register_som));
                     noReg.setText(getString(R.string.dont_register_som));
-                    volun.setText(getString(R.string.volunteer_som));
                     break;
                 default:
-                    lang = Languages.ENG;
+                    lang = Language.ENG;
                     imageButton.setImageResource(R.mipmap.gb);
                     iama.setText(getString(R.string.i_am_eng));
                     adapter = ArrayAdapter.createFromResource(this,
                             R.array.engReferrerOptions, R.layout.custom_spinner);
                     toReg.setText(getString(R.string.register_eng));
                     noReg.setText(getString(R.string.dont_register_eng));
-                    volun.setText(getString(R.string.volunteer_eng));
                     break;
             }
         }
@@ -153,7 +144,7 @@ public class LangAndRegisterActivity extends AppCompatActivity {
     public void toUrgent(View view) {
         Intent intent = new Intent(this, UrgentCheck.class);
         intent.putExtra("Language", lang);
-        intent.putExtra("type", type);
+        intent.putExtra("profile", new UserProfile(type, "", "", "", "", ""));
         startActivity(intent);
         this.finish();
     }
