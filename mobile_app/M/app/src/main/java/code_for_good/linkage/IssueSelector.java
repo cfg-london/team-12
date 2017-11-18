@@ -1,5 +1,6 @@
 package code_for_good.linkage;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -109,9 +110,15 @@ public class IssueSelector extends AppCompatActivity {
             public void onClick(View view) {
                 requestBuilder.addIssue(additional.getText().toString());
                 Request request = requestBuilder.build();
-                // TODO: send
+                toSubmit(request);
             }
         });
+    }
 
+    private void toSubmit(Request request){
+        Intent intent = new Intent(this, AdditionalInformationSubmit.class);
+        intent.putExtra("request", request);
+        startActivity(intent);
+        this.finish();
     }
 }
