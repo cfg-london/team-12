@@ -7,8 +7,8 @@
 
     <ImageButton
         android:id="@+id/changeLanguage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="44dp"
+        android:layout_height="50dp"
         android:onClick="changeLangActivity"
         app:srcCompat="@mipmap/gb"/>
     <LinearLayout
@@ -37,4 +37,3 @@
             android:text="Volunteer"/>
     </LinearLayout>
 </LinearLayout>
-
