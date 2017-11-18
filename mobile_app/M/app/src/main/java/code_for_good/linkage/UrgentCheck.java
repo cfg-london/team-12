@@ -1,7 +1,9 @@
 package code_for_good.linkage;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 public class UrgentCheck extends AppCompatActivity {
 
@@ -52,5 +54,10 @@ public class UrgentCheck extends AppCompatActivity {
 
     public void nonUrgent() {
 
+    }
+
+    public void changeLangActivity(View view){
+        Intent intent = new Intent(this, LanguagesActivity.class);
+        startActivity(intent);
     }
 }

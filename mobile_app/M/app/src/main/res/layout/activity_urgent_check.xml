@@ -55,4 +55,18 @@
         tools:layout_constraintLeft_creator="1"
         android:layout_marginBottom="42dp"
         app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageButton
+        android:id="@+id/changeLanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="changeLangActivity"
+        app:srcCompat="@mipmap/gb"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        android:layout_marginEnd="34dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="13dp" />
+
 </android.support.constraint.ConstraintLayout>
