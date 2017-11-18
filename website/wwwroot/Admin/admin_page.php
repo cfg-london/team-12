@@ -26,7 +26,7 @@ if ($updateDetails) {
     file_put_contents("../../login.ini.php", $result);
     $username = $_POST['newUsername'];
     $password = $_POST['newPass'];
-    $_SESSION['updated'] = "Password Updated <br>";
+    $_SESSION['updated'] = "<div class='row'><h1>Password Updated</h1></div>";
 }
 if ($sendMessage) {
     $message = $_POST['message'];
@@ -75,7 +75,7 @@ if ($sendMessage) {
 $serverLoginDetails = parse_ini_file("../../login.ini.php");
 if (!($username == $serverLoginDetails['username'] && password_verify($password, $serverLoginDetails['hashedPassword'])) && !$sendMessage) {
     //this is the error message which is outputted onto login page
-    $_SESSION['error'] = "<h1>Login details incorrect</h1>";
+    $_SESSION['error'] = "<div class='row'><h1>Login details incorrect</h1></div>";
     header("Location: login.php?err=true");
     exit;
 } else {
@@ -94,25 +94,27 @@ if (!($username == $serverLoginDetails['username'] && password_verify($password,
 require '../header.html';
 ?>
 <div class="container">
-    <div class="row float-right">
-        <?php echo $_SESSION['updated'];
-        $_SESSION['updated'] = ""; ?>
+    <?php echo $_SESSION['updated'];
+    $_SESSION['updated'] = ""; ?>
+    <div class="row">
         <div class="col">
             <form id="sendMessage" name="sendMessage" method="POST" action="admin_page.php">
-                <h4>Send a notification to all mobile app users</h4>
-                Message: <input type="text" name="message" id="message"/>
-                <input type="submit" name="sendNotification" id="sendNotification" value="Send"/>
+                <div class="row"><h3>Send a notification to all mobile app users:</h3></div>
+                <div class="row">Message: </div>
+                <div class="row"><input style="width: 85%;" type="text" name="message" id="message"/><input style="width: 15%" type="submit" name="sendNotification" id="sendNotification" value="Send"/></div>
             </form>
         </div>
-        <form id="newLogin" name="newLogin" method="POST" action="admin_page.php">
+            <div class="col text-center">
+                <form class="float-right" id="newLogin" name="newLogin" method="POST" action="admin_page.php">
+                    <div class="row"><h5>Update Admin Login:</h5></div>
+                    <div class="row">New Username:</div>
+                    <div class="row"><input type="text" name="newUsername" id="newUsername"/></div>
+                    <div class="row">New Password: </div>
+                    <div class="row"><input type="password" name="newPass" id="newPass"/></div>
+                    <div class="row"><input type="submit" name="update" id="update" value="Update"/></div>
+                </form>
 
-            <div class="col-md-4 float-right text-center">
-                <h4>Update Admin Login:</h4>
-                New Username: <input type="text" name="newUsername" id="newUsername"/>
-                New Password: <input type="password" name="newPass" id="newPass"/>
-                <input type="submit" name="update" id="update" value="Update"/>
             </div>
-        </form>
     </div>
 </div>
 <?php
