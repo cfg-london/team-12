@@ -1,6 +1,6 @@
 ;<?php
 ;die(); //#this code kills the script to ensure this code can never be printed
-;/*
+;/* delete and replace as appropriate.
 [AdminLogin]
 username = admin
 hashedPassword = $2y$10$t7FP31BixfWehVzJiV9/hewTcMUGIRRK12aeUEj6IL4cosW/MPzt2
