@@ -227,7 +227,7 @@
     <string name="next_esp">Siguiente</string>
     <string name="next_ita">Il prossimo</string>
     <string name="next_som">Xigta</string>
-    
+
     <string name="volunteer_eng">Volunteer</string>
     <string name="volunteer_bng">Sbēcchāsēbaka</string>
     <string name="volunteer_chi">志愿者</string>
@@ -251,6 +251,7 @@
     <string name="nonurgent_esp">No urgente</string>
     <string name="nonurgent_ita">Non urgenti</string>
     <string name="nonurgent_som">Xaalad degdeg ah</string>
+    <string name="title_activity_language_selection_dialog">LanguageSelectionDialog</string>
 
     <string name="medical_off">Medical Issue (Not Selected)</string>
     <string name="medical_on">Medical Issue (Selected)</string>

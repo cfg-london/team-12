@@ -23,23 +23,29 @@
             android:theme="@style/FullscreenTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="code_for_good.linkage.LangAndRegisterActivity" />
+                android:value="code_for_good.linkage.LangAndRegisterActivity"/>
         </activity>
         <activity android:name=".UrgentCheck"/>
         <activity android:name=".RefereeDetails">
         </activity>
-        <activity android:name=".IssueSelector" />
-        <activity android:name=".Messenger" />
+        <activity android:name=".IssueSelector"/>
+        <activity android:name=".Messenger"/>
         <activity android:name=".LangAndRegisterActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".UsableLocation" />
+        <activity android:name=".UsableLocation"/>
 
-        <service android:name=".GPSLocation" />
+        <service android:name=".GPSLocation"/>
+
+        <activity
+            android:name=".LanguageSelectionDialog"
+            android:label="@string/title_activity_language_selection_dialog"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
     </application>
 
 </manifest>

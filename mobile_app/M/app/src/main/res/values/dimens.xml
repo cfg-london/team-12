@@ -3,4 +3,5 @@
     <dimen name="lineSplitMargin">10dp</dimen>
     <dimen name="fontSize">15pt</dimen>
     <dimen name="textSizeSmall">10pt</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 </resources>

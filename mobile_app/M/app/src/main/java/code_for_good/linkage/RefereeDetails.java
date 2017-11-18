@@ -30,6 +30,11 @@ public class RefereeDetails extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_referee_details);
 
+        ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.genderOptions, R.layout.custom_spinner);
+        adapter.setDropDownViewResource(R.layout.custom_spinner_dropdown);
+        genderOptions = (Spinner) findViewById(R.id.genderDropdown);
+        genderOptions.setAdapter(adapter);
+
         rb = getIntent().getExtras().getParcelable("request");
 
         name = (EditText) findViewById(R.id.refereeInputName);
@@ -54,10 +59,6 @@ public class RefereeDetails extends AppCompatActivity {
             }
         });
 
-        ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.genderOptions, R.layout.custom_spinner);
-        adapter.setDropDownViewResource(R.layout.custom_spinner_dropdown);
-        genderOptions = (Spinner) findViewById(R.id.genderDropdown);
-        genderOptions.setAdapter(adapter);
     }
 
     private void toIssues(){
