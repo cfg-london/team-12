@@ -15,7 +15,9 @@ public class UserProfileBuilder {
 
     private UserProfileBuilder(){}
 
-    private UserProfileBuilder profileBuilder() {return new UserProfileBuilder();}
+    private UserProfileBuilder profileBuilder() {
+        return new UserProfileBuilder();
+    }
 
     public static UserProfileBuilder get() {
         return new UserProfileBuilder();
