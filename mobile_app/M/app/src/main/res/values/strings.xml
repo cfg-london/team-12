@@ -61,18 +61,18 @@
     </string-array>
 
     <string-array name="espReferrerOptions">
-        <item>GP</item>
-        <item>Police</item>
-        <item>Fire and Rescue</item>
-        <item>Paramedic</item>
-        <item>Pharmacist</item>
-        <item>Meals on Wheels</item>
-        <item>Linkage</item>
-        <item>Social Worker</item>
-        <item>Local Charity</item>
-        <item>Paid Carer</item>
-        <item>Friend, Family or Neighbour</item>
-        <item>Other</item>
+        <item>Médico general</item>
+        <item>Policía</item>
+        <item>Fuego y rescate</item>
+        <item>Paramédico</item>
+        <item>Farmacéutico</item>
+        <item>Comidas a domicilio</item>
+        <item>Enlace</item>
+        <item>Trabajador social</item>
+        <item>Caridad local</item>
+        <item>Cuidador pagado</item>
+        <item>Amigo, familia o vecino</item>
+        <item>Otro</item>
     </string-array>
 
     <string-array name="itaReferrerOptions">
