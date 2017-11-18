@@ -67,7 +67,7 @@ public class GPSLocation extends Service implements LocationListener {
             else {
                 this.canGetLocation = true;
                 // First get location from Network Provider
-                if (isNetworkEnabled) {
+//                if (isNetworkEnabled) {
                     locationManager.requestLocationUpdates(
                             LocationManager.NETWORK_PROVIDER,
                             MIN_TIME_BW_UPDATES,
@@ -83,28 +83,28 @@ public class GPSLocation extends Service implements LocationListener {
                             longitude = location.getLongitude();
                         }
                     }
-                }
+//                }
 
                 // if GPS Enabled get lat/long using GPS Services
-                if (isGPSEnabled) {
-                    if (location == null) {
-                        locationManager.requestLocationUpdates(
-                                LocationManager.GPS_PROVIDER,
-                                MIN_TIME_BW_UPDATES,
-                                MIN_DISTANCE_CHANGE_FOR_UPDATES, this);
-
-                        Log.d("GPS Enabled", "GPS Enabled");
-                        if (locationManager != null) {
-                            location = locationManager
-                                    .getLastKnownLocation(LocationManager.GPS_PROVIDER);
-
-                            if (location != null) {
-                                latitude = location.getLatitude();
-                                longitude = location.getLongitude();
-                            }
-                        }
-                    }
-                }
+//                if (isGPSEnabled) {
+//                    if (location == null) {
+//                        locationManager.requestLocationUpdates(
+//                                LocationManager.GPS_PROVIDER,
+//                                MIN_TIME_BW_UPDATES,
+//                                MIN_DISTANCE_CHANGE_FOR_UPDATES, this);
+//
+//                        Log.d("GPS Enabled", "GPS Enabled");
+//                        if (locationManager != null) {
+//                            location = locationManager
+//                                    .getLastKnownLocation(LocationManager.GPS_PROVIDER);
+//
+//                            if (location != null) {
+//                                latitude = location.getLatitude();
+//                                longitude = location.getLongitude();
+//                            }
+//                        }
+//                    }
+//                }
             }
 
         }
@@ -120,7 +120,8 @@ public class GPSLocation extends Service implements LocationListener {
      * Calling this function will stop using GPS in your app
      * */
 
-    public void stopUsingGPS(){
+    public void stopUsingGPS() {
+        
         if(locationManager != null){
             locationManager.removeUpdates(GPSLocation.this);
         }
@@ -130,12 +131,12 @@ public class GPSLocation extends Service implements LocationListener {
      * Function to get latitude
      * */
 
-    public double getLatitude(){
+    public double getLatitude() {
+
         if(location != null){
             latitude = location.getLatitude();
         }
 
-        // return latitude
         return latitude;
     }
 
@@ -190,21 +191,16 @@ public class GPSLocation extends Service implements LocationListener {
     }
 
     @Override
-    public void onProviderDisabled(String provider) {
-    }
+    public void onProviderDisabled(String provider) {}
 
     @Override
-    public void onProviderEnabled(String provider) {
-    }
+    public void onProviderEnabled(String provider) {}
 
     @Override
-    public void onLocationChanged(android.location.Location location) {
-
-    }
+    public void onLocationChanged(android.location.Location location) {}
 
     @Override
-    public void onStatusChanged(String provider, int status, Bundle extras) {
-    }
+    public void onStatusChanged(String provider, int status, Bundle extras) {}
 
     @Override
     public IBinder onBind(Intent arg0) {
