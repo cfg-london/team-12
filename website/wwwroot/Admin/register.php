@@ -31,9 +31,13 @@ $contents = $_GET['contents'];
 if ($type == "deviceID") {
     $deviceID = $contents;
     //register deviceID in our push notification table
+    mysqli_query($database, "INSERT INTO deviceids VALUES (" . $deviceID . ");");
 } elseif ($type == "increment") {
     $contents = explode(",", $contents);
     $valid = in_array($contents[0], $job_titles);
+    if ($valid) {
+        $contents[0] = str_replace("_", " ", $contents[0]);
+    }
     for ($i = 1; $i < count($contents); $i++) {
         if (in_array($contents[$i], $columnNames) && $valid) {
             //update the count in the SQL
