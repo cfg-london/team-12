@@ -46,6 +46,11 @@
             android:label="@string/title_activity_language_selection_dialog"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
+        <activity
+            android:name=".AdditionalInformationSubmit"
+            android:label="@string/title_activity_additional_information_submit"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
     </application>
 
 </manifest>
