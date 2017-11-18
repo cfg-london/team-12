@@ -26,6 +26,8 @@ public class LangAndRegisterActivity extends AppCompatActivity {
 
         TextView iama = (TextView) findViewById(R.id.i_am_a_view);
 
+        this.lang = Languages.ENG;
+
         ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.engReferrerOptions, R.layout.custom_spinner);
 
         Button toReg = (Button) findViewById(R.id.toProfile);
