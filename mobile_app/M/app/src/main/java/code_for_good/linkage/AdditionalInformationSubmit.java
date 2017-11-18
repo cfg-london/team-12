@@ -42,7 +42,6 @@ public class AdditionalInformationSubmit extends AppCompatActivity {
             public void onClick(View view) {
                 if(consent.isChecked()){
                     new DatabaseConnector().execute(request);
-                    // new DatabaseConnector().execute();
                 } else {
                     remindAccept();
                 }
@@ -61,6 +60,7 @@ public class AdditionalInformationSubmit extends AppCompatActivity {
             URL url = null;
             try {
                 requests[0].send();
+                /*
                 String b = requests[0].getJobType().replace(" ", "_").replace(",", "");
                 StringBuilder sb = new StringBuilder();
                 for(String s : requests[0].getIssues()){
@@ -77,7 +77,7 @@ public class AdditionalInformationSubmit extends AppCompatActivity {
                 sb.setLength(sb.length() - 1);
                 url = new URL("http://34.241.158.221/Admin/register.php?type=increment&contents="
                         + b + "," + sb.toString());
-                url.openConnection();
+                url.openConnection(); */
             } catch (IOException e) {
                 e.printStackTrace();
             }

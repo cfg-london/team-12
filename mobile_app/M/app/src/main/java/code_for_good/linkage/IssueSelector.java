@@ -148,10 +148,7 @@ public class IssueSelector extends AppCompatActivity {
         buttonIsolation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-<<<<<<< HEAD
                 requestBuilder.toggleIssue("Social Isolation");
-=======
-                requestBuilder.toggleIssue("Isolation");
                 if((Integer) buttonIsolation.getTag() == 0){
                     switch (lang) {
                         case BNG:
@@ -202,7 +199,6 @@ public class IssueSelector extends AppCompatActivity {
                     }
                     buttonIsolation.setTag(0);
                 }
->>>>>>> 8301c9db4cabcd4e0d5a520fcbb73d3d51eefb6d
             }
         });
 
@@ -323,9 +319,6 @@ public class IssueSelector extends AppCompatActivity {
         buttonCrisis.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-<<<<<<< HEAD
-                requestBuilder.toggleIssue("Crisis");
-=======
                 requestBuilder.toggleIssue("Crisis / Mental Issues");
                 if((Integer) buttonCrisis.getTag() == 0){
                     switch (lang) {
@@ -377,7 +370,6 @@ public class IssueSelector extends AppCompatActivity {
                     }
                     buttonCrisis.setTag(0);
                 }
->>>>>>> 8301c9db4cabcd4e0d5a520fcbb73d3d51eefb6d
             }
         });
 
@@ -555,9 +547,6 @@ public class IssueSelector extends AppCompatActivity {
         buttonMoney.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-<<<<<<< HEAD
-                requestBuilder.toggleIssue("Money / Benefits Issues");
-=======
                 requestBuilder.toggleIssue("Money / Benefits Issue");
                 if((Integer) buttonMoney.getTag() == 0){
                     switch (lang) {
@@ -609,7 +598,6 @@ public class IssueSelector extends AppCompatActivity {
                     }
                     buttonMoney.setTag(0);
                 }
->>>>>>> 8301c9db4cabcd4e0d5a520fcbb73d3d51eefb6d
             }
         });
 
