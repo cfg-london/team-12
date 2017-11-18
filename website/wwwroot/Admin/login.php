@@ -7,7 +7,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="placeholder.css">
-    <title>Admin Page</title>
+    <title>Login Page</title>
 </head>
 <body>
 <?php
