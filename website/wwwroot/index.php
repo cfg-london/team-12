@@ -25,6 +25,7 @@
           $info = mysqli_fetch_fields($table);
           $columnNames = array();
           $variableNames = array();
+          $originalReferrerName = array();
           foreach ($info as $item) {
               array_push($columnNames, $item->name); //gets the column names
           }
@@ -35,12 +36,14 @@
                   $columnName = $columnNames[$counter];
                   if ($counter == 0) {
                     //title of chart
+                    array_push($originalReferrerName, $item);
                     $item = preg_replace("( )", "_", $item);
                     $item = str_replace(",", "", $item);
                     array_push($variableNames, $item);
                     echo "\n\t\tvar " . $item . " = google.visualization.arrayToDataTable([\n\t\t['Referral Type', 'Frequency']";
                   } else {
-                    echo ",\n\t\t['" . $columnName . "', '" . $item . "']";
+                      $columnName = str_replace("_", " ", ucfirst($columnName));
+                    echo ",\n\t\t['" . $columnName . "', " . $item . "]";
                   }
                   //for each referral type/column
                   $counter++;
@@ -48,11 +51,11 @@
               //end of current var
               echo "]);\n\t\t";
           }
-          ?>
-        var options = {
-          title: 'Job Types - Referral Types'
-        };
-        <?php
+                for ($i = 0; $i < count($originalReferrerName); $i++) {
+                    echo "var options" . $variableNames[$i] . " = {\n";
+                    echo "title: '" . $originalReferrerName[$i] . " - Referral Types'\n";
+                    echo "};";
+                }
             $graphType = "PieChart";
             echo "\n\t\t";
             foreach($variableNames as $name) {
@@ -60,7 +63,7 @@
             }
             echo "\n\t\t";
             foreach($variableNames as $name) {
-                echo "chart" . $name . ".draw(" . $name . ", options);\n\t\t";
+                echo "chart" . $name . ".draw(" . $name . ", options" . $name . ");\n\t\t";
             }
         ?>
 }
@@ -68,6 +71,7 @@
   </head>
   <body>
   <?php
+  //add heading navbar
   require 'header.html';
   ?>
   <table align="center">

@@ -49,6 +49,17 @@ public class Referee implements Parcelable {
         return languages;
     }
 
+    @Override
+    public String toString() {
+        String result = "Name: " + name + "\nAddress: " + address + "\nGender: " + gender +
+                "\nPhone number: " + phoneNumber + "\nAge: " + age + "\nSpeaks: ";
+        for (String language : languages) {
+            result += language + " ";
+        }
+        result += "\n";
+        return result;
+    }
+
     public Referee(Parcel in) {
         name = in.readString();
         address = in.readString();
