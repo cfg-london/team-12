@@ -17,18 +17,16 @@ import android.util.Log;
  * Created by dimarammfire on 18.11.17.
  */
 
+/**
+ * FOR FUTURE USE; NOT YET COMPLETE MODULE
+ */
 public class GPSLocation extends Service implements LocationListener {
 
     private final Context mContext;
 
-    // flag for GPS status
-    boolean isGPSEnabled = false;
-
-    // flag for network status
-    boolean isNetworkEnabled = false;
-
-    // flag for GPS status
-    boolean canGetLocation = false;
+    private boolean isGPSEnabled = false;
+    private boolean isNetworkEnabled = false;
+    private boolean canGetLocation = false;
 
     Location location;
     double latitude;
@@ -121,8 +119,8 @@ public class GPSLocation extends Service implements LocationListener {
      * */
 
     public void stopUsingGPS() {
-        
-        if(locationManager != null){
+
+        if(locationManager != null) {
             locationManager.removeUpdates(GPSLocation.this);
         }
     }
@@ -144,7 +142,7 @@ public class GPSLocation extends Service implements LocationListener {
      * Function to get longitude
      * */
 
-    public double getLongitude(){
+    public double getLongitude() {
         if(location != null){
             longitude = location.getLongitude();
         }
@@ -167,7 +165,7 @@ public class GPSLocation extends Service implements LocationListener {
      * On pressing Settings button will lauch Settings Options
      * */
 
-    public void showSettingsAlert(){
+    public void showSettingsAlert() {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(mContext);
 
         alertDialog.setTitle("GPS is settings");

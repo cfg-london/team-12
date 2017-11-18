@@ -162,7 +162,8 @@ public class LangAndRegisterActivity extends AppCompatActivity {
                 }
                 in.close();
                 return sb.toString();
-            } catch (IOException e) {
+            }
+            catch (IOException e) {
                 e.printStackTrace();
             }
             return "";
