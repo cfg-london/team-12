@@ -30,42 +30,50 @@ public class LangAndRegisterActivity extends AppCompatActivity {
                 case "English":
                     lang = Languages.ENG;
                     iama.setText(getString(R.string.i_am_eng));
-                    adapter = ArrayAdapter.createFromResource(this, R.array.engReferrerOptions, R.layout.custom_spinner);
+                    adapter = ArrayAdapter.createFromResource(this,
+                            R.array.engReferrerOptions, R.layout.custom_spinner);
                     break;
                 case "বাঙালি":
                     lang = Languages.BNG;
                     iama.setText(getString(R.string.i_am_bng));
-                    adapter = ArrayAdapter.createFromResource(this, R.array.bngReferrerOptions, R.layout.custom_spinner);
+                    adapter = ArrayAdapter.createFromResource(this,
+                            R.array.bngReferrerOptions, R.layout.custom_spinner);
                     break;
                 case "中文":
                     lang = Languages.CHI;
                     iama.setText(getString(R.string.i_am_chi));
-                    adapter = ArrayAdapter.createFromResource(this, R.array.chiReferrerOptions, R.layout.custom_spinner);
+                    adapter = ArrayAdapter.createFromResource(this,
+                            R.array.chiReferrerOptions, R.layout.custom_spinner);
                     break;
                 case "Français":
                     lang = Languages.FRA;
                     iama.setText(getString(R.string.i_am_fra));
-                    adapter = ArrayAdapter.createFromResource(this, R.array.fraReferrerOptions, R.layout.custom_spinner);
+                    adapter = ArrayAdapter.createFromResource(this,
+                            R.array.fraReferrerOptions, R.layout.custom_spinner);
                     break;
                 case "Español":
                     lang = Languages.ESP;
                     iama.setText(getString(R.string.i_am_esp));
-                    adapter = ArrayAdapter.createFromResource(this, R.array.espReferrerOptions, R.layout.custom_spinner);
+                    adapter = ArrayAdapter.createFromResource(this,
+                            R.array.espReferrerOptions, R.layout.custom_spinner);
                     break;
                 case "Italiano":
                     lang = Languages.ITA;
                     iama.setText(getString(R.string.i_am_ita));
-                    adapter = ArrayAdapter.createFromResource(this, R.array.itaReferrerOptions, R.layout.custom_spinner);
+                    adapter = ArrayAdapter.createFromResource(this,
+                            R.array.itaReferrerOptions, R.layout.custom_spinner);
                     break;
                 case "Somali":
                     lang = Languages.SOM;
                     iama.setText(getString(R.string.i_am_som));
-                    adapter = ArrayAdapter.createFromResource(this, R.array.somReferrerOptions, R.layout.custom_spinner);
+                    adapter = ArrayAdapter.createFromResource(this,
+                            R.array.somReferrerOptions, R.layout.custom_spinner);
                     break;
                 default:
                     lang = Languages.ENG;
                     iama.setText(getString(R.string.i_am_eng));
-                    adapter = ArrayAdapter.createFromResource(this, R.array.engReferrerOptions, R.layout.custom_spinner);
+                    adapter = ArrayAdapter.createFromResource(this,
+                            R.array.engReferrerOptions, R.layout.custom_spinner);
                     break;
             }
         }
