@@ -69,6 +69,7 @@
   </head>
   <body>
   <?php
+  //add heading navbar
   require 'header.html';
   ?>
   <table align="center">
