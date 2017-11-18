@@ -68,6 +68,14 @@
             android:text="@string/dont_register_eng"
             android:textSize="@dimen/fontSize" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/messageOfTheDay"
+            android:textColor="#000000"
+            android:textSize="@dimen/fontSize"/>
+
     </LinearLayout>
 
 </LinearLayout>
