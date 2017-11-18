@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">linkage</string>
+    <string name="app_name">LinkAge Plus Referral</string>
     <string-array name="engReferrerOptions">
         <item>GP</item>
         <item>Police</item>
@@ -13,6 +13,96 @@
         <item>Paid Carer</item>
         <item>Friend, Family or Neighbour</item>
         <item>Other</item>
+    </string-array>
+
+    <string-array name="bngReferrerOptions">
+        <item>Sādhāraṇa anuśīlanakārī</item>
+        <item>Puliśa</item>
+        <item>Agni ēbaṁ rēsaki\'u</item>
+        <item>Pyārāmēḍika</item>
+        <item>Kampa\'uṇḍāra</item>
+        <item>Cākāra upara khābāra</item>
+        <item>Liṅkēja</item>
+        <item>Samāja karmī</item>
+        <item>Sthānīẏa cyāriṭi</item>
+        <item>Pradatta paricaryā</item>
+        <item>Bandhu, paribāra bā āśapāśa</item>
+        <item>An\'yān\'ya</item>
+    </string-array>
+
+    <string-array name="chiReferrerOptions">
+        <item>全科医生</item>
+        <item>警察</item>
+        <item>消防和救援</item>
+        <item>护理人员</item>
+        <item>药剂师</item>
+        <item>送餐上门</item>
+        <item>连锁</item>
+        <item>社会工作者</item>
+        <item>当地的慈善事业</item>
+        <item>有偿护老者</item>
+        <item>朋友，家人或邻居</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="fraReferrerOptions">
+        <item>Médecin généraliste</item>
+        <item>Police</item>
+        <item>Feu et sauvetage</item>
+        <item>Paramédical</item>
+        <item>Pharmacien</item>
+        <item>Repas sur roues</item>
+        <item>Lien</item>
+        <item>Travailleur social</item>
+        <item>Charité locale</item>
+        <item>Payé Carer</item>
+        <item>Ami, famille ou voisin</item>
+        <item>Autre</item>
+    </string-array>
+
+    <string-array name="espReferrerOptions">
+        <item>Médico general</item>
+        <item>Policía</item>
+        <item>Fuego y rescate</item>
+        <item>Paramédico</item>
+        <item>Farmacéutico</item>
+        <item>Comidas a domicilio</item>
+        <item>Enlace</item>
+        <item>Trabajador social</item>
+        <item>Caridad local</item>
+        <item>Cuidador pagado</item>
+        <item>Amigo, familia o vecino</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="itaReferrerOptions">
+        <item>Medico di famiglia</item>
+        <item>Polizia</item>
+        <item>Fuoco e salvataggio</item>
+        <item>Paramedico</item>
+        <item>Farmacista</item>
+        <item>Pasti su ruote</item>
+        <item>Collegamento</item>
+        <item>Assistente sociale</item>
+        <item>Carità locale</item>
+        <item>Carer a pagamento</item>
+        <item>Amico, famiglia o vicino</item>
+        <item>Altro </item>
+    </string-array>
+
+    <string-array name="somReferrerOptions">
+        <item>Dhakhtar guud</item>
+        <item>Booliska</item>
+        <item>Dabka iyo Badbaadinta</item>
+        <item>Kalkaaliye caafimaad</item>
+        <item>Farmashiistaha</item>
+        <item>Cuntooyinka ku yaala wheels</item>
+        <item>Isku xirka</item>
+        <item>Shaqaale bulsho</item>
+        <item>Hay\'ad samafal oo maxalli ah</item>
+        <item>Daryeele mushahar ah</item>
+        <item>Saaxiibka, Qoyska ama Deriska</item>
+        <item>Kale</item>
     </string-array>
 
     <string name="title_activity_languages">LanguagesActivity</string>
