@@ -1,13 +1,15 @@
 package code_for_good.linkage;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public class RequestBuilder {
 
     private boolean urgent; // Is the request urgent?
     private UserProfile referrer; // Who is sending the referral?
-    private Set<String> issues = new HashSet<>(); // The list of issues that are the reason for the referral.
+    private List<String> issues = new ArrayList<>(); // The list of issues that are the reason for the referral.
     private Referee referree; // The information provided on the referee.
 
     private RequestBuilder() {}
