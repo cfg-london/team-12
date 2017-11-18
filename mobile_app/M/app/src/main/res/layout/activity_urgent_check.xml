@@ -4,29 +4,37 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:layout_margin="15dp">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="10dp"
-        android:orientation="vertical"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:orientation="vertical">
+
         <Button
             android:id="@+id/urgentCheckUrgent"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="10"
-            android:text="Urgent"/>
+            android:layout_margin="5dp"
+            android:background="@color/button"
+            android:text="Urgent" />
+
         <Button
             android:id="@+id/urgentCheckNotUrgent"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="10"
-            android:text="Non Urgent"/>
+            android:layout_margin="5dp"
+            android:background="@color/button"
+            android:text="Non Urgent" />
+
         <Button
             android:id="@+id/urgentCheckVolunteer"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="3"
-            android:text="Volunteer"/>
+            android:text="Volunteer" />
     </LinearLayout>
 </LinearLayout>

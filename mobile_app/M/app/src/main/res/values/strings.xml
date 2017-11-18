@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">linkage</string>
+    <string name="app_name">LinkAge Plus Referral</string>
     <string-array name="engReferrerOptions">
         <item>GP</item>
         <item>Police</item>
