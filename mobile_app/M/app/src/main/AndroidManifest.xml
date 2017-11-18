@@ -30,6 +30,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="code_for_good.linkage.ProfileApp" />
         </activity>
+        <activity android:name=".Messenger" />
     </application>
 
 </manifest>
