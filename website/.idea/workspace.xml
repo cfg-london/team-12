@@ -15,13 +15,19 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wwwroot/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
-              <caret line="67" column="34" lean-forward="true" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
+            <state relative-caret-position="594">
+              <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#td#0;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#td#1;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1510976207319" expanded="true" signature="2690:2708" ph="SELECT * FRO... jobs" />
+                <marker date="1510976207319" expanded="true" signature="3155:3174" ph="..." />
+                <marker date="1510976207319" expanded="true" signature="3265:3284" ph="..." />
+                <marker date="1510976207319" expanded="true" signature="3376:3418" ph="..." />
+                <marker date="1510976207319" expanded="true" signature="3399:3418" ph="..." />
+                <marker date="1510976207319" expanded="true" signature="3510:3529" ph="..." />
               </folding>
             </state>
           </provider>
@@ -342,9 +348,12 @@
     <history-entry file="website - 2017.11.17 at 21h 38m 26s.xml">
       <configuration name="website" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
+    <history-entry file="website - 2017.11.18 at 03h 07m 43s.xml">
+      <configuration name="website" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17467000" />
+    <option name="totallyTimeSpent" value="20904000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="3026" height="1946" extended-state="6" />
@@ -354,7 +363,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329683" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -410,6 +419,12 @@
             <element signature="n#style#0;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#td#0;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#td#1;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1510976207319" expanded="true" signature="2690:2708" ph="SELECT * FRO... jobs" />
+            <marker date="1510976207319" expanded="true" signature="3155:3174" ph="..." />
+            <marker date="1510976207319" expanded="true" signature="3265:3284" ph="..." />
+            <marker date="1510976207319" expanded="true" signature="3376:3418" ph="..." />
+            <marker date="1510976207319" expanded="true" signature="3399:3418" ph="..." />
+            <marker date="1510976207319" expanded="true" signature="3510:3529" ph="..." />
           </folding>
         </state>
       </provider>
@@ -461,6 +476,12 @@
             <element signature="n#style#0;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#td#0;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#td#1;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1510976207319" expanded="true" signature="2690:2708" ph="SELECT * FRO... jobs" />
+            <marker date="1510976207319" expanded="true" signature="3155:3174" ph="..." />
+            <marker date="1510976207319" expanded="true" signature="3265:3284" ph="..." />
+            <marker date="1510976207319" expanded="true" signature="3376:3418" ph="..." />
+            <marker date="1510976207319" expanded="true" signature="3399:3418" ph="..." />
+            <marker date="1510976207319" expanded="true" signature="3510:3529" ph="..." />
           </folding>
         </state>
       </provider>
@@ -559,6 +580,12 @@
             <element signature="n#style#0;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#td#0;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#td#1;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1510976207319" expanded="true" signature="2690:2708" ph="SELECT * FRO... jobs" />
+            <marker date="1510976207319" expanded="true" signature="3155:3174" ph="..." />
+            <marker date="1510976207319" expanded="true" signature="3265:3284" ph="..." />
+            <marker date="1510976207319" expanded="true" signature="3376:3418" ph="..." />
+            <marker date="1510976207319" expanded="true" signature="3399:3418" ph="..." />
+            <marker date="1510976207319" expanded="true" signature="3510:3529" ph="..." />
           </folding>
         </state>
       </provider>
@@ -588,6 +615,12 @@
             <element signature="n#style#0;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#td#0;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#td#1;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1510976207319" expanded="true" signature="2690:2708" ph="SELECT * FRO... jobs" />
+            <marker date="1510976207319" expanded="true" signature="3155:3174" ph="..." />
+            <marker date="1510976207319" expanded="true" signature="3265:3284" ph="..." />
+            <marker date="1510976207319" expanded="true" signature="3376:3418" ph="..." />
+            <marker date="1510976207319" expanded="true" signature="3399:3418" ph="..." />
+            <marker date="1510976207319" expanded="true" signature="3510:3529" ph="..." />
           </folding>
         </state>
       </provider>
@@ -680,6 +713,12 @@
             <element signature="n#style#0;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#td#0;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#td#1;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1510976207319" expanded="true" signature="2690:2708" ph="SELECT * FRO... jobs" />
+            <marker date="1510976207319" expanded="true" signature="3155:3174" ph="..." />
+            <marker date="1510976207319" expanded="true" signature="3265:3284" ph="..." />
+            <marker date="1510976207319" expanded="true" signature="3376:3418" ph="..." />
+            <marker date="1510976207319" expanded="true" signature="3399:3418" ph="..." />
+            <marker date="1510976207319" expanded="true" signature="3510:3529" ph="..." />
           </folding>
         </state>
       </provider>
@@ -701,6 +740,12 @@
             <element signature="n#style#0;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#td#0;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#td#1;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1510976207319" expanded="true" signature="2690:2708" ph="SELECT * FRO... jobs" />
+            <marker date="1510976207319" expanded="true" signature="3155:3174" ph="..." />
+            <marker date="1510976207319" expanded="true" signature="3265:3284" ph="..." />
+            <marker date="1510976207319" expanded="true" signature="3376:3418" ph="..." />
+            <marker date="1510976207319" expanded="true" signature="3399:3418" ph="..." />
+            <marker date="1510976207319" expanded="true" signature="3510:3529" ph="..." />
           </folding>
         </state>
       </provider>
@@ -796,13 +841,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wwwroot/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="67" column="34" lean-forward="true" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
+        <state relative-caret-position="594">
+          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#td#0;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#td#1;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1510976207319" expanded="true" signature="2690:2708" ph="SELECT * FRO... jobs" />
+            <marker date="1510976207319" expanded="true" signature="3155:3174" ph="..." />
+            <marker date="1510976207319" expanded="true" signature="3265:3284" ph="..." />
+            <marker date="1510976207319" expanded="true" signature="3376:3418" ph="..." />
+            <marker date="1510976207319" expanded="true" signature="3399:3418" ph="..." />
+            <marker date="1510976207319" expanded="true" signature="3510:3529" ph="..." />
           </folding>
         </state>
       </provider>

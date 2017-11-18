@@ -74,6 +74,21 @@
       echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
       exit;
   }
+  $query = "SELECT * FROM jobs;";
+  $table = mysqli_query($database, $query);
+  $info = mysqli_fetch_fields($table);
+  echo "<table class='table'>";
+  echo "<tr>";
+  foreach ($info as $item) {
+    echo "<th>" . $item->name . "</th>";
+  }
+  while ($row = mysqli_fetch_row($table)) {
+      echo "<tr>";
+      foreach($row as $item) {
+          echo "<td>" . $item . "</td>";
+      }
+      echo "</tr>";
+  }
   ?><table align="center">
       <tr valign="top">
         <td colSpan=1>
