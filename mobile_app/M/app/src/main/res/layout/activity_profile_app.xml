@@ -11,9 +11,10 @@
         android:orientation="horizontal">
 
         <TextView
+            android:id="@+id/nameView"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Name:"
+            android:text="@string/name_eng"
             android:textColor="#000000"
             android:textSize="@dimen/fontSize" />
 
@@ -41,9 +42,10 @@
         android:orientation="horizontal">
 
         <TextView
+            android:id="@+id/phoneView"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Phone:"
+            android:text="@string/phone_eng"
             android:textColor="#000000"
             android:textSize="@dimen/fontSize" />
 
@@ -71,9 +73,10 @@
         android:orientation="horizontal">
 
         <TextView
+            android:id="@+id/emailView"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Email:"
+            android:text="@string/email_eng"
             android:textColor="#000000"
             android:textSize="@dimen/fontSize" />
 
@@ -101,9 +104,10 @@
         android:orientation="horizontal">
 
         <TextView
+            android:id="@+id/addrView"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Address:"
+            android:text="@string/addr_eng"
             android:textColor="#000000"
             android:textSize="@dimen/fontSize" />
 
@@ -130,9 +134,10 @@
         android:orientation="horizontal">
 
         <TextView
+            android:id="@+id/workView"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Work:"
+            android:text="@string/work_eng"
             android:textColor="#000000"
             android:textSize="@dimen/fontSize" />
 
@@ -147,9 +152,10 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/moreinfoView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Please provide as much information as possible"
+        android:text="@string/more_info_eng"
         android:textAlignment="center"
         android:textSize="@dimen/textSizeSmall" />
 
