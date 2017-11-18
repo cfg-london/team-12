@@ -85,5 +85,6 @@ public class UrgentCheck extends AppCompatActivity {
         intent.putExtra("Language", lang);
         intent.putExtra("request", rb);
         startActivity(intent);
+        this.finish();
     }
 }
