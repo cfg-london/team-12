@@ -50,6 +50,10 @@ public class AdditionalInformationSubmit extends AppCompatActivity {
         });
     }
 
+    private void complete() {
+        this.finish();
+    }
+
     private void remindAccept(){
         Toast.makeText(this, "Please tick the checkbox", Toast.LENGTH_LONG);
     }
@@ -84,7 +88,6 @@ public class AdditionalInformationSubmit extends AppCompatActivity {
                                 connection.getInputStream()));
                 String inputLine;
                 while ((inputLine = in.readLine()) != null){
-
                 }
                 in.close();
             } catch (IOException e) {
@@ -92,6 +95,13 @@ public class AdditionalInformationSubmit extends AppCompatActivity {
             }
             return null;
         }
+
+        @Override
+        protected void onPostExecute(Void aVoid) {
+            complete();
+        }
     }
+
+
 
 }
