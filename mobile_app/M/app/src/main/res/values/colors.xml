@@ -5,7 +5,7 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colorSeparatorLine">#ABB2B9</color>
     <color name="black_overlay">#66000000</color>
-    <color name="unchecked_button">#DBDBDB</color>
+    <color name="unchecked_button">@color/button</color>
     <color name="checked_button">#A1D490</color>
     <color name="button">#90C3D4</color>
 </resources>
