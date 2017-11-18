@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -20,6 +21,8 @@ public class LangAndRegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_launcher);
 
+        ImageButton imageButton = (ImageButton) findViewById(R.id.languageFlag);
+
         TextView iama = (TextView) findViewById(R.id.i_am_a_view);
 
         ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.engReferrerOptions, R.layout.custom_spinner);
@@ -29,41 +32,49 @@ public class LangAndRegisterActivity extends AppCompatActivity {
             switch (languages) {
                 case "English":
                     lang = Languages.ENG;
+                    imageButton.setImageResource(R.mipmap.gb);
                     iama.setText(getString(R.string.i_am_eng));
                     adapter = ArrayAdapter.createFromResource(this, R.array.engReferrerOptions, R.layout.custom_spinner);
                     break;
                 case "বাঙালি":
                     lang = Languages.BNG;
+                    imageButton.setImageResource(R.mipmap.bd);
                     iama.setText(getString(R.string.i_am_bng));
                     adapter = ArrayAdapter.createFromResource(this, R.array.bngReferrerOptions, R.layout.custom_spinner);
                     break;
                 case "中文":
                     lang = Languages.CHI;
+                    imageButton.setImageResource(R.mipmap.cn);
                     iama.setText(getString(R.string.i_am_chi));
                     adapter = ArrayAdapter.createFromResource(this, R.array.chiReferrerOptions, R.layout.custom_spinner);
                     break;
                 case "Français":
                     lang = Languages.FRA;
+                    imageButton.setImageResource(R.mipmap.fr);
                     iama.setText(getString(R.string.i_am_fra));
                     adapter = ArrayAdapter.createFromResource(this, R.array.fraReferrerOptions, R.layout.custom_spinner);
                     break;
                 case "Español":
                     lang = Languages.ESP;
+                    imageButton.setImageResource(R.mipmap.es);
                     iama.setText(getString(R.string.i_am_esp));
                     adapter = ArrayAdapter.createFromResource(this, R.array.espReferrerOptions, R.layout.custom_spinner);
                     break;
                 case "Italiano":
+                    imageButton.setImageResource(R.mipmap.it);
                     lang = Languages.ITA;
                     iama.setText(getString(R.string.i_am_ita));
                     adapter = ArrayAdapter.createFromResource(this, R.array.itaReferrerOptions, R.layout.custom_spinner);
                     break;
                 case "Somali":
                     lang = Languages.SOM;
+                    imageButton.setImageResource(R.mipmap.so);
                     iama.setText(getString(R.string.i_am_som));
                     adapter = ArrayAdapter.createFromResource(this, R.array.somReferrerOptions, R.layout.custom_spinner);
                     break;
                 default:
                     lang = Languages.ENG;
+                    imageButton.setImageResource(R.mipmap.gb);
                     iama.setText(getString(R.string.i_am_eng));
                     adapter = ArrayAdapter.createFromResource(this, R.array.engReferrerOptions, R.layout.custom_spinner);
                     break;
