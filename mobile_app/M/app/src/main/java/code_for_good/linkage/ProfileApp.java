@@ -1,10 +1,8 @@
 package code_for_good.linkage;
 
-import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.KeyEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -12,7 +10,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class ProfileApp extends AppCompatActivity {
 
@@ -26,46 +23,42 @@ public class ProfileApp extends AppCompatActivity {
     private EditText address;
     private Button submit;
 
-    private Langauges lang;
+    private Languages lang;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile_app);
 
-        this.lang = Langauges.ENG;
+        this.lang = (Languages) getIntent().getSerializableExtra("Language");
 
-        if(getIntent().hasExtra("Language_Choice")){
-            String languages = getIntent().getStringExtra("Language_Choice");
-            switch (languages) {
-                case "English":
-                    lang = Langauges.ENG;
-                    break;
-                case "বাঙালি":
-                    lang = Langauges.BNG;
-                    break;
-                case "中文":
-                    lang = Langauges.CHI;
-                    break;
-                case "Français":
-                    lang = Langauges.FRA;
-                    break;
-                case "Español":
-                    lang = Langauges.ESP;
-                    break;
-                case "Italiano":
-                    lang = Langauges.ITA;
-                    break;
-                case "Somali":
-                    lang = Langauges.SOM;
-                    break;
-                default:
-                    break;
-            }
+        ArrayAdapter adapter;
+        switch(lang) {
+            case ENG:
+                adapter = ArrayAdapter.createFromResource(this, R.array.engReferrerOptions, R.layout.custom_spinner);
+                break;
+            case BNG:
+                adapter = ArrayAdapter.createFromResource(this, R.array.bngReferrerOptions, R.layout.custom_spinner);
+                break;
+            case CHI:
+                adapter = ArrayAdapter.createFromResource(this, R.array.chiReferrerOptions, R.layout.custom_spinner);
+                break;
+            case FRA:
+                adapter = ArrayAdapter.createFromResource(this, R.array.fraReferrerOptions, R.layout.custom_spinner);
+                break;
+            case ESP:
+                adapter = ArrayAdapter.createFromResource(this, R.array.espReferrerOptions, R.layout.custom_spinner);
+                break;
+            case ITA:
+                adapter = ArrayAdapter.createFromResource(this, R.array.itaReferrerOptions, R.layout.custom_spinner);
+                break;
+            case SOM:
+                adapter = ArrayAdapter.createFromResource(this, R.array.somReferrerOptions, R.layout.custom_spinner);
+                break;
+            default:
+                adapter = ArrayAdapter.createFromResource(this, R.array.engReferrerOptions, R.layout.custom_spinner);
         }
-
-        ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.engReferrerOptions, R.layout.custom_spinner);
-
         adapter.setDropDownViewResource(R.layout.custom_spinner_dropdown);
         referrerDropdown = (Spinner) findViewById(R.id.professionDropdown);
         referrerDropdown.setAdapter(adapter);
@@ -101,6 +94,7 @@ public class ProfileApp extends AppCompatActivity {
     private void setupProfile(UserProfile profile){
         Intent toUrgent = new Intent(this, UrgentCheck.class);
         toUrgent.putExtra("profile", profile);
+        toUrgent.putExtra("Language", lang);
         startActivity(toUrgent);
         this.finish();
     }

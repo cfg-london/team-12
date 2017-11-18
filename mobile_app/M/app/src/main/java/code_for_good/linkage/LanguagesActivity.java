@@ -10,7 +10,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.MenuItem;
 import android.support.v4.app.NavUtils;
-import android.widget.TextView;
+import android.widget.Button;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -176,9 +176,9 @@ public class LanguagesActivity extends AppCompatActivity {
         mHideHandler.postDelayed(mHideRunnable, delayMillis);
     }
 
-    private void changeLanguage(View view){
-        Intent intent = new Intent(this, ProfileApp.class);
-        CharSequence language = ((TextView) view).getText();
+    public void changeLanguage(View view){
+        Intent intent = new Intent(this, LangAndRegisterActivity.class);
+        String language = ((Button) view).getText().toString();
         intent.putExtra("Language_Choice", language);
         startActivity(intent);
     }
