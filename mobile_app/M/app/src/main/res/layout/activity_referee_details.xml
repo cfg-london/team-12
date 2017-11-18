@@ -93,7 +93,6 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="@string/age_eng"
-            android:text="Age:"
             android:textColor="#000000"
             android:textSize="@dimen/fontSize"/>
         <EditText
