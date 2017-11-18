@@ -20,7 +20,11 @@ public class RequestBuilder implements Parcelable{
     public RequestBuilder(Parcel in) {
         urgent = in.readByte() != 0;
         referrer = in.readParcelable(UserProfile.class.getClassLoader());
-        in.readStringList(issues);
+        try {
+            in.readStringList(issues);
+        } catch (NullPointerException e){
+            in.createStringArrayList();
+        }
         referee = in.readParcelable(Referee.class.getClassLoader());
 
     }
@@ -49,6 +53,13 @@ public class RequestBuilder implements Parcelable{
     public RequestBuilder setReferrer(UserProfile referrer) {
         this.referrer = referrer;
         return this;
+    }
+
+    public RequestBuilder toggleIssue(String issue) {
+        if (issues.contains(issue)) {
+            return removeIssue(issue);
+        }
+        return addIssue(issue);
     }
 
     public RequestBuilder addIssue(String issue) {

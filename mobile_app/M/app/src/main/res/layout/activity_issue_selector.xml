@@ -19,17 +19,17 @@
             android:layout_weight="1" >
 
             <ToggleButton
-                android:id="@+id/buttonIsolation"
+                android:id="@+id/buttonMedical"
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
                 android:layout_margin="3dp"
                 android:background="@drawable/button_toggle"
-                android:textOn="@string/social_isolation_on"
-                android:textOff="@string/social_isolation_off" />
+                android:textOff="@string/medical_off"
+                android:textOn="@string/medical_on" />
 
             <ToggleButton
-                android:id="@+id/buttonSafetlyAtHome"
+                android:id="@+id/buttonSafetyAtHome"
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
@@ -76,14 +76,15 @@
                 android:textOn="@string/transport_mobility_on" />
 
             <ToggleButton
-                android:id="@+id/buttonLifePlanning"
+                android:id="@+id/buttonIsolation"
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
                 android:layout_margin="3dp"
                 android:background="@drawable/button_toggle"
-                android:textOff="@string/later_life_planning_off"
-                android:textOn="@string/later_life_planning_on" />
+                android:textOn="@string/social_isolation_on"
+                android:textOff="@string/social_isolation_off" />
+
         </TableRow>
 
         <TableRow
@@ -126,7 +127,7 @@
     </TableLayout>
 
     <EditText
-        android:id="@+id/textView"
+        android:id="@+id/additional"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:hint="@string/additional_information"
@@ -136,7 +137,7 @@
         tools:layout_editor_absoluteY="364dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/confirm"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:text="@string/confirm"

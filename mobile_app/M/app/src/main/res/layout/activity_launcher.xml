@@ -23,7 +23,7 @@
             android:id="@+id/i_am_a_view"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="I am a:"
+            android:text="@string/i_am_eng"
             android:textColor="#000000"
             android:textSize="@dimen/fontSize" />
 
@@ -50,7 +50,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:onClick="toProfileAct"
-            android:text="Register"
+            android:text="@string/register_eng"
             android:textSize="@dimen/fontSize" />
 
         <Button
@@ -59,7 +59,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:onClick="toUrgent"
-            android:text="Proceed without registering"
+            android:text="@string/dont_register_eng"
             android:textSize="@dimen/fontSize" />
 
         <Button
@@ -67,7 +67,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="0.3"
-            android:text="Volunteer"
+            android:text="@string/volunteer_eng"
             android:textSize="@dimen/textSizeSmall" />
 
     </LinearLayout>
