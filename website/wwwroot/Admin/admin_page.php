@@ -1,5 +1,6 @@
 <?php
 session_start();
+define( 'API_ACCESS_KEY', 'ACCESS-KEY' ); //PUT API ACCESS KEY IN HERE
 $username = $_POST['username'];
 $password = $_POST['pass'];
 $updateDetails = $_POST['update'];
@@ -28,15 +29,44 @@ if ($updateDetails) {
     $_SESSION['updated'] = "Password Updated <br>";
 }
 if ($sendMessage) {
-    //send push notification
-    $message = $_POST['message'];
+//    $message = $_POST['message'];
+//    //send push notification
+//    $databaseInfo = parse_ini_file("../../login.ini.php");
+//    $database = mysqli_connect($databaseInfo['dbIP'], $databaseInfo['dbUser'], $databaseInfo['dbPass'], $databaseInfo['dbDataBase'], $databaseInfo['dbSocket']);
+//    if (!$database) {
+//        //error connecting
+//        echo "Error: Unable to connect to MySQL." . PHP_EOL;
+//        echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
+//        echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
+//        exit;
+//    }
+//    //GET IDs
+//    $result = mysqli_query($database, "SELECT * FROM deviceids");
+//    $deviceIDs = array();
+//    while ($row = mysqli_fetch_row($result)) {
+//        foreach($result as $item) {
+//            array_push($deviceIDs, $item['id']);
+//        }
+//    }
+//    $notification = array(
+//            'body' => $message,
+//            'title' => "Notification"
+//    );
+//    foreach($deviceIDs as $deviceID) {
+//        $pushNotification = array(
+//            'to' => $deviceID,
+//            'notification' => $notification
+//        );
+//
+//    }
+
 
 }
 $serverLoginDetails = parse_ini_file("../../login.ini.php");
-if (!($username == $serverLoginDetails['username'] && password_verify($password, $serverLoginDetails['hashedPassword'])) || $sendMessage) {
+if (!($username == $serverLoginDetails['username'] && password_verify($password, $serverLoginDetails['hashedPassword'])) && !$sendMessage) {
     //this is the error message which is outputted onto login page
     $_SESSION['error'] = "<h1>Login details incorrect</h1>";
-    header("Location: login.php");
+    header("Location: login.php?err=true");
     exit;
 } else {
 ?>
@@ -59,7 +89,7 @@ require '../header.html';
         $_SESSION['updated'] = ""; ?>
         <div class="col">
             <form id="sendMessage" name="sendMessage" method="POST" action="admin_page.php">
-                <h4>Send notification to all mobile app users</h4>
+                <h4>Send a notification to all mobile app users</h4>
                 Message: <input type="text" name="message" id="message"/>
                 <input type="submit" name="sendNotification" id="sendNotification" value="Send"/>
             </form>
