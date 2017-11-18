@@ -28,9 +28,9 @@
         <activity android:name=".UrgentCheck"/>
         <activity android:name=".RefereeDetails">
         </activity>
-        <activity android:name=".LangAndRegisterActivity" />
+        <activity android:name=".IssueSelector" />
         <activity android:name=".Messenger" />
-        <activity android:name=".IssueSelector">
+        <activity android:name=".LangAndRegisterActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
