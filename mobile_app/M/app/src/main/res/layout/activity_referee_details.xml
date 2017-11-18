@@ -16,7 +16,7 @@
             android:textSize="@dimen/fontSize"/>
         <EditText
             android:layout_width="0dp"
-            android:id="@+id/profileInputName"
+            android:id="@+id/refereeInputName"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:inputType="textPersonName"
@@ -43,7 +43,7 @@
         <EditText
             android:layout_width="0dp"
             android:inputType="phone"
-            android:id="@+id/profileInputPhone"
+            android:id="@+id/refereeInputPhone"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@android:color/transparent"
@@ -63,14 +63,41 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Email:"
+            android:text="Gender:"
+            android:textColor="#000000"
+            android:textSize="@dimen/fontSize"/>
+        <Spinner
+            android:id="@+id/genderDropdown"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/fontSize"
+            android:entries="@array/genderOptions"
+            android:textAlignment="textEnd"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <View
+        android:layout_marginTop="@dimen/lineSplitMargin"
+        android:layout_marginBottom="@dimen/lineSplitMargin"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/colorSeparatorLine"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Age:"
+            android:inputType="number"
             android:textColor="#000000"
             android:textSize="@dimen/fontSize"/>
         <EditText
             android:layout_width="0dp"
-            android:id="@+id/profileInputEmail"
+            android:id="@+id/refereeInputAge"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:hint="Approximate"
             android:background="@android:color/transparent"
             android:inputType="textEmailAddress"
             android:textSize="@dimen/textSizeSmall"
@@ -94,8 +121,9 @@
             android:textSize="@dimen/fontSize"/>
         <EditText
             android:layout_width="0dp"
-            android:id="@+id/profileInputAddress"
+            android:id="@+id/refereeInputAddress"
             android:layout_height="match_parent"
+            android:inputType="textPostalAddress"
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:textSize="@dimen/textSizeSmall"
@@ -112,21 +140,16 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/refereeInputLanguages"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:text="Work:"
+            android:text="Languages:"
+            android:layout_weight="1"
             android:textColor="#000000"
             android:textSize="@dimen/fontSize"/>
-        <EditText
-            android:layout_width="0dp"
-            android:id="@+id/profileInputWorkAddress"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@android:color/transparent"
-            android:textSize="@dimen/textSizeSmall"
-            android:textAlignment="textEnd"/>
     </LinearLayout>
     <TextView
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
@@ -137,9 +160,10 @@
         android:layout_height="0dp"
         android:layout_weight="1"/>
     <Button
-        android:id="@+id/profileInputNext"
+        android:id="@+id/refereeInputNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="@dimen/fontSize"
         android:text="Next"
         android:layout_gravity="end"/>
 </LinearLayout>
