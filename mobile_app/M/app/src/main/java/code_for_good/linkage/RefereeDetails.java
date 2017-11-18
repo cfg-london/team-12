@@ -183,13 +183,15 @@ public class RefereeDetails extends AppCompatActivity {
         languages.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final CharSequence[] items = {"English","বাঙালি","中文","Français", "Español", "Italiano", "Somali"};
+                final CharSequence[] items =
+                        {"English","বাঙালি","中文","Français", "Español", "Italiano", "Somali"};
 
                 final ArrayList<Integer> seletedItems = new ArrayList<>();
 
                 AlertDialog dialog = new AlertDialog.Builder(context)
                         .setTitle("Select languages you speak")
-                        .setMultiChoiceItems(items, null, new DialogInterface.OnMultiChoiceClickListener() {
+                        .setMultiChoiceItems(items,
+                                null, new DialogInterface.OnMultiChoiceClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int indexSelected, boolean isChecked) {
                                 if (isChecked) {
@@ -208,7 +210,8 @@ public class RefereeDetails extends AppCompatActivity {
                                     sb.append(language).append(", ");
                                 }
                                 sb.setLength(sb.length() - 2);
-                                ((TextView) findViewById(R.id.languagesSelect)).setText(sb.toString());
+                                ((TextView) findViewById(R.id.languagesSelect))
+                                        .setText(sb.toString());
                             }
                         }).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                             @Override
