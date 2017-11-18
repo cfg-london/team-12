@@ -3,6 +3,7 @@ package code_for_good.linkage;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -41,6 +42,16 @@ public class IssueSelector extends AppCompatActivity {
         buttonStayingInHome = (Button) findViewById(R.id.buttonStayingInTheirHome);
         buttonMoney = (Button) findViewById(R.id.buttonMoneyAndBenefits);
 
+        buttonIsolation.setTag(0);
+        buttonSafetyAtHome.setTag(0);
+        buttonLegal.setTag(0);
+        buttonCrisis.setTag(0);
+        buttonMedical.setTag(0);
+        buttonTransport.setTag(0);
+        buttonHelpAroundHouse.setTag(0);
+        buttonStayingInHome.setTag(0);
+        buttonMoney.setTag(0);
+
         additional = (EditText) findViewById(R.id.additional);
         confirm = (Button) findViewById(R.id.confirm);
 
@@ -52,26 +63,80 @@ public class IssueSelector extends AppCompatActivity {
             case BNG:
                 additional.setHint(getString(R.string.addInfo_bng));
                 confirm.setText(getString(R.string.cfm_bng));
+                buttonIsolation.setText("Sāmājika bicchinnatā (nirbācita naẏa)");
+                buttonSafetyAtHome.setText("Bāṛitē nirāpattā (nirbācita naẏa)");
+                buttonLegal.setText("Ā\'ini sahāẏatā (nirbācita naẏa)");
+                buttonCrisis.setText("Saṅkaṭa (nirbācita naẏa)");
+                buttonMedical.setText("Mēḍikēla isyu (nirbācita naẏa)");
+                buttonTransport.setText("Paribahana ēbaṁ gatiśīlatā (nirbācita naẏa)");
+                buttonHelpAroundHouse.setText("Bāṛira cārapāśē sāhāyya karuna (nirbācita naẏa)");
+                buttonStayingInHome.setText("Tādēra bāṛitē thākuna (nirbācita naẏa)");
+                buttonMoney.setText("Artha ēbaṁ upakāritā (nirbācita naẏa)");
                 break;
             case CHI:
                 additional.setHint(getString(R.string.addInfo_chi));
                 confirm.setText(getString(R.string.cfm_chi));
+                buttonIsolation.setText("社会隔离（未选择）");
+                buttonSafetyAtHome.setText("家中安全（未选择）");
+                buttonLegal.setText("法律帮助（未选择）");
+                buttonCrisis.setText("危机（未选定）");
+                buttonMedical.setText("医疗问题（未选择）");
+                buttonTransport.setText("运输与流动（未选择）");
+                buttonHelpAroundHouse.setText("帮助周围的房子（未选定）");
+                buttonStayingInHome.setText("留在家里（未选定）");
+                buttonMoney.setText("金钱和福利（未选择）");
                 break;
             case FRA:
                 additional.setHint(getString(R.string.addInfo_fra));
                 confirm.setText(getString(R.string.cfm_fra));
+                buttonIsolation.setText("Isolement social (non sélectionné)");
+                buttonSafetyAtHome.setText("Sécurité à la maison (non sélectionné)");
+                buttonLegal.setText("Aide juridique (non sélectionnée)");
+                buttonCrisis.setText("Crise (non sélectionnée)");
+                buttonMedical.setText("Problème médical (non sélectionné)");
+                buttonTransport.setText("Transport et mobilité (non sélectionné)");
+                buttonHelpAroundHouse.setText("Aide autour de la maison (Non sélectionné)");
+                buttonStayingInHome.setText("Rester dans leur maison (non sélectionné)");
+                buttonMoney.setText("Argent et avantages (non sélectionné)");
                 break;
             case ESP:
                 additional.setHint(getString(R.string.addInfo_esp));
                 confirm.setText(getString(R.string.cfm_esp));
+                buttonIsolation.setText("Aislamiento social (No seleccionado)");
+                buttonSafetyAtHome.setText("Seguridad en el hogar (No seleccionado)");
+                buttonLegal.setText("Ayuda legal (no seleccionada)");
+                buttonCrisis.setText("Crisis (no seleccionada)");
+                buttonMedical.setText("Problema médico (no seleccionado)");
+                buttonTransport.setText("Transporte y movilidad (No seleccionado)");
+                buttonHelpAroundHouse.setText("Ayudando en la casa (No seleccionado)");
+                buttonStayingInHome.setText("Alojarse en su casa (No seleccionado)");
+                buttonMoney.setText("Dinero y beneficios (No seleccionado)");
                 break;
             case ITA:
                 additional.setHint(getString(R.string.addInfo_ita));
                 confirm.setText(getString(R.string.cfm_ita));
+                buttonIsolation.setText("Isolamento sociale (non selezionato)");
+                buttonSafetyAtHome.setText("Sicurezza a casa (non selezionato)");
+                buttonLegal.setText("Guida legale (non selezionata)");
+                buttonCrisis.setText("Crisi (non selezionato)");
+                buttonMedical.setText("Problema medico (non selezionato)");
+                buttonTransport.setText("Trasporto e mobilità (non selezionato)");
+                buttonHelpAroundHouse.setText("Aiutare in casa (non selezionato)");
+                buttonStayingInHome.setText("Stare nella propria casa (non selezionato)");
+                buttonMoney.setText("Soldi e vantaggi (non selezionato)");
                 break;
             case SOM:
                 additional.setHint(getString(R.string.addInfo_som));
                 confirm.setText(getString(R.string.cfm_som));
+                buttonIsolation.setText("Iskudarinta Bulshada (Looma dooran)");
+                buttonSafetyAtHome.setText("Ammaanka Guriga (Looma Xushay)");
+                buttonLegal.setText("Caawin sharci (Lama doorto)");
+                buttonCrisis.setText("Dhibaato (Lama doorto)");
+                buttonMedical.setText("Warqadda Caafimaadka (Looma dooran)");
+                buttonTransport.setText("Gaadiidka iyo socodka (Looma doorto)");
+                buttonHelpAroundHouse.setText("Ka caawi hareeraha guriga (Lama doorto)");
+                buttonStayingInHome.setText("Joogitaanka guryahooda (Lama doorto)");
+                buttonMoney.setText("Lacagta iyo faa'iidooyinka (Looma dooran)");
                 break;
             default:
                 additional.setHint(getString(R.string.addInfo_eng));
@@ -84,6 +149,14 @@ public class IssueSelector extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 requestBuilder.toggleIssue("Isolation");
+                if((Integer) buttonIsolation.getTag() == 0){
+                    buttonIsolation.setText("Active");
+                    buttonIsolation.setTag(1);
+                }
+                else {
+                    buttonIsolation.setText("Passive");
+                    buttonIsolation.setTag(0);
+                }
             }
         });
 
