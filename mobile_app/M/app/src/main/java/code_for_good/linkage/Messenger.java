@@ -23,6 +23,7 @@ public class Messenger extends Activity {
     public void onCreate(Bundle savedInstanceState) {
 
         Intent emailIntent = new Intent(Intent.ACTION_SEND);
+//        UserProfile user = new UserProfileBuilder().withEmail("alex.keks@mail.com");
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_issue_selector);}
@@ -49,12 +50,13 @@ public class Messenger extends Activity {
             message.setFrom(new InternetAddress(from));
             message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
             message.setSubject("Ping");
-            message.setText("Testing");
+            message.setText("Test");
 
             Transport.send(message);
-            System.out.println("message sent successfully....");
 
-        } catch (MessagingException mex) {
+        }
+
+        catch (MessagingException mex) {
             mex.printStackTrace();
         }
     }
