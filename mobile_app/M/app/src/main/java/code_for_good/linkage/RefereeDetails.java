@@ -106,11 +106,15 @@ public class RefereeDetails extends AppCompatActivity {
                     ));
                     toIssues();
                 } catch (NumberFormatException e){
-                    Toast.makeText(context, "Invalid age", Toast.LENGTH_LONG);
+                    numberError();
                 }
             }
         });
 
+    }
+
+    private void numberError() {
+        Toast.makeText(this, "Invalid age", Toast.LENGTH_LONG);
     }
 
     private void toIssues(){
