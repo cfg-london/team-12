@@ -53,7 +53,11 @@ public class Referee implements Parcelable {
         address = in.readString();
         gender = in.readString();
         phoneNumber = in.readString();
-        in.readStringList(languages);
+        try{
+            in.readStringList(languages);
+        } catch (NullPointerException e){
+            languages = in.createStringArrayList();
+        }
     }
 
     @Override

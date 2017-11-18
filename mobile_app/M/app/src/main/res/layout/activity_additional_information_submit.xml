@@ -1,0 +1,33 @@
+<LinearLayout android:layout_height="match_parent"
+              android:layout_width="match_parent"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_margin="10dp">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Additional Information"/>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/lineSplitMargin"
+        android:layout_marginTop="@dimen/lineSplitMargin"
+        android:background="@color/colorSeparatorLine" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text="CONSENT STUFF"/>
+    <CheckBox
+        android:id="@+id/consentCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I accept the terms and conditions"/>
+    <Button
+        android:id="@+id/finalSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Submit"/>
+</LinearLayout>

@@ -255,6 +255,7 @@
 
     <string name="medical_off">Medical Issue (Not Selected)</string>
     <string name="medical_on">Medical Issue (Selected)</string>
+    <string name="title_activity_additional_information_submit">AdditionalInformationSubmit</string>
 
     <string name="Gender_eng">Gender:</string>
     <string name="Gender_bng">Liṅga:</string>
