@@ -31,18 +31,17 @@ public class UsableLocation extends Activity {
     Button btnShowLocation;
     private static final int REQUEST_CODE_PERMISSION = 2;
     String mPermission = Manifest.permission.ACCESS_FINE_LOCATION;
-    private FusedLocationProviderClient mFusedLocationClient;
-    private LocationManager manager;
+//    private FusedLocationProviderClient mFusedLocationClient;
+//    private LocationManager manager;
 
     GPSLocation gps;
 
-    protected Location mLastLocation;
-
-    private String mLatitudeLabel;
-    private String mLongitudeLabel;
-    private TextView mLatitudeText;
-    private TextView mLongitudeText;
-
+//    protected Location mLastLocation;
+//
+//    private String mLatitudeLabel;
+//    private String mLongitudeLabel;
+//    private TextView mLatitudeText;
+//    private TextView mLongitudeText;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
